@@ -5,7 +5,7 @@ from pprint import pprint
 from pymongo import MongoClient, DESCENDING
 import pandas as pd
 
-from src.config import CONNECTION_STRING, DEBUG, GERMAN_ABSTRACTS_PATH
+from src.config import CONNECTION_STRING, DEBUG, GERMAN_ABSTRACTS_PATH, NO_OF_ANNOTATION_PER_DOC
 from src.models.response import return_pass, return_fail
 
 
@@ -42,7 +42,7 @@ class GermanAbstractsDB:
         query = {
             "english_abstract": {"$exists": True},
             "annotations": {"$exists": False},
-            "annotation_count": {"$lte": 3}
+            "annotation_count": {"$lt": NO_OF_ANNOTATION_PER_DOC}
         }
         projection = {
                 "authors": False,

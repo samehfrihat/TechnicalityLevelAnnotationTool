@@ -10,3 +10,6 @@ CONNECTION_STRING = os.environ.get("DB", 'mongodb://root:secret@sally.is.inf.uni
 
 # API related configurations
 PORT = os.environ.get("PORT", 8787)
+
+# Annotation configurations
+NO_OF_ANNOTATION_PER_DOC = os.environ.get("APD", 8787) # annotation per document
