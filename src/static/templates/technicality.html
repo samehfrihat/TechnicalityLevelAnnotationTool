@@ -1,0 +1,79 @@
+{% extends "header.html"%} {% block content %}
+
+
+
+<div class="bgded overlay" style="background-image:url({{url_for('static', filename='./images/img3.jpg')}});">
+    <div id="breadcrumb" class="hoc clear">
+        <ul class="slides">
+            <li>
+                <article1>
+                    <h1 class='heading1'>Annotate medical documents technicality</h1>
+                </article1>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/home">Annotate</a></li>
+            <li><a href="/technicality"> Annotate Technicality</a></li>
+        </ul>
+    </div>
+</div>
+<div class="wrapper row3">
+    <main class="hoc container clear">
+        <div class="content">
+            <h1><strong>How to help us?</strong></h1>
+            <p align="justify">Please read the abstract carefully then fill the following form.</p>
+            <br>
+            <table class="tg" style="table-layout: fixed;">
+                <colgroup>
+                   <col span="1" style="width: 5%;">
+                   <col span="1" style="width: 95%;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td class="tg-0lax">Topic_ID</td>
+                        <td class="tg-0lax">{{doc["_id"]}}</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax">Topic</td>
+                        <td class="tg-0lax">{{doc["topic"]}}</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax">Title</td>
+                        <td class="tg-0lax">{{doc["tittle"]}}</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax">English</td>
+                        <td class="tg-0lax">{{doc["english_abstract"]}}</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax">German</td>
+                        <td class="tg-0lax">{{doc["german_abstract"]}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form method="POST">
+                <label > Technicality Level:
+                <input type="range" name="technicality_level" list="tickmarks" style="width: 100%;">
+                </label>
+                <datalist id="tickmarks">
+                    <option value="0">0%</option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5">50%</option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10">100%</option>
+                </datalist>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <h1><br></h1>
+    </main>
+</div>
+{% endblock content %}
