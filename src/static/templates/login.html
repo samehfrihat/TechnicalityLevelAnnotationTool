@@ -102,30 +102,29 @@
             </nav>
         </header>
     </div>
-    <div class="bgded overlay" style="background-image:url({{url_for('static', filename='./images/img2.jpg')}});">
+    <div class="bgded overlay" style="background-image:url({{ url_for('static', filename='images/img2.jpg') }});">
     <div id="pageintro" class="hoc clear">
         <div class="flexslider basicslider">
             <ul class="slides">
                 <li>
                     <article>
-                        <h1 class='heading'>Welcome to WisPerMed</h1>
-                        <h1>Artificial intelligence and medical decision support</h1>
+                        <h1 class='heading'>{{gettext('Welcome to WisPerMed')}}</h1>
+                        <h1>{{gettext('Artificial intelligence and medical decision support') }}</h1>
                         <form action="" method="POST">
                             <div class="loging">
                                 {% if message %}
                                 <p style="color: #9C1A1C; background-color: moccasin;cursor: pointer; border: 3px; border-color: #474747 ;padding: 15px; margin-top: 30px">
-
                                         {{ message }}
                                 </p>
                                 {% endif %}
                                 <table class="container">
                                     <tr>
-                                        <td> User Name:<span style="color: red">*</span></td>
-                                        <td><input  type="text" name="username" style="width: 300px" placeholder="User Name" required></td>
+                                        <td> {{gettext('User Name:')}}<span style="color: red">*</span></td>
+                                        <td><input  type="text" name="username" style="width: 300px" placeholder="{{gettext('User Name')}}" required></td>
                                     </tr>
                                     <tr>
-                                        <td>Password:<span style="color: red">*</span></td>
-                                        <td><input  type="password" name="password" style="width: 300px" placeholder="Password" required></td>
+                                        <td>{{gettext('Password:')}}<span style="color: red">*</span></td>
+                                        <td><input  type="password" name="password" style="width: 300px" placeholder="{{gettext('Password')}}" required></td>
                                     </tr>
                                     </table>
                             </div>
@@ -160,10 +159,11 @@
             </p>
         </div>
     </div>
-    <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+    <!-- <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>-->
     <!-- JAVASCRIPTS -->
-    <script type="text/javascript" src="{{ url_for('static', filename='./layout/scripts/jquery.min.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='./layout/scripts/jquery.backtotop.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <!-- <script type="text/javascript" src="{{ url_for('static', filename='./layout/scripts/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='./layout/scripts/jquery.backtotop.js') }}"></script>-->
     <script type="text/javascript" src="{{ url_for('static', filename='./layout/scripts/jquery.mobilemenu.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='./layout/scripts/jquery.flexslider-min.js') }}"></script>
 </body>

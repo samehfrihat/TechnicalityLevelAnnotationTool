@@ -4,40 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href="{{url_for('static', filename='./layout/styles/layout.css')}}" rel="stylesheet" type="text/css" media="all"> {% if title %}
+    <link href="{{url_for('static', filename='./layout/styles/index.css')}}" rel="stylesheet" type="text/css"
+          media="all">
+    <link href="{{url_for('static', filename='./layout/styles/layout.css')}}" rel="stylesheet" type="text/css"
+          media="all">
+    {% if title %}
     <title>{{ title }} - WisPerMed</title>
     {% else %}
     <title>WisPerMed</title>
     {% endif %}
-    <style type="text/css">
-        .container .demo {
-            text-align: center;
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
-        .container .demo div {
-            padding: 5px 0;
-        }
-        .container .demo div:nth-child(odd) {
-            color: #000000;
-            background: #FFFFFF;
-        }
-        .container .demo div:nth-child(even) {
-            color: #FFFFFF;
-            background: #FFFFFF;
-        }
-        @media screen and (max-width:900px) {
-            .container .demo div {
-                margin-bottom: 0;
-            }
-        }
-        .editorTextBox {
-            height: 48px;
-            width: 960px;
-        }
-    </style>
 </head>
-
 <body>
     <div class="wrapper row1">
         <header id="header" class="hoc clear">
@@ -62,23 +38,34 @@
                     </li>
                     <li class="active"><a href="https://www.uni-due.de/grk_wispermed/grk_wispermed.php">About us</a></li>
                     </ul>
-            </nav>
-        </header>
+                </li>
+                <li class="active"><a class="drop" href="#">Settings</a>
+                    <ul>
+                        <li class="active"><a href="/change_pass">Change password</a></li>
+                        <li class="active"><a href="/logout">logout</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="https://www.uni-due.de/grk_wispermed/grk_wispermed.php">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+{% block content %} {% endblock %}
+<div class="wrapper row5">
+    <div id="copyright" class="hoc clear">
+        <p class="fl_left">Powered by WisPerMed</p>
+        <p class="fl_right">&copy; Copyright 2021
+        <p>
+        </p>
     </div>
-    {% block content %} {% endblock %}
-    <div class="wrapper row5">
-        <div id="copyright" class="hoc clear">
-            <p class="fl_left">Powered by WisPerMed</p>
-            <p class="fl_right">&copy; Copyright 2021<p>
-            </p>
-        </div>
-    </div>
-    <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-    <!-- JAVASCRIPTS -->
-    <script type="text/javascript" src="{{ url_for('static', filename='./layout/scripts/jquery.min.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='./layout/scripts/jquery.backtotop.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='./layout/scripts/jquery.mobilemenu.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='./layout/scripts/jquery.flexslider-min.js') }}"></script>
+</div>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script type="text/javascript" src="{{ url_for('static', filename='./layout/scripts/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='./layout/scripts/jquery.backtotop.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='./layout/scripts/jquery.mobilemenu.js') }}"></script>
+<script type="text/javascript"
+        src="{{ url_for('static', filename='./layout/scripts/jquery.flexslider-min.js') }}"></script>
 </body>
 
 </html>

@@ -65,5 +65,5 @@ class GermanAbstractsDB:
 if __name__ == '__main__':
     print('PyCharm')
     db_obj = GermanAbstractsDB()
-    #print(db_obj.insert_csv(GERMAN_ABSTRACTS_PATH))
+    # print(db_obj.insert_csv(GERMAN_ABSTRACTS_PATH))
     print(db_obj.get_document()["value"].keys())
