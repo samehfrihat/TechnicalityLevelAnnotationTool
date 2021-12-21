@@ -36,9 +36,11 @@ class UsersDB:
         if DEBUG:
             print("[STEP] Check if user exist in DB")
         try:
-            result = self.db.find_one(_doc, projection={"_id": True})
+            result = self.db.find_one({'username': _doc['username']}, projection={"_id": True, 'password': True})
             if result and len(result) > 0:
-                return return_pass(result)
+                if result["password"] != _doc["password"]:
+                    return return_fail("Password incorrect, Please try again!")
+                return return_pass()
             return return_fail("Username or password incorrect, Please try again!")
         except Exception as e:
             print(e)
