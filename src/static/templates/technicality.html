@@ -53,26 +53,41 @@
             </table>
             <form method="POST">
                 <div class="slider_with_counter">
-                    <label for="level_en" id="label_level_en"> Technicality Level <strong>English</strong> abstract:</label>
-                    <output id="output_en" for="level_en" ></output><span class="counter">%</span>
-                    <input type="range" name="technicality_level" min=0 max=100 step="5" id="level_en"
-                           style="width: 100%;" value="50">
+                    <label for="level_en" id="label_level_en">{{gettext('Technicality Level')}} <strong>{{gettext('English')}}</strong>
+                        {{gettext('abstract: ')}}</label>
+                    <output id="output_en" for="level_en"></output>
+                    <span class="counter">%</span>
+                    <div class="slider_extended">
+                        <span>  0  </span>
+                        <input type="range" name="technicality_level" min=0
+                               max=100 step="5" id="level_en"
+                               style="width: 100%;" value="50"/>
+                        <span></span>
+                        <span> 100 </span>
+                    </div>
+
 
                 </div>
                 <div class="slider_with_counter">
-                    <label for="level_de" id="label_level_de"> Technicality Level <strong>German</strong> abstract: </label>
-                    <output id="output_de" for="level_en"></output><span class="counter">%</span>
-                    <input type="range" name="technicality_level" min=0 max=100 step="5" id="level_de"
-                           style="width: 100%;" value="50">
+                    <label for="level_de" id="label_level_de"> {{gettext('Technicality Level')}} <strong>{{gettext('German')}} </strong>{{gettext('abstract:
+                        ')}}</label>
+                    <output id="output_de" for="level_en"></output>
+                    <span class="counter">%</span>
+                    <div class="slider_extended">
+                        <span> 0  </span>
+                        <input type="range" name="technicality_level" min=0
+                               max=100 step="5" id="level_de"
+                               style="width: 100%;" value="50"/>
+                        <span></span>
+                        <span> 100 </span>
+                    </div>
                 </div>
-                <script type="application/javascript"
-                        src="{{ url_for('static', filename='./layout/scripts/sliderInputController.js') }}"/>
+                <input class="btn brand z-depth-0 end" type="submit" value="{{gettext('submit')}}">
 
-
-                <input type="submit" value="Submit">
             </form>
         </div>
         <h1><br></h1>
+
     </main>
 </div>
 {% endblock content %}
