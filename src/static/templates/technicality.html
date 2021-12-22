@@ -6,7 +6,7 @@
         <ul class="slides">
             <li>
                 <article1>
-                    <h1 class='heading1'>Annotate medical documents technicality</h1>
+                    <h1 class='heading1'>{{gettext('Annotate medical documents technicality')}}</h1>
                 </article1>
             </li>
         </ul>
@@ -20,13 +20,12 @@
 <div class="wrapper row3">
     <main class="hoc container clear">
         <div class="content">
-            <h1><strong>Level of Technicality</strong></h1>
-            <p align="justify">Please read the abstract carefully then fill the following form.</p>
-            <br>
+            <h1><strong>{{gettext('Level of Technicality')}}</strong></h1>
+            <p align="justify">{{gettext('Please read the abstracts carefully and evaluate their technicality level on a scale between 0 and 100 percent.')}}</p>
             <table class="tg" style="table-layout: fixed;">
                 <colgroup>
-                    <col span="1" style="width: 5%;">
-                    <col span="1" style="width: 95%;">
+                    <col span="1">
+                    <col span="1">
                 </colgroup>
                 <tbody>
                 <tr>
@@ -34,19 +33,19 @@
                     <td class="tg-0lax">{{doc["_id"]}}</td>
                 </tr>
                 <tr>
-                    <td class="tg-0lax">Topic</td>
+                    <td class="tg-0lax">{{gettext('Topic')}}</td>
                     <td class="tg-0lax">{{doc["topic"]}}</td>
                 </tr>
                 <tr>
-                    <td class="tg-0lax">Title</td>
+                    <td class="tg-0lax">{{gettext('Title')}}</td>
                     <td class="tg-0lax">{{doc["tittle"]}}</td>
                 </tr>
                 <tr>
-                    <td class="tg-0lax">English</td>
+                    <td class="tg-0lax">{{gettext('English')}}</td>
                     <td class="tg-0lax">{{doc["english_abstract"]}}</td>
                 </tr>
                 <tr>
-                    <td class="tg-0lax">German</td>
+                    <td class="tg-0lax">{{gettext('German')}}</td>
                     <td class="tg-0lax">{{doc["german_abstract"]}}</td>
                 </tr>
                 </tbody>

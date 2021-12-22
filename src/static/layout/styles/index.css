@@ -1,5 +1,16 @@
+html {
+    height: 100%;
+}
+
 body {
-    background-color: #eeeeee;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+main {
+    display: table-row;
+    height: 100%;
 }
 
 .container .demo {
@@ -32,23 +43,98 @@ body {
     height: 48px;
     width: 960px;
 }
-.slider_with_counter{
+
+.slider_with_counter {
     width: 100%;
     display: grid;
     grid-template-columns: max-content max-content auto;
     grid-template-areas: "label counter per" "slider slider slider";
+    margin: 15px 5px;
 }
-#label_level_de, #label_level_en{
+
+#label_level_de, #label_level_en {
     grid-area: label;
 }
-#output_de, #output_en{
+
+#output_de, #output_en {
     grid-area: counter;
 }
 
-#level_de, #level_en{
+.slider_extended {
     grid-area: slider;
 }
-.counter
-{
+
+.counter {
     grid-area: per;
 }
+
+.clear li {
+    list-style-type: none;
+}
+
+.slider_extended {
+    display: grid;
+    grid-template-columns: 15px  auto 5px 30px;
+}
+
+.btn.cancel {
+    background-color: var(--color-secondary-1-0);
+    border-color: var(--color-secondary-2-0);
+}
+
+.start {
+    float: left;
+}
+
+.end {
+    float: right;
+}
+
+.center {
+     align:center
+}
+
+.tg colgroup col {
+    width: 100%;
+}
+
+.tg colgroup col:first-child {
+    width: 1%;
+}
+
+@-moz-document url-prefix() {
+    .tg colgroup col {
+        width: 90%;
+    }
+    .tg colgroup col:first-child {
+        width: 10%;
+    }
+}
+
+#loging {
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: grid;
+    padding: 8px;
+    border-radius: 12px;
+    justify-content: center;
+    justify-items: end;
+}
+#loging .input_row input{
+    width: 300px;
+}
+#loging input[type=submit]{
+    width: 125px;
+    font-size: unset;
+}
+.input_row{
+    display: grid;
+    grid-template-columns: auto max-content;
+    justify-items: end;
+    margin: 15px;
+    width: 100%;
+}
+#loging .input_row label,#loging .input_row input{
+    margin: 10px;
+}
+
