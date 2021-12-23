@@ -1,0 +1,215 @@
+# German translations for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-12-23 12:45+0100\n"
+"PO-Revision-Date: 2021-12-23 11:52+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: static/templates/change_pass.html:8
+msgid "Change your Password"
+msgstr "Passwort ändern"
+
+#: static/templates/change_pass.html:22
+msgid "Please fill in the form and save changes."
+msgstr "Bitte füllen sie die Felder aus und speichern sie die Änderungen."
+
+#: static/templates/change_pass.html:23
+msgid "*required data"
+msgstr "*erforderliche Felder"
+
+#: static/templates/change_pass.html:28
+msgid "Username:"
+msgstr "Nutzername"
+
+#: static/templates/change_pass.html:33
+msgid "Old Password:"
+msgstr "altes Passwort"
+
+#: static/templates/change_pass.html:35 static/templates/change_pass.html:41
+#: static/templates/login.html:62
+msgid "Password"
+msgstr "Passwort"
+
+#: static/templates/change_pass.html:39
+msgid "new Password:"
+msgstr "neues Passwort"
+
+#: static/templates/change_pass.html:46
+msgid "save"
+msgstr "speichern"
+
+#: static/templates/change_pass.html:47
+msgid "Cancel"
+msgstr "abbrechen"
+
+#: static/templates/header.html:30 static/templates/login.html:30
+msgid "Home"
+msgstr "Startseite"
+
+#: static/templates/header.html:31
+msgid "Annotate"
+msgstr "Annotieren"
+
+#: static/templates/header.html:33
+msgid "Technicality"
+msgstr "Formalität"
+
+#: static/templates/header.html:36
+msgid "Settings"
+msgstr "Account"
+
+#: static/templates/header.html:38
+msgid "Change password"
+msgstr "Passwort ändern"
+
+#: static/templates/header.html:39
+msgid "logout"
+msgstr "ausloggen"
+
+#: static/templates/header.html:42 static/templates/login.html:33
+msgid "About us"
+msgstr "über uns"
+
+#: static/templates/index.html:8
+msgid ", Welcome to WisPerMed"
+msgstr ", Willkommen bei WisPerMed"
+
+#: static/templates/index.html:9
+msgid ""
+"Annotation tool for improving Artificial intelligence in medical decision"
+" support"
+msgstr ""
+"Annotationstool zur Verbesserung von Künstlicher Intelligenz für "
+"medizinische Entscheidungsunterstützung"
+
+#: static/templates/index.html:19
+msgid "Welcome to "
+msgstr "Willkommen beim "
+
+#: static/templates/index.html:19
+msgid " Annotation Tool!"
+msgstr "-Annotationstool!"
+
+#: static/templates/index.html:20
+msgid ""
+"Thank you for supporting our research for improving AI in Medicine! <br> "
+"Here we will try to identify the following terms for medical abstracts:"
+msgstr ""
+"Vielen dank, dass sie uns bei unserer Forschung zur Verbesserung von KI "
+"in der Medizin unterstützen! <br> Mit diesem Tool wollen wir - mit ihrer "
+"Hilfe - folgende Eigenschaften von Abstracts medizinischer Artikel "
+"bewerten:"
+
+#: static/templates/index.html:22
+msgid "Technicality level for medical research abstracts"
+msgstr "Formalität des Textes"
+
+#: static/templates/index.html:23 static/templates/index.html:24
+msgid "XXXXXXXXXXXXXXXXXXXXXXXXX"
+msgstr ""
+
+#: static/templates/login.html:44
+msgid "Welcome to WisPerMed"
+msgstr "Willkommen bei WisPerMed"
+
+#: static/templates/login.html:45
+msgid "Artificial intelligence and medical decision support"
+msgstr "Künstliche Intelligenz und Entscheidungsunterstützung in der Medizin"
+
+#: static/templates/login.html:55
+msgid "User Name:"
+msgstr "Nutzername"
+
+#: static/templates/login.html:57
+msgid "User Name"
+msgstr "Nutzername"
+
+#: static/templates/login.html:60
+msgid "Password:"
+msgstr "Passwort:"
+
+#: static/templates/login.html:74
+msgid "Welcome to WisPerMed Annotation Tool!"
+msgstr "Willkommmen zu WisPerMeds Annotationstool!"
+
+#: static/templates/login.html:75
+msgid ""
+"Thank you for supporting our research for improving AI in Medicine <br> "
+"You are only one step far from making a difference! <br> Are you in the "
+"medical domain and would like to help us? then contact us via"
+msgstr ""
+" Vielen dank, dass sie uns bei unserer Forschung zur Verbesserung von KI "
+"in der Medizin unterstützen! <br> Sie sind nur ein Schritt davon entfernt"
+" den Unterschied zu machen. <br> Sind sie im Bereich der Medizin tätig "
+"und würden gerne mehr erfahren oder uns unterstützen? Dann kontaktieren "
+"sie und einfach via "
+
+#: static/templates/technicality.html:9
+msgid "Annotate medical documents technicality"
+msgstr "Bewertung der Formalität medizinischer Publikationen"
+
+#: static/templates/technicality.html:23
+msgid "Level of Technicality"
+msgstr "Grad der Formalität"
+
+#: static/templates/technicality.html:24
+msgid ""
+"Please read the abstracts carefully and evaluate their technicality level"
+" on a scale between 0 and 100 percent."
+msgstr ""
+"Bitte lesen sie die Abstracts sorgfältig durch und bewerten sie die "
+"jeweilige Formalität auf einer Skala zwischen 0 und 100 Prozent."
+
+#: static/templates/technicality.html:36
+msgid "Topic"
+msgstr "Themen- <br> bereich"
+
+#: static/templates/technicality.html:40
+msgid "Title"
+msgstr "Titel"
+
+#: static/templates/technicality.html:44
+msgid "English"
+msgstr "Englisch"
+
+#: static/templates/technicality.html:48
+msgid "German"
+msgstr "Deutsch"
+
+#: static/templates/technicality.html:55 static/templates/technicality.html:71
+msgid "Technicality Level"
+msgstr "Grad der Formalität"
+
+#: static/templates/technicality.html:55
+msgid "Englishs"
+msgstr "Englisches"
+
+#: static/templates/technicality.html:56
+msgid "abstract: "
+msgstr "Abstract:"
+
+#: static/templates/technicality.html:72
+msgid "Germans"
+msgstr "Deutsches"
+
+#: static/templates/technicality.html:73
+msgid "abstract:"
+msgstr "Abstract:"
+
+#: static/templates/technicality.html:85
+msgid "submit"
+msgstr "absenden"
+

@@ -5,8 +5,10 @@
             <ul class="slides">
                 <li>
                     <article>
-                        <h1 class='heading'><span style="color: #00ACEE;" class='heading'>{{ username }}</span>{{gettext(', Welcome to WisPerMed')}} </h1>
-                        <h1>{{gettext('Annotation tool for improving Artificial intelligence in medical decision support')}}</h1>
+                        <h1 class='heading'><span style="color: #00ACEE;" class='heading'>{{ username }}</span>{{gettext(',
+                            Welcome to WisPerMed')}} </h1>
+                        <h1>{{gettext('Annotation tool for improving Artificial intelligence in medical decision
+                            support')}}</h1>
                     </article>
                 </li>
             </ul>
@@ -16,15 +18,21 @@
 <div class="wrapper row3">
     <main class="hoc container clear">
         <div class="content">
-            <h3 class="heading" align="center">{{gettext('Welcome to ') }}<a href="https://www.uni-due.de/grk_wispermed/grk_wispermed.php">WisPerMed</a>{{gettext(' Annotation Tool!')}}</h3>
-            <p>{{gettext('Thank you for supporting our research for improving AI in Medicine')}}</p>
-            <p>{{gettext('Here we will try to identify the following terms for medical abstracts:')}}</p>
-            <ul>
-                <li>{{gettext('Technicality level for medical research abstracts')}}</li>
-                <li>{{gettext('XXXXXXXXXXXXXXXXXXXXXXXXX')}}</li>
-                <li>{{gettext('XXXXXXXXXXXXXXXXXXXXXXXXX')}}</li>
-            </ul>
-            <div class="clear"></div>
+            <h3 class="heading" align="center">{{gettext('Welcome to ') }}<a
+                    href="https://www.uni-due.de/grk_wispermed/grk_wispermed.php">WisPerMed</a>{{gettext(' Annotation
+                Tool!')}}</h3>
+            <p class="center">{{gettext('Thank you for supporting our research for improving AI in Medicine! <br> Here
+                we will try to
+                identify the following terms for medical abstracts:')}}</p>
+            <div class="centered_list">
+                <ul>
+                    <li title="{{gettext('Englisch: Technicality; \nDie Formalität Beschreibt, wie fachlich ein Text ist. Anzeichen für eine hohe Formalität ist der Gebrauch vieler (spezifischer) Fachwörter und ein hohes Maß an benötigtem Vorwissen aus der Domäne, um den Text verstehen zu können.') }}"><a href="/technicality"><span class="fas fa-edit"></span> {{gettext('Technicality level for
+                        medical
+                        research abstracts')}}</a></li>
+                    <li><a href="/#"><span class="fas fa-edit"></span> {{gettext('XXXXXXXXXXXXXXXXXXXXXXXXX')}}</a></li>
+                    <li><a href="/#"><span class="fas fa-edit"></span> {{gettext('XXXXXXXXXXXXXXXXXXXXXXXXX')}}</a></li>
+                </ul>
+            </div>
         </div>
     </main>
 </div>

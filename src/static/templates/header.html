@@ -8,7 +8,7 @@
           media="all">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="shortcut icon" href="{{ url_for('static', filename='./images/favicon.ico') }}">
-
+    {{ fontawesome_html() }}
     {% if title %}
     <title>{{ title }} - WisPerMed</title>
     {% else %}
@@ -21,25 +21,25 @@
         <div id="header" class="hoc clear">
             <div id="logo" class="fl_left">
                 <h1>
-                        <img class="logo1" src="{{ url_for('static', filename='./images/logo.jpg') }}" alt="logo"> <a href="/"> e-Health!</a>
+                    <img class="logo1" src="{{ url_for('static', filename='./images/logo.jpg') }}" alt="logo"> <a
+                        href="/"> e-Health!</a>
                 </h1>
             </div>
             <nav id="mainav" class="fl_right">
                 <ul class="clear">
-                    <li class="active"><a href="/home">{{gettext('Home')}}</a></li>
-                    <li class="active"><a class="drop" href="#">{{gettext('Annotate')}}</a>
+                    <li class="active"><a href="/home"><span class="fas fa-home"></span> {{gettext('Home')}}</a></li>
+                    <li class="active"><a class="drop" href="#"><span class="fas fa-edit"></span> {{gettext('Annotate')}}</a>
                         <ul>
                             <li class="active"><a href="/technicality">{{gettext('Technicality')}}</a></li>
                         </ul>
                     </li>
-                    <li class="active"><a class="drop" href="#">{{gettext('Settings')}}</a>
+                    <li class="active"><a class="drop" href="#"><span class="fas fa-user-circle"></span> {{gettext('Settings')}}</a>
                         <ul>
                             <li class="active"><a href="/change_pass">{{gettext('Change password')}}</a></li>
-                            <li class="active"><a href="/logout">{{gettext('logout')}}</a></li>
+                            <li class="active"><a href="/logout"><span class="fas fa-sign-out-alt"></span> {{gettext('logout')}}</a></li>
                         </ul>
                     </li>
-                    <li class="active"><a href="https://www.uni-due.de/grk_wispermed/grk_wispermed.php">{{gettext('About
-                        us')}}</a></li>
+                    <li class="active"><a href="https://www.uni-due.de/grk_wispermed/grk_wispermed.php"><span class="fas fa-external-link-alt"></span> {{gettext('About us')}}</a></li>
                 </ul>
             </nav>
         </div>

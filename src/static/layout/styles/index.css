@@ -91,7 +91,7 @@ main {
 }
 
 .center {
-     align:center
+    align: center
 }
 
 .tg colgroup col {
@@ -109,7 +109,9 @@ main {
     .tg colgroup col:first-child {
         width: 10%;
     }
+
 }
+
 
 #loging {
     color: #000000;
@@ -120,21 +122,53 @@ main {
     justify-content: center;
     justify-items: end;
 }
-#loging .input_row input{
+
+#loging .input_row input {
     width: 300px;
 }
-#loging input[type=submit]{
+
+#loging input[type=submit] {
     width: 125px;
     font-size: unset;
 }
-.input_row{
+
+.input_row {
     display: grid;
     grid-template-columns: auto max-content;
     justify-items: end;
     margin: 15px;
     width: 100%;
 }
-#loging .input_row label,#loging .input_row input{
+
+#loging .input_row label, #loging .input_row input {
     margin: 10px;
+}
+
+.fa-info-circle{
+    color: var(--color-primary-0);
+}
+
+.invisible{
+    display: none;
+}
+
+
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: var(--color-secondary-2-0);
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: #F7F7F7;
+    border-radius: 4px;
+    border: 1px solid #DDDDDD;
+}
+
+.centered_list{
+display: grid;
+}
+
+.centered_list ul{
+    justify-self: center;
 }
 

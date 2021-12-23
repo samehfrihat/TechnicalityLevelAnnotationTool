@@ -5,7 +5,7 @@
             <ul class="slides">
                 <li>
                     <article1>
-                        <h1 class='heading1'>Change your Password </h1>
+                        <h1 class='heading1'>{{gettext('Change your Password')}}</h1>
                     </article1>
                 </li>
             </ul>
@@ -19,32 +19,32 @@
     <div class="wrapper row3">
         <main class="hoc container clear">
             <div class="content">
-                <p>Please fill in the form and save changes.</p>
-                <p>*required data</p>
+                <p>{{gettext('Please fill in the form and save changes.')}}</p>
+                <p>{{gettext('*required data')}}</p>
                 <form action="" method="POST">
                     <div class="scrollable">
                         <table style="width: 100%">
                             <tbody>
-                            <td style="text-align: right">Username:</td>
+                            <td style="text-align: right">{{gettext('Username:')}}</td>
                             <td style="text-align: left">{{ username }}</td>
                             </tbody>
 
                             <tbody>
-                            <td style="text-align: right">Old Password:<span style="color: red">*</span></td>
+                            <td style="text-align: right">{{gettext('Old Password:')}}<span style="color: red">*</span></td>
                             <td style="text-align: left"><input type="password" name="oldpass" style="width: 300px;"
-                                                                placeholder="password" required></td>
+                                                                placeholder="{{gettext('Password')}}" required></td>
                             </tbody>
 
                             <tbody>
-                            <td style="text-align: right">new Password:<span style="color: red">*</span></td>
+                            <td style="text-align: right">{{gettext('new Password:')}}<span style="color: red">*</span></td>
                             <td style="text-align: left"><input type="password" name="newpass" style="width: 300px"
-                                                                placeholder="password" required></td>
+                                                                placeholder="{{gettext('Password')}}" required></td>
                             </tbody>
 
                         </table>
                         <div class="center">
-                            <input type="submit" name="type" value="save" class="btn brand z-depth-0 end">
-                            <input type="button" value="Cancel" class="btn brand z-depth-0 cancel start"
+                            <input type="submit" name="type" value="{{gettext('save')}}" class="btn brand z-depth-0 end">
+                            <input type="button" value="{{gettext('Cancel')}}" class="btn brand z-depth-0 cancel start"
                                    onclick="history.back()">
                         </div>
                     </div>
@@ -53,5 +53,4 @@
             <h1><br></h1>
         </main>
     </div>
-
 {% endblock content %}
