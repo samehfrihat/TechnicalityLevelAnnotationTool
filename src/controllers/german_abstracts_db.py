@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 from pprint import pprint
 
 from pymongo import MongoClient, DESCENDING
+from bson.objectid import ObjectId
 import pandas as pd
 
 from src.config import CONNECTION_STRING, DEBUG, GERMAN_ABSTRACTS_PATH, NO_OF_ANNOTATION_PER_DOC
@@ -38,11 +39,12 @@ class GermanAbstractsDB:
     def _update_docs_with_time_and_annotation_count(self):
         self.db.update_many({}, {"$set": {"annotation_count": 0, "time": datetime.now()}})
 
-    def get_document(self):
+    def get_document(self, username):
         query = {
             "english_abstract": {"$exists": True},
             "annotations": {"$exists": False},
-            "annotation_count": {"$lt": NO_OF_ANNOTATION_PER_DOC}
+            "annotation_count": {"$lt": NO_OF_ANNOTATION_PER_DOC},
+            "usernames": {"$nin": [username]}
         }
         projection = {
                 "authors": False,
@@ -58,12 +60,12 @@ class GermanAbstractsDB:
             print(e)
             return return_fail("Failed to connect DB please try later or contact WisPerMed team!")
 
-    def add_document_annotation(self, username, param):
-        pass
+    def add_document_annotation(self, username, _id, param):
+        self.db.update_many({"_id": ObjectId(_id)}, {"$inc": {"annotation_count": 1}, '$push': {'annotator': {"username": username, "value": param, "time": datetime.now()}, 'usernames': username}})
 
 
 if __name__ == '__main__':
     print('PyCharm')
     db_obj = GermanAbstractsDB()
     # print(db_obj.insert_csv(GERMAN_ABSTRACTS_PATH))
-    print(db_obj.get_document()["value"].keys())
+    print(db_obj.get_document("test")["value"].keys())

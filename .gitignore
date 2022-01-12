@@ -12,6 +12,7 @@ __pycache__/
 static/models
 
 # local files
+#src/static/data/
 src/static/well_care/
 
 
