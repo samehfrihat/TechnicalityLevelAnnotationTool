@@ -22,68 +22,116 @@
         <div class="content">
             <h1><strong>{{gettext('Level of Technicality')}}</strong></h1>
             <p align="justify">{{gettext('Please read the abstracts carefully and evaluate their technicality level on a scale between 0 and 100 percent.')}}</p>
-            <table class="tg" style="table-layout: fixed;">
-                <colgroup>
-                    <col span="1">
-                    <col span="1">
-                </colgroup>
-                <tbody>
-                <tr>
-                    <td class="tg-0lax">Topic_ID</td>
-                    <td class="tg-0lax">{{doc["_id"]}}</td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">{{gettext('Topic')}}</td>
-                    <td class="tg-0lax">{{doc["topic"]}}</td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">{{gettext('Title')}}</td>
-                    <td class="tg-0lax">{{doc["tittle"]}}</td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">{{gettext('English')}}</td>
-                    <td class="tg-0lax">{{doc["english_abstract"]}}</td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">{{gettext('German')}}</td>
-                    <td class="tg-0lax">{{doc["german_abstract"]}}</td>
-                </tr>
-                </tbody>
-            </table>
             <form method="POST">
-                <div class="slider_with_counter">
-                    <label for="level_en" id="label_level_en">{{gettext('Technicality Level')}} <strong>{{gettext('Englishs')}}</strong>
-                        {{gettext('abstract: ')}}</label>
-                    <output id="output_en" for="level_en"></output>
-                    <span class="counter">%</span>
-                    <div class="slider_extended">
-                        <span>  0  </span>
-                        <input type="range" name="technicality_level_en" min=0
-                               max=100 step="5" id="level_en"
-                               style="width: 100%;" value="50"/>
-                        <span></span>
-                        <span> 100 </span>
-                    </div>
-
-
-                </div>
-                <div class="slider_with_counter">
-                    <label for="level_de" id="label_level_de"> {{gettext('Technicality Level')}}
-                        <strong>{{gettext('Germans')}} </strong>
-                        {{gettext('abstract:')}}</label>
-                    <output id="output_de" for="level_en"></output>
-                    <span class="counter">%</span>
-                    <div class="slider_extended">
-                        <span> 0  </span>
-                        <input type="range" name="technicality_level_de" min=0
-                               max=100 step="5" id="level_de"
-                               style="width: 100%;" value="50"/>
-                        <span></span>
-                        <span> 100 </span>
-                    </div>
-                </div>
+                <table class="tg" style="table-layout: fixed;">
+                    <colgroup>
+                        <col span="1">
+                        <col span="1">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td class="tg-0lax">Topic_ID</td>
+                            <td class="tg-0lax">{{doc["_id"]}}</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax">{{gettext('Topic')}}</td>
+                            <td class="tg-0lax">{{doc["topic"]}}</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax">{{gettext('Title')}}</td>
+                            <td class="tg-0lax">{{doc["tittle"]}}</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax">{{gettext('English')}}</td>
+                            <td class="tg-0lax">{{doc["english_abstract"]}}</td>
+                        </tr>
+                        <tr><!--INPUT-->
+                            <td class="tg-0lax" colspan="2" style="padding:0 0;">
+                                <div class="slider_with_counter">
+                                    <label for="level_en" id="technicality_label_level_en">
+                                        {{gettext('Technicality Level')}}
+                                        <strong>{{gettext('Englishs')}}</strong>
+                                        {{gettext('abstract: ')}}
+                                    </label>
+                                    <output id="output_en" for="level_en"></output>
+                                    <span class="counter">%</span>
+                                    <div class="slider_extended">
+                                        <span>  0  </span>
+                                        <input type="range" name="technicality_level_en" min=0
+                                               max=100 step="5" id="level_en"
+                                               style="width: 100%;" value="50"/>
+                                        <span></span>
+                                        <span> 100 </span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr><!--INPUT-->
+                            <td class="tg-0lax" colspan="2" style="padding:0 0;">
+                                <div class="slider_with_counter">
+                                    <label for="read_level_en" id="readability_label_level_en">
+                                        {{gettext('Readability Level')}}
+                                        <strong>{{gettext('Englishs')}}</strong>
+                                        {{gettext('abstract: ')}}
+                                    </label>
+                                    <output id="readability_output_en" for="read_level_en"></output>
+                                    <span class="counter">%</span>
+                                    <div class="slider_extended">
+                                        <span>  0  </span>
+                                        <input type="range" name="readability_level_en" min=0
+                                               max=100 step="5" id="read_level_en"
+                                               style="width: 100%;" value="50"/>
+                                        <span></span>
+                                        <span> 100 </span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax">{{gettext('German')}}</td>
+                            <td class="tg-0lax">{{doc["german_abstract"]}}</td>
+                        </tr>
+                        <tr><!--INPUT-->
+                            <td class="tg-0lax" colspan="2" style="padding:0 0;">
+                                <div class="slider_with_counter">
+                                    <label for="level_de" id="label_level_de"> {{gettext('Technicality Level')}}
+                                        <strong>{{gettext('Germans')}} </strong>
+                                        {{gettext('abstract:')}}</label>
+                                    <output id="output_de" for="level_de"></output>
+                                    <span class="counter">%</span>
+                                    <div class="slider_extended">
+                                        <span> 0  </span>
+                                        <input type="range" name="technicality_level_de" min=0
+                                               max=100 step="5" id="level_de"
+                                               style="width: 100%;" value="50"/>
+                                        <span></span>
+                                        <span> 100 </span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr><!--INPUT-->
+                            <td class="tg-0lax" colspan="2" style="padding:0 0;">
+                                <div class="slider_with_counter">
+                                    <label for="readability_level_de" id="label_level_de"> {{gettext('Readability Level')}}
+                                        <strong>{{gettext('Germans')}} </strong>
+                                        {{gettext('abstract:')}}</label>
+                                    <output id="readability_level_de" for="readability_level_de"></output>
+                                    <span class="counter">%</span>
+                                    <div class="slider_extended">
+                                        <span> 0  </span>
+                                        <input type="range" name="readability_level_de" min=0
+                                               max=100 step="5" id="readability_level_de"
+                                               style="width: 100%;" value="50"/>
+                                        <span></span>
+                                        <span> 100 </span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
                 <input class="btn brand z-depth-0 end" type="submit" value="{{gettext('submit')}}">
-
             </form>
         </div>
         <h1><br></h1>
