@@ -158,7 +158,7 @@ msgstr ""
 "sie und einfach via "
 
 #: static/templates/technicality.html:9
-msgid "Annotate medical documents technicality"
+msgid "Annotate medical documents"
 msgstr "Bewertung der Formalität medizinischer Publikationen"
 
 #: static/templates/technicality.html:23
@@ -167,7 +167,7 @@ msgstr "Grad der Formalität"
 
 #: static/templates/technicality.html:24
 msgid ""
-"Please read the abstracts carefully and evaluate their technicality level"
+"Please read the abstracts carefully and evaluate their technicality and readability levels"
 " on a scale between 0 and 100 percent."
 msgstr ""
 "Bitte lesen sie die Abstracts sorgfältig durch und bewerten sie die "

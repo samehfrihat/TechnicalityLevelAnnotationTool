@@ -49,14 +49,15 @@ main {
     display: grid;
     grid-template-columns: max-content max-content auto;
     grid-template-areas: "label counter per" "slider slider slider";
-    margin: 15px 5px;
+    margin: 5px 5px;
+    padding-right: 10px;
 }
 
-#label_level_de, #label_level_en {
+#label_level_de, #label_level_en, #readability_label_level_de, #technicality_label_level_en,  #technicality_label_level_de, #readability_label_level_en {
     grid-area: label;
 }
 
-#output_de, #output_en {
+#output_de, #output_en, #readability_output_en, #output_readability_level_de {
     grid-area: counter;
 }
 

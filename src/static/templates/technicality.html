@@ -6,7 +6,7 @@
         <ul class="slides">
             <li>
                 <article1>
-                    <h1 class='heading1'>{{gettext('Annotate medical documents technicality')}}</h1>
+                    <h1 class='heading1'>{{gettext('Annotate medical documents')}}</h1>
                 </article1>
             </li>
         </ul>
@@ -21,7 +21,7 @@
     <main class="hoc container clear">
         <div class="content">
             <h1><strong>{{gettext('Level of Technicality')}}</strong></h1>
-            <p align="justify">{{gettext('Please read the abstracts carefully and evaluate their technicality level on a scale between 0 and 100 percent.')}}</p>
+            <p align="justify">{{gettext('Please read the abstracts carefully and evaluate their technicality and readability levels on a scale between 0 and 100 percent.')}}</p>
             <form method="POST">
                 <table class="tg" style="table-layout: fixed;">
                     <colgroup>
@@ -46,7 +46,7 @@
                             <td class="tg-0lax">{{doc["english_abstract"]}}</td>
                         </tr>
                         <tr><!--INPUT-->
-                            <td class="tg-0lax" colspan="2" style="padding:0 0;">
+                            <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                                 <div class="slider_with_counter">
                                     <label for="level_en" id="technicality_label_level_en">
                                         {{gettext('Technicality Level')}}
@@ -67,7 +67,7 @@
                             </td>
                         </tr>
                         <tr><!--INPUT-->
-                            <td class="tg-0lax" colspan="2" style="padding:0 0;">
+                            <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                                 <div class="slider_with_counter">
                                     <label for="read_level_en" id="readability_label_level_en">
                                         {{gettext('Readability Level')}}
@@ -92,9 +92,9 @@
                             <td class="tg-0lax">{{doc["german_abstract"]}}</td>
                         </tr>
                         <tr><!--INPUT-->
-                            <td class="tg-0lax" colspan="2" style="padding:0 0;">
+                            <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                                 <div class="slider_with_counter">
-                                    <label for="level_de" id="label_level_de"> {{gettext('Technicality Level')}}
+                                    <label for="level_de" id="technicality_label_level_de"> {{gettext('Technicality Level')}}
                                         <strong>{{gettext('Germans')}} </strong>
                                         {{gettext('abstract:')}}</label>
                                     <output id="output_de" for="level_de"></output>
@@ -111,12 +111,12 @@
                             </td>
                         </tr>
                         <tr><!--INPUT-->
-                            <td class="tg-0lax" colspan="2" style="padding:0 0;">
+                            <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                                 <div class="slider_with_counter">
-                                    <label for="readability_level_de" id="label_level_de"> {{gettext('Readability Level')}}
+                                    <label for="readability_level_de" id="readability_label_level_de"> {{gettext('Readability Level')}}
                                         <strong>{{gettext('Germans')}} </strong>
                                         {{gettext('abstract:')}}</label>
-                                    <output id="readability_level_de" for="readability_level_de"></output>
+                                    <output id="readability_output_de" for="readability_level_de"></output>
                                     <span class="counter">%</span>
                                     <div class="slider_extended">
                                         <span> 0  </span>
