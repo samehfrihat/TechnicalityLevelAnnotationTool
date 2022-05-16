@@ -38,6 +38,7 @@
                         console.log(localStorage.getItem("2"))
                         console.log(localStorage.getItem("3"))
                         console.log(localStorage.getItem("4"))
+
                     }
 
                     function checkSubmitEnable(nr) {
@@ -71,7 +72,79 @@
                     </tr>
                     <tr>
                         <td class="tg-0lax">{{gettext('Topic')}}</td>
-                        <td class="tg-0lax">{{doc["topic"]}}</td>
+                        <!--<td class="tg-0lax">{{doc["topic"]}}</td>-->
+                        <td>
+                            <select id="l1-topics-list" onchange="ChangeSecondList(this.options[this.selectedIndex].value)" name="l1-topics">
+                                <option value="">Select topic</option>
+                                <option value="Anesthesiology">Anesthesiology</option>
+                                <option value="Cardiology">Cardiology</option>
+                                <option value="Dermatology">Dermatology</option>
+                                <option value="Emergency Medicine">Emergency Medicine</option>
+                                <option value="Family Practice">Family Practice</option>
+                                <option value="Forensic Medicine">Forensic Medicine</option>
+                                <option value="Geriatrics">Geriatrics</option>
+                                <option value="Internal Medicine">Internal Medicine</option>
+                                <option value="Medical Genetics">Medical Genetics</option>
+                                <option value="Neurology">Neurology</option>
+                                <option value="Obstetrics">Obstetrics</option>
+                                <option value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
+                                <option value="Dermatology">Occupational Medicine</option>
+                                <option value="Dermatology">Ophthalmology</option>
+                                <option value="Dermatology">Otolaryngology</option>
+                                <option value="Dermatology">Pathology</option>
+                                <option value="Dermatology">Pediatrics</option>
+                                <option value="Dermatology">Physical Medicine and Rehabilitation</option>
+                                <option value="Dermatology">Podiatry</option>
+                                <option value="Dermatology">Preventive Medicine</option>
+                                <option value="Dermatology">Psychiatry</option>
+                                <option value="Dermatology">Public Health</option>
+                                <option value="Dermatology">Pulmonary Medicine</option>
+                                <option value="Dermatology">Radiology</option>
+                                <option value="Dermatology">Sports Medicine</option>
+                                <option value="Dermatology">Surgery</option>
+                                <option value="Dermatology">Surgical Specialty</option>
+                                <option value="Dermatology">Urology</option>
+                            </select>
+
+                            <div id="dynamic-list-div" style="display:none;">
+                                <select id="dynamic-list" name="l2-topics">
+                                    <option value="">Select subtopic</option>
+                                </select>
+                            </div>
+                            <script type="text/javascript">
+                                function ChangeSecondList(value) {
+                                   if( value.length ) {
+                                      var dropid = document.getElementById("dynamic-list");
+                                      var data = {
+                                          "Internal Medicine": ["Endocrinology", "Gastroenterology", "Gynecology", "Hematology","Nephrology","Oncology","Parasitology","Rheumatology"],
+                                          "Medical Genetics": ["Breast Cancer Genetics"],
+                                          "Ophthalmology": ["Experimental Ophthalmology"],
+                                          "Pathology": ["Bone and Connective Tissue Pathology","Cardiovascular Pathology","Cytopathology","Experimental Pathology","Gynecologic Pathology", "Hematopathology","Human Pathology","Immunopathology","Molecular Pathology","Neuropathology", "Ocular Pathology","Oral Pathology","Pathology of Tumors in Animals","Psychopathology", "Pulmonary Pathology","Renal/Urogenital Pathology", "Surgical Pathology","Ultrastructural Pathology"],
+                                          "Pediatrics": ["Neonatology", "Pediatric Hematology/Oncology", "Pediatric Neurologic Oncology", "Pediatric Neurology"],
+                                          "Preventive Medicine": ["Health Promotion in Nursing"],
+                                          "Psychiatry": ["Child Psychiatry", "Experimental Psychiatry", "Psychosomatic Medicine"],
+                                          "Public Health": ["Arctic Research","Community Health", "Occupational Health", "Patterns of Care","Women's Health"],
+                                          "Radiology": ["Diagnostic Radiology", "Interventional Radiology","Nuclear Medicine","Pediatric Radiology","Radiology, Bone","Radiology, Dental","Radiology, Head, Neck","Radiology, Soft Tissue","Radiology, Thorax, Chest","Therapeutic Radiology",],
+                                          "Surgical Specialty": ["General Surgery","Hand Surgery","Neurosurgery","Oral Surgery","Orthopedics","Pediatric Surgery","Plastic Surgery","Thoracic Surgery","Urological Surgery","Vascular Surgery",],
+                                      }
+                                      if (value in data) {
+                                          document.getElementById("dynamic-list-div").style.display = "block";
+                                          for(var i=0; i<data[value].length; i++ ) {
+                                              var opt = document.createElement("option")
+                                              opt.value = data[value][i];
+                                              opt.innerText = data[value][i]
+                                              dropid.appendChild(opt)
+                                          }
+                                          dropid.options[0].selected = true;
+                                      }
+                                      else {
+                                          document.getElementById("dynamic-list-div").style.display = "none";
+                                      }
+                                   }
+                                }
+                                ChangeSecondList(document.getElementById("l1-topics-list").options[document.getElementById("l1-topics-list").selectedIndex].value);
+                            </script>
+                        </td>
                     </tr>
                     <tr>
                         <td class="tg-0lax">{{gettext('Title')}}</td>
