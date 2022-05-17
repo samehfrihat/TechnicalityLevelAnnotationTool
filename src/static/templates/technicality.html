@@ -15,13 +15,13 @@
             <li><a href="/home">Home</a></li>
             <li><a href="/home">Annotate</a></li>
             <li><a href="/technicality"> Annotate Technicality</a></li>
-        </ul>-->c
+        </ul>-->
     </div>
 </div>
 <div class="wrapper row3">
     <main class="hoc container clear">
         <div class="content">
-            <h1><strong>{{gettext('Level of Technicality')}}</strong></h1>
+            <!--<h1><strong>{{gettext('Level of Technicality')}}</strong></h1>-->
             <p align="justify">{{gettext('Please read the abstracts carefully and evaluate their technicality and
                 readability levels on a scale between 0 and 100 percent.')}}</p>
             <form method="POST">
@@ -88,22 +88,22 @@
                                 <option value="Neurology">Neurology</option>
                                 <option value="Obstetrics">Obstetrics</option>
                                 <option value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
-                                <option value="Dermatology">Occupational Medicine</option>
-                                <option value="Dermatology">Ophthalmology</option>
-                                <option value="Dermatology">Otolaryngology</option>
-                                <option value="Dermatology">Pathology</option>
-                                <option value="Dermatology">Pediatrics</option>
-                                <option value="Dermatology">Physical Medicine and Rehabilitation</option>
-                                <option value="Dermatology">Podiatry</option>
-                                <option value="Dermatology">Preventive Medicine</option>
-                                <option value="Dermatology">Psychiatry</option>
-                                <option value="Dermatology">Public Health</option>
-                                <option value="Dermatology">Pulmonary Medicine</option>
-                                <option value="Dermatology">Radiology</option>
-                                <option value="Dermatology">Sports Medicine</option>
-                                <option value="Dermatology">Surgery</option>
-                                <option value="Dermatology">Surgical Specialty</option>
-                                <option value="Dermatology">Urology</option>
+                                <option value="Occupational Medicine">Occupational Medicine</option>
+                                <option value="Ophthalmology">Ophthalmology</option>
+                                <option value="Otolaryngology">Otolaryngology</option>
+                                <option value="Pathology">Pathology</option>
+                                <option value="Pediatrics">Pediatrics</option>
+                                <option value="Physical Medicine and Rehabilitation">Physical Medicine and Rehabilitation</option>
+                                <option value="Podiatry">Podiatry</option>
+                                <option value="Preventive Medicine">Preventive Medicine</option>
+                                <option value="Psychiatry">Psychiatry</option>
+                                <option value="Public Health">Public Health</option>
+                                <option value="Pulmonary Medicine">Pulmonary Medicine</option>
+                                <option value="Radiology">Radiology</option>
+                                <option value="Sports Medicine">Sports Medicine</option>
+                                <option value="Surgery">Surgery</option>
+                                <option value="Surgical Specialty">Surgical Specialty</option>
+                                <option value="Urology">Urology</option>
                             </select>
 
                             <div id="dynamic-list-div" style="display:none;">
@@ -127,6 +127,10 @@
                                           "Radiology": ["Diagnostic Radiology", "Interventional Radiology","Nuclear Medicine","Pediatric Radiology","Radiology, Bone","Radiology, Dental","Radiology, Head, Neck","Radiology, Soft Tissue","Radiology, Thorax, Chest","Therapeutic Radiology",],
                                           "Surgical Specialty": ["General Surgery","Hand Surgery","Neurosurgery","Oral Surgery","Orthopedics","Pediatric Surgery","Plastic Surgery","Thoracic Surgery","Urological Surgery","Vascular Surgery",],
                                       }
+                                      console.log(value in data);
+                                      console.log(value);
+                                      console.log(data[value]);
+
                                       if (value in data) {
                                           document.getElementById("dynamic-list-div").style.display = "block";
                                           for(var i=0; i<data[value].length; i++ ) {
