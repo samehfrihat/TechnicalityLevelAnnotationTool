@@ -81,13 +81,14 @@
                     <tr><!--INPUT-->
                         <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                             <div class="slider_with_counter">
-                                <label for="level_en" id="technicality_label_level_en" class="required">
+                                <label for="level_en" id="technicality_label_level_en" class="tooltip">
                                     <strong>{{gettext('Technicality Level')}}</strong>
                                     <strong>{{gettext('Englishs')}}</strong>
                                     {{gettext('abstract: ')}}
+                                    <span class="tooltiptext">An article may be well written and grammatically understandable, but its content may cover concepts only understandable to people learned in a certain domain. 0 means high technical text, and 100 low technicality.</span>
                                 </label>
                                 <output id="output_en" for="level_en"></output>
-                                <span class="counter">%</span>
+                                <span class="counter, required">%</span>
                                 <div class="slider_extended">
                                     <span>  0  </span>
                                     <input type="range" name="technicality_level_en" min=0
@@ -102,13 +103,14 @@
                     <tr><!--INPUT-->
                         <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                             <div class="slider_with_counter">
-                                <label for="read_level_en" id="readability_label_level_en" class="required">
+                                <label for="read_level_en" id="readability_label_level_en" class="tooltip">
                                     <strong>{{gettext('Readability Level')}}</strong>
                                     <strong>{{gettext('Englishs')}}</strong>
                                     {{gettext('abstract: ')}}
+                                    <span class="tooltiptext">The ease with which a reader can understand a written text. 0 means Hard to read, and 100 easy to read.</span>
                                 </label>
                                 <output id="readability_output_en" for="read_level_en"></output>
-                                <span class="counter">%</span>
+                                <span class="counter, required">%</span>
                                 <div class="slider_extended">
                                     <span>  0  </span>
                                     <input type="range" name="readability_level_en" min=0
@@ -127,12 +129,15 @@
                     <tr><!--INPUT-->
                         <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                             <div class="slider_with_counter">
-                                <label for="level_de" id="technicality_label_level_de" class="required">
+                                <label for="level_de" id="technicality_label_level_de" class="tooltip">
                                     <strong>{{gettext('Technicality Level')}}</strong>
                                     <strong>{{gettext('Germans')}}</strong>
-                                    {{gettext('abstract:')}}</label>
+                                    {{gettext('abstract:')}}
+
+                                    <span class="tooltiptext">Ein Artikel kann gut geschrieben und grammatikalisch verständlich sein, aber sein Inhalt kann Konzepte umfassen, die nur für Menschen mit Fachkenntnissen in einem bestimmten Bereich verständlich sind. 0 bedeutet, dass der Text sehr technisch ist, und 100, dass er wenig technisch ist.</span>
+                                </label>
                                 <output id="output_de" for="level_de"></output>
-                                <span class="counter">%</span>
+                                <span class="counter, required">%</span>
                                 <div class="slider_extended">
                                     <span> 0  </span>
                                     <input type="range" name="technicality_level_de" min=0
@@ -147,12 +152,14 @@
                     <tr><!--INPUT-->
                         <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                             <div class="slider_with_counter">
-                                <label for="readability_level_de" id="readability_label_level_de" class="required">
+                                <label for="readability_level_de" id="readability_label_level_de" class="tooltip">
                                     <strong>{{gettext('Readability Level')}}</strong>
                                     <strong>{{gettext('Germans')}}</strong>
-                                    {{gettext('abstract:')}}</label>
+                                    {{gettext('abstract:')}}
+                                    <span class="tooltiptext">Die Leichtigkeit, mit der ein Leser einen geschriebenen Text verstehen kann. 0 bedeutet schwer zu lesen und 100 leicht zu lesen.</span>
+                                </label>
                                 <output id="readability_output_de" for="readability_level_de"></output>
-                                <span class="counter">%</span>
+                                <span class="counter, required">%</span>
                                 <div class="slider_extended">
                                     <span> 0  </span>
                                     <input type="range" name="readability_level_de" min=0
