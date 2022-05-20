@@ -95,6 +95,13 @@ msgstr ""
 "Annotationstool zur Verbesserung von Künstlicher Intelligenz für "
 "medizinische Entscheidungsunterstützung"
 
+
+#: static/templates/index.html:11
+msgid "Start Annotation!"
+msgstr "Annotation starten!"
+
+
+
 #: static/templates/index.html:19
 msgid "Welcome to "
 msgstr "Willkommen beim "
@@ -105,13 +112,9 @@ msgstr "-Annotationstool!"
 
 #: static/templates/index.html:20
 msgid ""
-"Thank you for supporting our research for improving AI in Medicine! <br> "
-"Here we will try to identify the following terms for medical abstracts:"
+"Thank you for supporting our research for improving AI in Medicine!"
 msgstr ""
-"Vielen dank, dass sie uns bei unserer Forschung zur Verbesserung von KI "
-"in der Medizin unterstützen! <br> Mit diesem Tool wollen wir - mit ihrer "
-"Hilfe - folgende Eigenschaften von Abstracts medizinischer Artikel "
-"bewerten:"
+"Vielen dank, dass sie uns bei unserer Forschung zur Verbesserung von KI in der Medizin unterstützen!"
 
 #: static/templates/index.html:22
 msgid "Technicality level for medical research abstracts"

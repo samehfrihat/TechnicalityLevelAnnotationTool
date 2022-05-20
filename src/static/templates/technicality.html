@@ -71,86 +71,6 @@
                         <td class="tg-0lax">{{doc["_id"]}}</td>
                     </tr>
                     <tr>
-                        <td class="tg-0lax">{{gettext('Topic')}}</td>
-                        <!--<td class="tg-0lax">{{doc["topic"]}}</td>-->
-                        <td>
-                            <select id="l1-topics-list" onchange="ChangeSecondList(this.options[this.selectedIndex].value)" name="l1-topics">
-                                <option value="">Select topic</option>
-                                <option value="Anesthesiology">Anesthesiology</option>
-                                <option value="Cardiology">Cardiology</option>
-                                <option value="Dermatology">Dermatology</option>
-                                <option value="Emergency Medicine">Emergency Medicine</option>
-                                <option value="Family Practice">Family Practice</option>
-                                <option value="Forensic Medicine">Forensic Medicine</option>
-                                <option value="Geriatrics">Geriatrics</option>
-                                <option value="Internal Medicine">Internal Medicine</option>
-                                <option value="Medical Genetics">Medical Genetics</option>
-                                <option value="Neurology">Neurology</option>
-                                <option value="Obstetrics">Obstetrics</option>
-                                <option value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
-                                <option value="Occupational Medicine">Occupational Medicine</option>
-                                <option value="Ophthalmology">Ophthalmology</option>
-                                <option value="Otolaryngology">Otolaryngology</option>
-                                <option value="Pathology">Pathology</option>
-                                <option value="Pediatrics">Pediatrics</option>
-                                <option value="Physical Medicine and Rehabilitation">Physical Medicine and Rehabilitation</option>
-                                <option value="Podiatry">Podiatry</option>
-                                <option value="Preventive Medicine">Preventive Medicine</option>
-                                <option value="Psychiatry">Psychiatry</option>
-                                <option value="Public Health">Public Health</option>
-                                <option value="Pulmonary Medicine">Pulmonary Medicine</option>
-                                <option value="Radiology">Radiology</option>
-                                <option value="Sports Medicine">Sports Medicine</option>
-                                <option value="Surgery">Surgery</option>
-                                <option value="Surgical Specialty">Surgical Specialty</option>
-                                <option value="Urology">Urology</option>
-                            </select>
-
-                            <div id="dynamic-list-div" style="display:none;">
-                                <select id="dynamic-list" name="l2-topics">
-                                    <option value="">Select subtopic</option>
-                                </select>
-                            </div>
-                            <script type="text/javascript">
-                                function ChangeSecondList(value) {
-                                   if( value.length ) {
-                                      var dropid = document.getElementById("dynamic-list");
-                                      var data = {
-                                          "Internal Medicine": ["Endocrinology", "Gastroenterology", "Gynecology", "Hematology","Nephrology","Oncology","Parasitology","Rheumatology"],
-                                          "Medical Genetics": ["Breast Cancer Genetics"],
-                                          "Ophthalmology": ["Experimental Ophthalmology"],
-                                          "Pathology": ["Bone and Connective Tissue Pathology","Cardiovascular Pathology","Cytopathology","Experimental Pathology","Gynecologic Pathology", "Hematopathology","Human Pathology","Immunopathology","Molecular Pathology","Neuropathology", "Ocular Pathology","Oral Pathology","Pathology of Tumors in Animals","Psychopathology", "Pulmonary Pathology","Renal/Urogenital Pathology", "Surgical Pathology","Ultrastructural Pathology"],
-                                          "Pediatrics": ["Neonatology", "Pediatric Hematology/Oncology", "Pediatric Neurologic Oncology", "Pediatric Neurology"],
-                                          "Preventive Medicine": ["Health Promotion in Nursing"],
-                                          "Psychiatry": ["Child Psychiatry", "Experimental Psychiatry", "Psychosomatic Medicine"],
-                                          "Public Health": ["Arctic Research","Community Health", "Occupational Health", "Patterns of Care","Women's Health"],
-                                          "Radiology": ["Diagnostic Radiology", "Interventional Radiology","Nuclear Medicine","Pediatric Radiology","Radiology, Bone","Radiology, Dental","Radiology, Head, Neck","Radiology, Soft Tissue","Radiology, Thorax, Chest","Therapeutic Radiology",],
-                                          "Surgical Specialty": ["General Surgery","Hand Surgery","Neurosurgery","Oral Surgery","Orthopedics","Pediatric Surgery","Plastic Surgery","Thoracic Surgery","Urological Surgery","Vascular Surgery",],
-                                      }
-                                      console.log(value in data);
-                                      console.log(value);
-                                      console.log(data[value]);
-
-                                      if (value in data) {
-                                          document.getElementById("dynamic-list-div").style.display = "block";
-                                          for(var i=0; i<data[value].length; i++ ) {
-                                              var opt = document.createElement("option")
-                                              opt.value = data[value][i];
-                                              opt.innerText = data[value][i]
-                                              dropid.appendChild(opt)
-                                          }
-                                          dropid.options[0].selected = true;
-                                      }
-                                      else {
-                                          document.getElementById("dynamic-list-div").style.display = "none";
-                                      }
-                                   }
-                                }
-                                ChangeSecondList(document.getElementById("l1-topics-list").options[document.getElementById("l1-topics-list").selectedIndex].value);
-                            </script>
-                        </td>
-                    </tr>
-                    <tr>
                         <td class="tg-0lax">{{gettext('Title')}}</td>
                         <td class="tg-0lax">{{doc["tittle"]}}</td>
                     </tr>
@@ -161,8 +81,8 @@
                     <tr><!--INPUT-->
                         <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                             <div class="slider_with_counter">
-                                <label for="level_en" id="technicality_label_level_en">
-                                    {{gettext('Technicality Level')}}
+                                <label for="level_en" id="technicality_label_level_en" class="required">
+                                    <strong>{{gettext('Technicality Level')}}</strong>
                                     <strong>{{gettext('Englishs')}}</strong>
                                     {{gettext('abstract: ')}}
                                 </label>
@@ -182,8 +102,8 @@
                     <tr><!--INPUT-->
                         <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                             <div class="slider_with_counter">
-                                <label for="read_level_en" id="readability_label_level_en">
-                                    {{gettext('Readability Level')}}
+                                <label for="read_level_en" id="readability_label_level_en" class="required">
+                                    <strong>{{gettext('Readability Level')}}</strong>
                                     <strong>{{gettext('Englishs')}}</strong>
                                     {{gettext('abstract: ')}}
                                 </label>
@@ -207,9 +127,9 @@
                     <tr><!--INPUT-->
                         <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                             <div class="slider_with_counter">
-                                <label for="level_de" id="technicality_label_level_de"> {{gettext('Technicality
-                                    Level')}}
-                                    <strong>{{gettext('Germans')}} </strong>
+                                <label for="level_de" id="technicality_label_level_de" class="required">
+                                    <strong>{{gettext('Technicality Level')}}</strong>
+                                    <strong>{{gettext('Germans')}}</strong>
                                     {{gettext('abstract:')}}</label>
                                 <output id="output_de" for="level_de"></output>
                                 <span class="counter">%</span>
@@ -227,9 +147,9 @@
                     <tr><!--INPUT-->
                         <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                             <div class="slider_with_counter">
-                                <label for="readability_level_de" id="readability_label_level_de">
-                                    {{gettext('Readability Level')}}
-                                    <strong>{{gettext('Germans')}} </strong>
+                                <label for="readability_level_de" id="readability_label_level_de" class="required">
+                                    <strong>{{gettext('Readability Level')}}</strong>
+                                    <strong>{{gettext('Germans')}}</strong>
                                     {{gettext('abstract:')}}</label>
                                 <output id="readability_output_de" for="readability_level_de"></output>
                                 <span class="counter">%</span>
@@ -242,6 +162,164 @@
                                     <span> 100 </span>
                                 </div>
                             </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="tg-0lax, required">{{gettext('Topic')}}</td>
+                        <!--<td class="tg-0lax">{{doc["topic"]}}</td>-->
+                        <td>
+                            <div id="dynamic-list-div">
+                                <select id="topics-list" name="topics">
+                                  <option value="" selected="selected">Select an option...</option>
+                                  <optgroup label="Anesthesiology">
+                                    <option value="Anesthesiology">Anesthesiology</option>
+                                  </optgroup>
+                                  <optgroup label="Cardiology">
+                                    <option value="Cardiology">Cardiology</option>
+                                  </optgroup>
+                                  <optgroup label="Dermatology">
+                                    <option value="Dermatology">Dermatology</option>
+                                  </optgroup>
+                                  <optgroup label="Emergency Medicine">
+                                    <option value="Emergency Medicine">Emergency Medicine</option>
+                                  </optgroup>
+                                  <optgroup label="Family Practice">
+                                    <option value="Family Practice">Family Practice</option>
+                                  </optgroup>
+                                  <optgroup label="Forensic Medicine">
+                                    <option value="Forensic Medicine">Forensic Medicine</option>
+                                  </optgroup>
+                                  <optgroup label="Geriatrics">
+                                    <option value="Geriatrics">Geriatrics</option>
+                                  </optgroup>
+                                  <optgroup label="Internal Medicine">
+                                    <option value="Endocrinology">Endocrinology</option>
+                                    <option value="Gastroenterology">Gastroenterology</option>
+                                    <option value="Gynecology">Gynecology</option>
+                                    <option value="Hematology">Hematology</option>
+                                    <option value="Nephrology">Nephrology</option>
+                                    <option value="Oncology">Oncology</option>
+                                    <option value="Parasitology">Parasitology</option>
+                                    <option value="Rheumatology">Rheumatology</option>
+                                  </optgroup>
+                                  <optgroup label="Medical Genetics">
+                                    <option value="Breast Cancer Genetics">Breast Cancer Genetics</option>
+                                  </optgroup>
+                                  <optgroup label="Neurology">
+                                    <option value="Neurology">Neurology</option>
+                                  </optgroup>
+                                  <optgroup label="Obstetrics">
+                                    <option value="Obstetrics">Obstetrics</option>
+                                  </optgroup>
+                                  <optgroup label="Obstetrics and Gynecology">
+                                    <option value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
+                                  </optgroup>
+                                  <optgroup label="Occupational Medicine">
+                                    <option value="Occupational Medicine">Occupational Medicine</option>
+                                  </optgroup>
+                                  <optgroup label="Ophthalmology">
+                                    <option value="Experimental Ophthalmology">Experimental Ophthalmology</option>
+                                  </optgroup>
+                                  <optgroup label="Otolaryngology">
+                                    <option value="Otolaryngology">Otolaryngology</option>
+                                  </optgroup>
+                                  <optgroup label="Pathology">
+                                    <option value="Bone and Connective Tissue Pathology">Bone and Connective Tissue Pathology</option>
+                                    <option value="Cardiovascular Pathology">Cardiovascular Pathology</option>
+                                    <option value="Cytopathology">Cytopathology</option>
+                                    <option value="Experimental Pathology">Experimental Pathology</option>
+                                    <option value="Gynecologic Pathology">Gynecologic Pathology</option>
+                                    <option value="Hematopathology">Hematopathology</option>
+                                    <option value="Hematopathology">Hematopathology</option>
+                                    <option value="Human Pathology">Human Pathology</option>
+                                    <option value="Immunopathology">Immunopathology</option>
+                                    <option value="Molecular Pathology">Molecular Pathology</option>
+                                    <option value="Neuropathology">Neuropathology</option>
+                                    <option value="Ocular Pathology">Ocular Pathology</option>
+                                    <option value="Pathology">Pathology</option>
+                                    <option value="Oral">Oral</option>
+                                      <option value="Pathology of Tumors in Animals">Pathology of Tumors in Animals</option>
+                                      <option value="Psychopathology">Psychopathology</option>
+                                      <option value="Pulmonary Pathology">Pulmonary Pathology</option>
+                                      <option value="Renal/Urogenital Pathology">Renal/Urogenital Pathology</option>
+                                      <option value="Surgical Pathology">Surgical Pathology</option>
+                                      <option value="Ultrastructural Pathology">Ultrastructural Pathology</option>
+                                  </optgroup>
+
+                                  <optgroup label="Pediatrics">
+                                    <option value="Neonatology">Neonatology</option>
+                                    <option value="Pediatric Hematology/Oncology">Pediatric Hematology/Oncology</option>
+                                    <option value="Pediatric Neurologic Oncology">Pediatric Neurologic Oncology</option>
+                                    <option value="Pediatric Neurology">Pediatric Neurology</option>
+                                  </optgroup>
+                                  <optgroup label="Physical Medicine and Rehabilitation">
+                                    <option value="Physical Medicine and Rehabilitation">Physical Medicine and Rehabilitation</option>
+                                  </optgroup>
+                                  <optgroup label="Podiatry">
+                                    <option value="Podiatry">Podiatry</option>
+                                  </optgroup>
+                                  <optgroup label="Preventive Medicine">
+                                    <option value="Health Promotion in Nursing">Health Promotion in Nursing</option>
+                                  </optgroup>
+                                  <optgroup label="Psychiatry">
+                                    <option value="Child Psychiatry">Child Psychiatry</option>
+                                    <option value="Experimental Psychiatry">Experimental Psychiatry</option>
+                                    <option value="Psychosomatic Medicine">Psychosomatic Medicine</option>
+                                  </optgroup>
+                                  <optgroup label="Public Health">
+                                    <option value="Arctic Research">Arctic Research</option>
+                                    <option value="Community Health">Community Health</option>
+                                    <option value="Occupational Health">Occupational Health</option>
+                                    <option value="Patterns of Care">Patterns of Care</option>
+                                    <option value="Women's Health">Women's Health</option>
+                                  </optgroup>
+                                  <optgroup label="Pulmonary Medicine">
+                                    <option value="Pulmonary Medicine">Pulmonary Medicine</option>
+                                  </optgroup>
+                                  <optgroup label="Radiology">
+                                    <option value="Diagnostic Radiology">Diagnostic Radiology</option>
+                                    <option value="Interventional Radiology">Interventional Radiology</option>
+                                    <option value="Nuclear Medicine">Nuclear Medicine</option>
+                                    <option value="Pediatric Radiology">Pediatric Radiology</option>
+                                    <option value="Radiology, Bone">Radiology, Bone</option>
+                                    <option value="Radiology, Dental">Radiology, Dental</option>
+                                    <option value="Radiology, Head, Neck">Radiology, Head, Neck</option>
+                                    <option value="Otolaryngology">Radiology, Soft Tissue</option>
+                                    <option value="Radiology, Thorax, Chest">Radiology, Thorax, Chest</option>
+                                    <option value="Therapeutic Radiology">Therapeutic Radiology</option>
+                                  </optgroup>
+                                  <optgroup label="Sports Medicine">
+                                    <option value="Sports Medicine">Sports Medicine</option>
+                                  </optgroup>
+                                  <optgroup label="Surgery">
+                                    <option value="Surgery">Surgery</option>
+                                  </optgroup>
+                                  <optgroup label="Surgical Specialty">
+                                    <option value="General Surgery">General Surgery</option>
+                                      <option value="Hand Surgery">Hand Surgery</option>
+                                      <option value="Neurosurgery">Neurosurgery</option>
+                                      <option value="Oral Surgery">Oral Surgery</option>
+                                      <option value="Orthopedics">Orthopedics</option>
+                                      <option value="Pediatric Surgery">Pediatric Surgery</option>
+                                      <option value="Plastic Surgery">Plastic Surgery</option>
+                                      <option value="Thoracic Surgery">Thoracic Surgery</option>
+                                      <option value="Urological Surgery">Urological Surgery</option>
+                                      <option value="Vascular Surgery">Vascular Surgery</option>
+                                  </optgroup>
+                                  <optgroup label="Urology">
+                                    <option value="Urology">Urology</option>
+                                  </optgroup>
+                                </select>
+                            </div>
+                            <script type="text/javascript">
+                                function ChangeSecondList() {
+                                    console.log("Some actions ....")
+                                    //var divid = document.getElementById("dynamic-list-div");
+
+                                }
+                                 //ChangeSecondList(document.getElementById("l1-topics-list").options[document.getElementById("l1-topics-list").selectedIndex].value);
+                            </script>
                         </td>
                     </tr>
                     </tbody>

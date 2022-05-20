@@ -175,3 +175,8 @@ input[type="range"]::-moz-range-track {
     justify-self: center;
 }
 
+
+.required:after {
+    content:" *";
+    color: red;
+}
