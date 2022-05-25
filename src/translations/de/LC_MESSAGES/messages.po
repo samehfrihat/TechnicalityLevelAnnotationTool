@@ -216,3 +216,16 @@ msgstr "Abstract:"
 msgid "submit"
 msgstr "absenden"
 
+#: static/templates/technicality.html:75
+msgid "English abstract"
+msgstr "Englisches Abstract"
+
+#: static/templates/technicality.html:95
+msgid "German abstract"
+msgstr "Deutsches Abstract"
+
+#: static/templates/technicality.html:96
+msgid "This field is mandatory"
+msgstr "Dieses Feld ist verpflichtend"
+
+

@@ -72,7 +72,7 @@
                         <td class="tg-0lax">{{doc["tittle"]}}</td>
                     </tr>
                     <tr>
-                        <td class="tg-0lax">{{gettext('English')}}</td>
+                        <td class="tg-0lax">{{gettext('English abstract')}}</td>
                         <td class="tg-0lax">{{doc["english_abstract"]}}</td>
                     </tr>
                     <tr><!--INPUT-->
@@ -120,7 +120,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="tg-0lax">{{gettext('German')}}</td>
+                        <td class="tg-0lax">{{gettext('German abstract')}}</td>
                         <td class="tg-0lax">{{doc["german_abstract"]}}</td>
                     </tr>
                     <tr><!--INPUT-->
@@ -315,6 +315,7 @@
                                     <option value="Urology">Urology</option>
                                   </optgroup>
                                 </select>
+                                <div id="second-list-dev"></div>
                             </div>
                             <script type="text/javascript">
                                 function ChangeSecondList(value) {
@@ -322,8 +323,8 @@
                                         checkSubmitEnable("5");
                                     }
                                     if(!document.getElementById('"second_topics-list"')){
-                                        var divid = document.getElementById("dynamic-list-div");
-                                        divid.innerHTML += `
+                                        var divid = document.getElementById("second-list-dev");
+                                        divid.innerHTML = `
                                         <select id="second_topics-list" name="second_topics" >
                                   <option value="" selected="selected">You can select a second topic! ...</option>
                                   <optgroup label="Anesthesiology">
@@ -474,6 +475,7 @@
                     </tr>
                     </tbody>
                 </table>
+                <p><span style="color: red">*</span> {{gettext('This field is mandatory')}}</p>
                 <input id="submitAnnotation" class="btn brand z-depth-0 end disabled" type="submit"
                        value="{{gettext('submit')}}" disabled>
             </form>
