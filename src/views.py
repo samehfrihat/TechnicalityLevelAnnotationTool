@@ -39,6 +39,28 @@ def login():
     return render_template('login.html', title='login')
 
 
+@app.route('/', methods=['GET', 'POST'])
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
+    if request.method == 'POST':
+        param = request.form.to_dict()
+        print(param)
+        result = user_db.new_user(param)
+        print("result", result)
+        if result["status"]:
+            session.permanent = True  # this session will be exist for 5 days.
+            session["username"] = param["username"]  # create a session for user.
+            return redirect(url_for('index'))  # welcome page after login
+        else:
+            message = result["error"]
+            return render_template('signup.html', title='sign up', message=message)
+    if "username" in session:  # if user already logged in
+        if DEBUG:
+            print("[STEP] Already logged in user!")
+        return redirect(url_for('index'))
+    return render_template('signup.html', title='sign up')
+
+
 @app.route('/change_pass', methods=['GET', 'POST'])
 def change_pass():
     if "username" not in session:

@@ -61,9 +61,43 @@
                                 <input type="password" id="input_password" name="password"
                                        placeholder="{{gettext('Password')}}" required>
                             </div>
-                            <input type="submit" name="type" value="login" class="btn btn-primary">
+                            <div class="input_row">
+                                <label for="repeat_password">confirm password:</label>
+                                <input type="password" id="repeat_password" name="repeat_password"
+                                       placeholder="{{gettext('Password')}}" required>
+                            </div>
+                            <div class="input_row">
+                                <label for="german_language_level">What is your german level:</label>
+                                <select name="german_language_level" id="german_language_level">
+                                  <option value="b1">B1 (Independent)</option>
+                                  <option value="b2" selected>B2 (upper Independent)</option>
+                                  <option value="c1">C1 (Advanced)</option>
+                                  <option value="native">Native</option>
+                                </select>
+                            </div>
+                            <div class="input_row">
+                                <label for="english_language_level">What is your english level:</label>
+                                <select name="english_language_level" id="english_language_level">
+                                  <option value="b1">B1 (Independent)</option>
+                                  <option value="b2" selected>B2 (upper Independent)</option>
+                                  <option value="c1">C1 (Advanced)</option>
+                                  <option value="native">Native</option>
+                                </select>
+                            </div>
+                            <div class="input_row">
+                                <label for="Med_level">To which category do you belong?:</label>
+                                <select name="Med_level" id="Med_level">
+                                  <option value="sr_doc">Doctor with 2+ years of experience</option>
+                                  <option value="jr_doc">Doctor with less than 2 years of experience</option>
+                                  <option value="sr_std" selected>Senior Medical Student (7th semester +)</option>
+                                  <option value="jr_std">junior Medical Student (up to 6th semester )</option>
+                                  <option value="nt_med">Out of medical domain</option>
+                                </select>
+                            </div>
+
+                            <input type="submit" name="type" value="signup" class="btn btn-primary">
                         </form>
-                        <a href="/signup">Don't have account?</a>
+                        <a href="/login">I have account!</a>
                     </article>
                 </li>
             </ul>

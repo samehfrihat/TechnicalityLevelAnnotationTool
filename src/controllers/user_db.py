@@ -27,7 +27,13 @@ class UsersDB:
     def new_user(self, _doc, admin=False):
         if DEBUG:
             print("[STEP] Validate user data ....")
-        if "username" not in _doc or "password" not in _doc:
+        if _doc["password"] != _doc["repeat_password"]:
+            return return_fail("Password incorrect!")
+        del _doc["repeat_password"]
+        result = self.db.find_one({'username': _doc['username']}, projection={"_id": True})
+        if result and len(result) > 0:
+            return return_fail("Not a valid username, please try again!")
+        if "username" not in _doc or "password" not in _doc or "german_language_level" not in _doc or "english_language_level" not in _doc or "Med_level" not in _doc:
             return return_fail("Not a valid user!")
         _doc["admin"] = admin
         return self._insert_doc(_doc)
