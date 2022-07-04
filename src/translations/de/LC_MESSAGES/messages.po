@@ -144,6 +144,10 @@ msgstr "Nutzername"
 msgid "Password:"
 msgstr "Passwort:"
 
+#: static/templates/login.html:60
+msgid "Do not have account?"
+msgstr "Haben Sie kein Konto?"
+
 #: static/templates/login.html:74
 msgid "Welcome to WisPerMed Annotation Tool!"
 msgstr "Willkommmen zu WisPerMeds Annotationstool!"
@@ -159,6 +163,67 @@ msgstr ""
 " den Unterschied zu machen. <br> Sind sie im Bereich der Medizin tätig "
 "und würden gerne mehr erfahren oder uns unterstützen? Dann kontaktieren "
 "sie und einfach via "
+
+
+#: static/templates/signup.html:60
+msgid "confirm password:"
+msgstr "Passwort bestätigen:"
+
+
+#: static/templates/signup.html:60
+msgid "What is your german level:"
+msgstr "Wie gut ist Ihr Deutsch:"
+
+#: static/templates/signup.html:60
+msgid "B1 (Independent)"
+msgstr "B1 (Unabhängig)"
+
+#: static/templates/signup.html:60
+msgid "B2 (upper Independent)"
+msgstr "B2 (Oberstufe Unabhängig)"
+
+#: static/templates/signup.html:60
+msgid "C1 (Advanced)"
+msgstr "C1 (Fortgeschrittene)"
+
+#: static/templates/signup.html:60
+msgid "Native"
+msgstr "Native"
+
+
+#: static/templates/signup.html:60
+msgid "What is your english level:"
+msgstr "Was ist Ihr Englisch-Niveau:"
+
+#: static/templates/signup.html:60
+msgid "To which category do you belong?:"
+msgstr "Zu welcher Kategorie gehören Sie?"
+
+#: static/templates/signup.html:60
+msgid "Doctor with 2+ years of experience"
+msgstr "Arzt mit 2+ Jahren Erfahrung"
+
+#: static/templates/signup.html:60
+msgid "Doctor with less than 2 years of experience"
+msgstr "Arzt mit weniger als 2 Jahren Berufserfahrung"
+
+#: static/templates/signup.html:60
+msgid "Senior Medizinstudent (7. Semester +)"
+msgstr "Senior Medizinstudent (7. Semester +)"
+
+#: static/templates/signup.html:60
+msgid "junior Medical Student (up to 6th semester )"
+msgstr "Junior Medizinstudent (bis zum 6. Semester)"
+
+#: static/templates/signup.html:60
+msgid "Out of medical domain"
+msgstr "Außerhalb des medizinischen Bereichs"
+
+#: static/templates/signup.html:60
+msgid "I have account!"
+msgstr "Ich habe ein Konto!"
+
+
 
 #: static/templates/technicality.html:9
 msgid "Annotate medical documents"
@@ -207,6 +272,17 @@ msgstr "Abstract:"
 #: static/templates/technicality.html:72
 msgid "Germans"
 msgstr "Deutsches"
+
+
+#: static/templates/technicality.html:72
+msgid "An article may be well written and grammatically understandable, but its content may cover concepts only understandable to people learned in a certain domain. 0 means high technical text, and 100 low technicality."
+msgstr "Ein Artikel kann gut geschrieben und grammatikalisch verständlich sein, aber sein Inhalt kann Konzepte umfassen, die nur für Menschen mit Fachkenntnissen in einem bestimmten Bereich verständlich sind. 0 bedeutet, dass der Text sehr technisch ist, und 100, dass er wenig technisch ist."
+
+#: static/templates/technicality.html:72
+msgid "The ease with which a reader can understand a written text. 0 means Hard to read, and 100 easy to read."
+msgstr "Die Leichtigkeit, mit der ein Leser einen geschriebenen Text verstehen kann. 0 bedeutet schwer zu lesen und 100 leicht zu lesen."
+
+
 
 #: static/templates/technicality.html:73
 msgid "abstract:"
