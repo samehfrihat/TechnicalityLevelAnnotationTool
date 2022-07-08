@@ -28,9 +28,14 @@
         <nav id="mainav" class="fl_right">
             <ul class="clear">
                 <li class="active"><a href="/home">{{gettext('Home')}}</a></li>
-                <li class="active">
-                    <a href="https://www.uni-due.de/grk_wispermed/grk_wispermed.php">
-                        {{gettext('About us')}}</a></li>
+
+                <li class="active"><a class="drop" href="#"><span class="fas fa-external-link-alt"></span> {{gettext('About us')}}</a>
+                    <ul>
+                        <li class="active"><a href="https://www.uni-due.de/grk_wispermed/grk_wispermed.php"><span class="fas fa-info-circle"></span> {{gettext('General')}}</a></li>
+                        <li class="active"><a href="mailto:catharina.beckmann@fh-dortmund.de?subject=Medical abstracts survey!"><span class="fas fa-envelope"></span> {{gettext('Contact us')}}</a></li>
+                    </ul>
+                </li>
+
             </ul>
         </nav>
     </div>
@@ -52,11 +57,11 @@
                             {% endif %}
                             <div></div>
                             <div class="input_row">
-                                <label for="input_username"  class="tooltip">{{gettext('User Name:')}}
+                                <label for="input_username"  class="tooltip">{{gettext('Nickname')}}:
                                 <span class="tooltiptext">{{gettext('This is a nickname, not your real name!')}}</span>
                                 </label>
                                 <input type="text" id="input_username" name="username"
-                                       placeholder="{{gettext('User Name')}}" required>
+                                       placeholder="{{gettext('Nickname')}}" required>
                             </div>
 
                             <div class="input_row">
@@ -72,29 +77,32 @@
                             <div class="input_row">
                                 <label for="german_language_level">{{gettext('What is your german level:')}}</label>
                                 <select name="german_language_level" id="german_language_level">
+                                    <option style="display: none" value="">{{gettext('Select')}}</option>
                                   <option value="b1">{{gettext('B1 (Independent)')}}</option>
-                                  <option value="b2" selected>{{gettext('B2 (upper Independent)')}}</option>
+                                  <option value="b2">{{gettext('B2 (upper Independent)')}}</option>
                                   <option value="c1">{{gettext('C1 (Advanced)')}}</option>
                                   <option value="native">{{gettext('Native')}}</option>
                                 </select>
                             </div>
                             <div class="input_row">
                                 <label for="english_language_level">What is your english level:</label>
-                                <select name="english_language_level" id="english_language_level">
+                                <select name="english_language_level" id="english_language_level" required>
+                                    <option style="display: none" value="">{{gettext('Select')}}</option>
                                   <option value="b1">{{gettext('B1 (Independent)')}}</option>
-                                  <option value="b2" selected>{{gettext('B2 (upper Independent)')}}</option>
+                                  <option value="b2">{{gettext('B2 (upper Independent)')}}</option>
                                   <option value="c1">{{gettext('C1 (Advanced)')}}</option>
                                   <option value="native">{{gettext('Native')}}</option>
                                 </select>
                             </div>
                             <div class="input_row">
-                                <label for="Med_level">{{gettext('Native')}}To which category do you belong?:</label>
+                                <label for="Med_level">{{gettext('To which category do you belong?:')}}</label>
                                 <select name="Med_level" id="Med_level">
-                                  <option value="sr_doc">{{gettext('Doctor with 2+ years of experience')}}</option>
-                                  <option value="jr_doc">{{gettext('Doctor with less than 2 years of experience')}}</option>
-                                  <option value="sr_std" selected>{{gettext('Senior Medical Student (7th semester +)')}}</option>
-                                  <option value="jr_std">{{gettext('junior Medical Student (up to 6th semester )')}}</option>
-                                  <option value="nt_med">{{gettext('Out of medical domain')}}</option>
+                                    <option style="display: none" value="">{{gettext('Select')}}</option>
+                                    <option value="sr_doc">{{gettext('Doctor with 2+ years of experience')}}</option>
+                                    <option value="jr_doc">{{gettext('Doctor with less than 2 years of experience')}}</option>
+                                    <option value="sr_std">{{gettext('Senior Medical Student (7th semester +)')}}</option>
+                                    <option value="jr_std">{{gettext('junior Medical Student (up to 6th semester )')}}</option>
+                                    <option value="nt_med">{{gettext('Out of medical domain')}}</option>
                                 </select>
                             </div>
 
@@ -111,7 +119,7 @@
             <div class="content">
                 <h3 class="heading" align="center">{{gettext('Welcome to WisPerMed Annotation Tool!')}}</h3>
                 <p class="center">{{gettext('Thank you for supporting our research for improving AI in Medicine <br> You are only one step far from making a difference! <br> Are you in the medical domain and would like to help us? then contact us via')}}
-                    <a href="mailto:frihat@is.inf.uni-due.de?subject=eHealth Documents Technicality!">Email</a>
+                    <a href="mailto:catharina.beckmann@fh-dortmund.de?subject=Medical abstracts survey!">Email</a>
                 </p>
             </div>
         </main>

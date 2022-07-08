@@ -83,6 +83,17 @@ msgstr "ausloggen"
 msgid "About us"
 msgstr "über uns"
 
+
+#: static/templates/header.html:60
+msgid "General"
+msgstr "Allgemein"
+
+
+#: static/templates/deader.html:60
+msgid "Contact us"
+msgstr "kontaktiere uns"
+
+
 #: static/templates/index.html:8
 msgid ", Welcome to WisPerMed"
 msgstr ", Willkommen bei WisPerMed"
@@ -140,6 +151,15 @@ msgstr "Nutzername"
 msgid "User Name"
 msgstr "Nutzername"
 
+#: static/templates/login.html:57
+msgid "Nickname"
+msgstr "Spitzname"
+
+#: static/templates/login.html:57
+msgid "Forgot password?"
+msgstr "Passwort vergessen?"
+
+
 #: static/templates/login.html:60
 msgid "Password:"
 msgstr "Passwort:"
@@ -172,6 +192,11 @@ msgstr "Dies ist ein Spitzname, nicht dein richtiger Name!"
 #: static/templates/signup.html:60
 msgid "confirm password:"
 msgstr "Passwort bestätigen:"
+
+
+#: static/templates/signup.html:60
+msgid "Select"
+msgstr "Auswählen"
 
 
 #: static/templates/signup.html:60

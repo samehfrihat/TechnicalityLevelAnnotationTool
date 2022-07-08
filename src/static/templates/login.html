@@ -28,9 +28,13 @@
         <nav id="mainav" class="fl_right">
             <ul class="clear">
                 <li class="active"><a href="/home">{{gettext('Home')}}</a></li>
-                <li class="active">
-                    <a href="https://www.uni-due.de/grk_wispermed/grk_wispermed.php">
-                        {{gettext('About us')}}</a></li>
+
+                <li class="active"><a class="drop" href="#"><span class="fas fa-external-link-alt"></span> {{gettext('About us')}}</a>
+                    <ul>
+                        <li class="active"><a href="https://www.uni-due.de/grk_wispermed/grk_wispermed.php"><span class="fas fa-info-circle"></span> {{gettext('General')}}</a></li>
+                        <li class="active"><a href="mailto:catharina.beckmann@fh-dortmund.de?subject=Medical abstracts survey!"><span class="fas fa-envelope"></span> {{gettext('Contact us')}}</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </div>
@@ -52,16 +56,20 @@
                             {% endif %}
                             <div></div>
                             <div class="input_row">
-                                <label for="input_username">{{gettext('User Name:')}}</label>
+                                <label for="input_username">{{gettext('Nickname')}}:</label>
                                 <input type="text" id="input_username" name="username"
-                                       placeholder="{{gettext('User Name')}}" required>
+                                       placeholder="{{gettext('Nickname')}}" required>
                             </div>
                             <div class="input_row">
                                 <label for="input_password">{{gettext('Password:')}}</label>
                                 <input type="password" id="input_password" name="password"
                                        placeholder="{{gettext('Password')}}" required>
                             </div>
+
+                            <a href="mailto:catharina.beckmann@fh-dortmund.de?subject=Forgot password!&body=Hello, My nickname is: ">{{gettext('Forgot password?')}}</a>
+
                             <input type="submit" name="type" value="login" class="btn btn-primary">
+                            </br>
                         </form>
                         <a href="/signup">{{gettext('Do not have account?')}}</a>
                     </article>
