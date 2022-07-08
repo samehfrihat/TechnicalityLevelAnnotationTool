@@ -164,6 +164,10 @@ msgstr ""
 "und würden gerne mehr erfahren oder uns unterstützen? Dann kontaktieren "
 "sie und einfach via "
 
+#: static/templates/signup.html:60
+msgid "This is a nickname, not your real name!"
+msgstr "Dies ist ein Spitzname, nicht dein richtiger Name!"
+
 
 #: static/templates/signup.html:60
 msgid "confirm password:"

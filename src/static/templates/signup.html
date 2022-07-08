@@ -52,10 +52,13 @@
                             {% endif %}
                             <div></div>
                             <div class="input_row">
-                                <label for="input_username">{{gettext('User Name:')}}</label>
+                                <label for="input_username"  class="tooltip">{{gettext('User Name:')}}
+                                <span class="tooltiptext">{{gettext('This is a nickname, not your real name!')}}</span>
+                                </label>
                                 <input type="text" id="input_username" name="username"
                                        placeholder="{{gettext('User Name')}}" required>
                             </div>
+
                             <div class="input_row">
                                 <label for="input_password">{{gettext('Password:')}}</label>
                                 <input type="password" id="input_password" name="password"
