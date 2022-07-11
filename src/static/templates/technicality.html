@@ -34,16 +34,12 @@
                         localStorage.setItem("2", "0");
                         localStorage.setItem("3", "0");
                         localStorage.setItem("4", "0");
-                        console.log(localStorage.getItem("1"))
-                        console.log(localStorage.getItem("2"))
-                        console.log(localStorage.getItem("3"))
-                        console.log(localStorage.getItem("4"))
-
                     }
 
                     function checkSubmitEnable(nr) {
                         localStorage.setItem(nr, "1");
-                        console.log(localStorage.getItem("5"));
+                        console.log(nr);
+
                         if (localStorage.getItem("1") === "1"
                             && localStorage.getItem("2") === "1"
                             && localStorage.getItem("3") === "1"
