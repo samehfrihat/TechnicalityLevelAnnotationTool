@@ -1,13 +1,13 @@
 {% extends "header.html"%} {% block content %}
 
 
-<div class="bgded overlay" style="background-image:url({{url_for('static', filename='./images/img3.jpg')}});"
+<div class="bgded overlay_header" style="background-image:url({{url_for('static', filename='./images/img3.jpg')}});"
      xmlns="http://www.w3.org/1999/html">
     <div id="breadcrumb" class="hoc clear">
         <ul class="slides">
             <li>
                 <article1>
-                    <h1 class='heading1'>{{gettext('Annotate medical documents')}}</h1>
+                    <h1 class='heading1'>{{gettext('Annotation of medical documents')}}</h1>
                 </article1>
             </li>
         </ul>
@@ -22,8 +22,7 @@
     <main class="hoc container clear">
         <div class="content">
             <!--<h1><strong>{{gettext('Level of Technicality')}}</strong></h1>-->
-            <p align="justify">{{gettext('Please read the abstracts carefully and evaluate their technicality and
-                readability levels on a scale between 0 and 100 percent.')}}</p>
+            <p align="justify">{{gettext('Please read the abstracts carefully and evaluate their technicality and readability levels on a scale between 0 and 100 percent.')}}</p>
             <form method="POST">
                 <script type="text/javascript">
                     if (window.addEventListener) {
@@ -55,7 +54,7 @@
                 </script>
                 <table class="tg" style="table-layout: fixed;" on="setSliderStates()">
                     <colgroup>
-                        <col span="1">
+                        <col span="1" width="100px">
                         <col span="1">
                     </colgroup>
                     <tbody>
@@ -67,15 +66,15 @@
                         <td class="tg-0lax">{{gettext('Title')}}</td>
                         <td class="tg-0lax">{{doc["tittle"]}}</td>
                     </tr>
-                    <tr  style="background-color: #aaaadd">
+                    <tr  class="lightMainColor">
                         <td class="tg-0lax">{{gettext('English abstract')}}</td>
                         <td class="tg-0lax">{{doc["english_abstract"]}}</td>
                     </tr>
-                    <tr   style="background-color: #aaaadd"><!--INPUT-->
+                    <tr   class="lightMainColor"><!--INPUT-->
                         <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                             <div class="slider_with_counter">
-                                <label for="level_en" id="technicality_label_level_en" class="tooltip">
-                                    <strong>{{gettext('Technicality Level')}}</strong>
+                                <label for="level_en" id="technicality_label_level_en" class="tooltip ">
+                                    <strong>{{gettext('Technicality Level -')}}</strong>
                                     <strong>{{gettext('Englishs')}}</strong>
                                     {{gettext('abstract: ')}}
                                     <span class="tooltiptext">{{gettext('An article may be well written and grammatically understandable, but its content may cover concepts only understandable to people learned in a certain domain. 0 means high technical text, and 100 low technicality.')}}</span>
@@ -86,18 +85,18 @@
                                     <span>  0  </span>
                                     <input type="range" name="technicality_level_en" min=0
                                            max=100 step="5" id="level_en"
-                                           style="width: 100%;" value="50" onclick="checkSubmitEnable('1')"/>
+                                           style="width: 100%; background-color: transparent;" value="50" onclick="checkSubmitEnable('1')" />
                                     <span></span>
                                     <span> 100 </span>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr  style="background-color: #aaaadd"><!--INPUT-->
+                    <tr class="lightMainColor"><!--INPUT-->
                         <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                             <div class="slider_with_counter">
-                                <label for="read_level_en" id="readability_label_level_en" class="tooltip">
-                                    <strong>{{gettext('Readability Level')}}</strong>
+                                <label for="read_level_en" id="readability_label_level_en" class="tooltip ">
+                                    <strong>{{gettext('Readability Level -')}}</strong>
                                     <strong>{{gettext('Englishs')}}</strong>
                                     {{gettext('abstract: ')}}
                                     <span class="tooltiptext">{{gettext('The ease with which a reader can understand a written text. 0 means Hard to read, and 100 easy to read.')}}</span>
@@ -108,22 +107,22 @@
                                     <span>  0  </span>
                                     <input type="range" name="readability_level_en" min=0
                                            max=100 step="5" id="read_level_en"
-                                           style="width: 100%;" value="50" onclick="checkSubmitEnable('2')"/>
+                                           style="width: 100%; background-color: transparent;" value="50" onclick="checkSubmitEnable('2')">
                                     <span></span>
                                     <span> 100 </span>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr style="background-color: #aaeeaa">
+                    <tr class="lightMainColor2">
                         <td class="tg-0lax">{{gettext('German abstract')}}</td>
                         <td class="tg-0lax">{{doc["german_abstract"]}}</td>
                     </tr>
-                    <tr style="background-color: #aaeeaa"><!--INPUT-->
+                    <tr class="lightMainColor2"><!--INPUT-->
                         <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                             <div class="slider_with_counter">
                                 <label for="level_de" id="technicality_label_level_de" class="tooltip">
-                                    <strong>{{gettext('Technicality Level')}}</strong>
+                                    <strong>{{gettext('Technicality Level -')}}</strong>
                                     <strong>{{gettext('Germans')}}</strong>
                                     {{gettext('abstract:')}}
 
@@ -135,18 +134,18 @@
                                     <span> 0  </span>
                                     <input type="range" name="technicality_level_de" min=0
                                            max=100 step="5" id="level_de"
-                                           style="width: 100%;" value="50" onclick="checkSubmitEnable('3')"/>
+                                           style="width: 100%; background-color: transparent;" value="50" onclick="checkSubmitEnable('3')"/>
                                     <span></span>
                                     <span> 100 </span>
                                 </div>
                             </div>
                         </td>
                     </tr>
-                    <tr style="background-color: #aaeeaa"><!--INPUT-->
+                    <tr class="lightMainColor2"><!--INPUT-->
                         <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                             <div class="slider_with_counter">
                                 <label for="readability_level_de" id="readability_label_level_de" class="tooltip">
-                                    <strong>{{gettext('Readability Level')}}</strong>
+                                    <strong>{{gettext('Readability Level -')}}</strong>
                                     <strong>{{gettext('Germans')}}</strong>
                                     {{gettext('abstract:')}}
                                     <span class="tooltiptext">{{gettext('The ease with which a reader can understand a written text. 0 means Hard to read, and 100 easy to read.')}}</span>
@@ -157,7 +156,7 @@
                                     <span> 0  </span>
                                     <input type="range" name="readability_level_de" min=0
                                            max=100 step="5" id="readability_level_de"
-                                           style="width: 100%;" value="50" onclick="checkSubmitEnable('4')"/>
+                                           style="width: 100%; background-color: transparent;" value="50" onclick="checkSubmitEnable('4')" />
                                     <span></span>
                                     <span> 100 </span>
                                 </div>
@@ -165,7 +164,7 @@
                         </td>
                     </tr>
 
-                    <tr>
+                    <tr class="lightMainColor3">
                         <td class="tg-0lax, required">{{gettext('Topic')}}</td>
                         <!--<td class="tg-0lax">{{doc["topic"]}}</td>-->
                         <td>
@@ -493,7 +492,7 @@
                     </tr>
                     </tbody>
                 </table>
-                <p><span style="color: red">*</span> {{gettext('This field is mandatory')}}</p>
+                <p><span class="required"></span> {{gettext('This field is mandatory')}}</p>
                 <input id="submitAnnotation" class="btn brand z-depth-0 end disabled" type="submit"
                        value="{{gettext('submit')}}" disabled>
             </form>

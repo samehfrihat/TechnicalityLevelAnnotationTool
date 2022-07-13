@@ -1,38 +1,21 @@
 {% extends "header.html"%} {% block content %}
 <div class="bgded overlay" style="background-image:url({{url_for('static', filename='./images/img2.jpg')}});">
-    <div id="pageintro" class="hoc clear">
+    <div class="hoc clear pageintro">
         <div class="flexslider basicslider">
             <ul class="slides">
                 <li>
                     <article>
-                        <h1 class='heading'><span style="color: #00ACEE;" class='heading'>{{ username }}</span>{{gettext(',
-                            Welcome to WisPerMed')}} </h1>
-                        <h1>{{gettext('Annotation tool for improving Artificial intelligence in medical decision
-                            support')}}</h1>
-                        <footer><a class="btn" href="/technicality">{{gettext('Start Annotation!')}}</a></footer>
+                        <h1 class='heading'><span style="color: #00ACEE;" class='heading'>{{ username }}</span>{{gettext(', Welcome to WisPerMed')}}{{gettext(' Annotation Tool!')}} </h1>
+                        <h1>{{gettext('Help improving Artificial intelligence in medical decision support')}}</h1>
+                        <footer><a class="btn cancel" href="/technicality">{{gettext('Start Annotation!')}}</a></footer>
                     </article>
                 </li>
             </ul>
         </div>
-    </div>
-</div>
-<div class="wrapper row3">
-    <main class="hoc container clear">
-        <div class="content">
-            <h3 class="heading" align="center">{{gettext('Welcome to ') }}<a
-                    href="https://www.uni-due.de/grk_wispermed/grk_wispermed.php">WisPerMed</a>{{gettext(' Annotation
-                Tool!')}}</h3>
-            <p class="center">{{gettext('Thank you for supporting our research for improving AI in Medicine!')}}</p>
-            <!--<div class="centered_list">
-                <ul>
-                    <li title="{{gettext('Englisch: Technicality; \nDie Formalität Beschreibt, wie fachlich ein Text ist. Anzeichen für eine hohe Formalität ist der Gebrauch vieler (spezifischer) Fachwörter und ein hohes Maß an benötigtem Vorwissen aus der Domäne, um den Text verstehen zu können.') }}"><a href="/technicality"><span class="fas fa-edit"></span> {{gettext('Technicality level for
-                        medical
-                        research abstracts')}}</a></li>
-                    <li><a href="/#"><span class="fas fa-edit"></span> {{gettext('XXXXXXXXXXXXXXXXXXXXXXXXX')}}</a></li>
-                    <li><a href="/#"><span class="fas fa-edit"></span> {{gettext('XXXXXXXXXXXXXXXXXXXXXXXXX')}}</a></li>
-                </ul>
-            </div> -->
+        <div class="overlaybox transparent content subtext">
+            <h1 class="center">{{gettext('Thank you for supporting our research!')}}</h1>
+
         </div>
-    </main>
+    </div>
 </div>
 {% endblock content %}

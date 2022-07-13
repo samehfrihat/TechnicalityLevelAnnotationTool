@@ -72,14 +72,16 @@ main {
 .slider_extended {
     grid-area: slider;
     display: grid;
-    grid-template-columns: 15px  auto 5px max-content;
+    grid-template-columns: 15px 80% 5px max-content;
+    justify-content: center;
 }
 
 .btn.cancel {
     background-color: var(--color-secondary-1-0);
     border-color: var(--color-secondary-2-0);
 }
-.btn.disabled, .btn.disabled:hover{
+
+.btn.disabled, .btn.disabled:hover {
     background-color: #AAAAAA;
     border-color: #666666;
     color: #666666;
@@ -107,48 +109,73 @@ main {
 
 @-moz-document url-prefix() {
     .tg colgroup col {
-        width: 90%;
+        width: 89%;
     }
     .tg colgroup col:first-child {
-        width: 10%;
+        width: 11%;
     }
 
 }
+.content.subtext{
+        margin-top:18px;
 
+}
 
-#loging {
+.overlaybox, #signup.overlaybox,  #login.overlaybox {
     color: #000000;
     background-color: rgba(255, 255, 255, 0.8);
     display: grid;
-    padding: 8px;
+    padding: 1px;
     border-radius: 12px;
     justify-content: center;
-    justify-items: end;
+    margin-top: 18px;
+}
+.overlaybox.transparent{
+    background-color: transparent;
+    color: white;
 }
 
-#loging .input_row input{
+.overlaybox .input_row input, .overlaybox .input_row select, .overlaybox .text_row select, .overlaybox .text_row input   {
     width: 300px;
+    height: 23px;
 }
 
-#loging input[type=submit] {
-    width: 125px;
+.overlaybox input[type=submit] {
+    max-width: 160px;
     font-size: unset;
 }
 
-.input_row {
+.overlaybox .input_row>input[type=submit], .overlaybox .text_row>input[type=submit] {
+    height: 35px;
+}
+
+.overlaybox .input_row , #signup .input_row, .overlaybox .text_row , #signup .text_row  {
     display: grid;
-    grid-template-columns: auto max-content;
+    grid-template-columns: auto 310px;
     justify-items: end;
-    margin: 15px;
     width: 100%;
 }
-
-#loging .input_row label, #loging .input_row input {
-    margin: 10px;
+.overlaybox .input_row , #signup .input_row
+{
+    margin: 15px;
 }
 
+.overlaybox .text_row , #signup .text_row
+{
+    margin: 5px;
+}
+
+
+.overlaybox h2{
+    color:var(--color-primary-4);
+    padding: 18px;
+}
+/*.overlaybox .input_row label, .overlaybox .input_row input, .overlaybox .input_row select {
+    margin: 10px;
+}*/
+
 .fa-info-circle {
-    color: var(--color-primary-0);
+    color: var(--color-primary-4);
 }
 
 .invisible {
@@ -177,46 +204,46 @@ input[type="range"]::-moz-range-track {
 
 
 .required:after {
-    content:" *";
-    color: red;
+    content: " *";
+    color: var(--color-secondary-2-4);
 }
 
 
 .tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 400px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
+    visibility: hidden;
+    width: 400px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
