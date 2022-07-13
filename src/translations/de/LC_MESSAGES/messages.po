@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-07-13 13:33+0200\n"
+"POT-Creation-Date: 2022-07-13 14:13+0200\n"
 "PO-Revision-Date: 2022-07-13 10:20+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -18,43 +18,55 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.1\n"
 
-#: static/templates/change_pass.html:8
+#: static/templates/change_pass.html:9
+msgid "WisPerMed Annotation Tool"
+msgstr " WisPerMed Annotationstool"
+
+#: static/templates/change_pass.html:10 static/templates/login.html:53
+#: static/templates/signup.html:54
+msgid "Artificial intelligence and medical decision support"
+msgstr "Künstliche Intelligenz und Entscheidungsunterstützung in der Medizin"
+
+#: static/templates/change_pass.html:13
 msgid "Change your Password"
 msgstr "Passwort ändern"
 
-#: static/templates/change_pass.html:22
+#: static/templates/change_pass.html:14
 msgid "Please fill in the form and save changes."
 msgstr "Bitte füllen sie die Felder aus und speichern sie die Änderungen."
 
-#: static/templates/change_pass.html:23
-msgid "*required data"
-msgstr "*erforderliche Felder"
+#: static/templates/change_pass.html:17 static/templates/change_pass.html:19
+#: static/templates/login.html:64 static/templates/login.html:66
+#: static/templates/signup.html:65 static/templates/signup.html:69
+msgid "Nickname"
+msgstr "Spitzname"
 
-#: static/templates/change_pass.html:28
-msgid "Username:"
-msgstr "Nutzername"
-
-#: static/templates/change_pass.html:33
+#: static/templates/change_pass.html:22
 msgid "Old Password:"
 msgstr "altes Passwort"
 
-#: static/templates/change_pass.html:35 static/templates/change_pass.html:41
+#: static/templates/change_pass.html:24 static/templates/change_pass.html:29
 #: static/templates/login.html:71 static/templates/signup.html:75
 #: static/templates/signup.html:80
 msgid "Password"
 msgstr "Passwort"
 
-#: static/templates/change_pass.html:39
+#: static/templates/change_pass.html:27
 msgid "new Password:"
 msgstr "neues Passwort"
 
-#: static/templates/change_pass.html:46
-msgid "save"
-msgstr "speichern"
+#: static/templates/change_pass.html:32 static/templates/signup.html:118
+#: static/templates/technicality.html:495
+msgid "This field is mandatory"
+msgstr "erforderliches Feld"
 
-#: static/templates/change_pass.html:47
+#: static/templates/change_pass.html:37
 msgid "Cancel"
 msgstr "abbrechen"
+
+#: static/templates/change_pass.html:40
+msgid "save"
+msgstr "speichern"
 
 #: static/templates/header.html:30 static/templates/login.html:30
 #: static/templates/signup.html:30
@@ -82,7 +94,7 @@ msgstr "WisPerMed"
 #: static/templates/header.html:46 static/templates/login.html:39
 #: static/templates/signup.html:39
 msgid "Contact us"
-msgstr "kontaktiere uns"
+msgstr "kontaktieren Sie uns"
 
 #: static/templates/header.html:50
 msgid "Settings"
@@ -116,18 +128,9 @@ msgstr "Annotation starten!"
 msgid "Thank you for supporting our research!"
 msgstr "Vielen dank, dass sie uns bei unserer Forschung unterstützen!"
 
-#: static/templates/login.html:52
+#: static/templates/login.html:52 static/templates/signup.html:53
 msgid "Welcome to WisPerMed Annotation Tool!"
 msgstr "Willkommmen beim WisPerMed Annotationstool!"
-
-#: static/templates/login.html:53 static/templates/signup.html:54
-msgid "Artificial intelligence and medical decision support"
-msgstr "Künstliche Intelligenz und Entscheidungsunterstützung in der Medizin"
-
-#: static/templates/login.html:64 static/templates/login.html:66
-#: static/templates/signup.html:65 static/templates/signup.html:69
-msgid "Nickname"
-msgstr "Spitzname"
 
 #: static/templates/login.html:69 static/templates/signup.html:73
 msgid "Password:"
@@ -143,13 +146,9 @@ msgstr "Haben Sie noch kein Konto?"
 
 #: static/templates/login.html:88
 msgid ""
-"Thank you for supporting our research for improving AI\n"
-"                                    in\n"
-"                                    Medicine <br> You are only one step "
-"far from making a difference! <br> Are you\n"
-"                                    in the medical\n"
-"                                    domain and would like to help us? "
-"then contact us via"
+"Thank you for supporting our research for improving AI in Medicine <br> "
+"You are only one step far from making a difference! <br> Are you in the "
+"medical domain and would like to help us? then contact us via"
 msgstr ""
 " Vielen dank, dass sie uns bei unserer Forschung zur Verbesserung von KI "
 "in der Medizin unterstützen! <br> Sie sind nur ein Schritt davon entfernt"
@@ -157,17 +156,13 @@ msgstr ""
 "und würden gerne mehr erfahren oder uns unterstützen? Dann kontaktieren "
 "sie und einfach via "
 
-#: static/templates/signup.html:53
-msgid "Welcome to WisPerMed"
-msgstr "Willkommen bei WisPerMed"
-
 #: static/templates/signup.html:57
 msgid "Account registration"
 msgstr "Konto anlegen"
 
 #: static/templates/signup.html:66
 msgid "Please choose a fictional nickname. Not your real name!"
-msgstr "Bitte wählen Sie einen fiktionalen Nutzernamen und nicht ihren echten!"
+msgstr "Bitte wählen Sie einen fiktiven Nutzernamen und nicht ihren echten!"
 
 #: static/templates/signup.html:78
 msgid "confirm password:"
@@ -204,39 +199,33 @@ msgstr "Wie gut sprechen Sie Englisch?:"
 
 #: static/templates/signup.html:103
 msgid "To which category do you belong?:"
-msgstr "Zu welcher Kategorie gehören Sie?"
+msgstr "In welcher Kategorie ordnen sie sich ein?"
 
 #: static/templates/signup.html:106
 msgid "Doctor with 2+ years of experience"
-msgstr "Arzt mit 2+ Jahren Erfahrung"
+msgstr "Ärzt*in mit 2+ Jahren Erfahrung"
 
 #: static/templates/signup.html:108
-msgid ""
-"Doctor with less than 2 years of\n"
-"                                            experience"
-msgstr "Arzt mit weniger als 2 Jahren Berufserfahrung"
+msgid "Doctor with less than 2 years of experience"
+msgstr "Ärzt*in mit weniger als 2 Jahren Erfahlung"
 
-#: static/templates/signup.html:111
+#: static/templates/signup.html:110
 msgid "Senior Medical Student (7th semester +)"
-msgstr "Senior Medizinstudent (7. Semester +)"
+msgstr "Senior Medizinstudent*in (7. Semester +)"
 
-#: static/templates/signup.html:113
+#: static/templates/signup.html:112
 msgid "junior Medical Student (up to 6th semester)"
-msgstr "Junior Medizinstudent (bis zum 6. Semester)"
+msgstr "Junior Medizinstudent*in (bis zum 6. Semester)"
 
-#: static/templates/signup.html:115
+#: static/templates/signup.html:114
 msgid "Out of medical domain"
 msgstr "Außerhalb des medizinischen Bereichs"
 
-#: static/templates/signup.html:119 static/templates/technicality.html:495
-msgid "This field is mandatory"
-msgstr "erforderliches Feld"
-
-#: static/templates/signup.html:120
+#: static/templates/signup.html:119
 msgid "I already have an account!"
-msgstr "Ich habe ein Konto!"
+msgstr "Ich habe schon ein Konto"
 
-#: static/templates/signup.html:124
+#: static/templates/signup.html:123
 msgid "signup"
 msgstr "Regirstrieren"
 
@@ -324,91 +313,4 @@ msgstr "Themen-bereich"
 msgid "submit"
 msgstr "absenden"
 
-#~ msgid ""
-#~ ",\n"
-#~ "                            Welcome to WisPerMed"
-#~ msgstr ", Willkommen bei WisPerMed"
-
-#~ msgid "Welcome to "
-#~ msgstr "Willkommen beim "
-
-#~ msgid ""
-#~ " Annotation\n"
-#~ "                Tool!"
-#~ msgstr "-Annotationstool!"
-
-#~ msgid ""
-#~ "Englisch: Technicality; \n"
-#~ "Die Formalität Beschreibt, wie fachlich "
-#~ "ein Text ist. Anzeichen für eine "
-#~ "hohe Formalität ist der Gebrauch vieler"
-#~ " (spezifischer) Fachwörter und ein hohes"
-#~ " Maß an benötigtem Vorwissen aus der"
-#~ " Domäne, um den Text verstehen zu "
-#~ "können."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Technicality level for\n"
-#~ "                        medical\n"
-#~ "                        research abstracts"
-#~ msgstr "Formalität des Textes"
-
-#~ msgid "XXXXXXXXXXXXXXXXXXXXXXXXX"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Thank you for supporting our research"
-#~ " for improving AI in Medicine <br>"
-#~ " You\n"
-#~ "                    are only one step "
-#~ "far from making a difference! <br> "
-#~ "Are you in the medical domain and"
-#~ " would like to\n"
-#~ "                    help us? then contact us via"
-#~ msgstr ""
-#~ " Vielen dank, dass sie uns bei "
-#~ "unserer Forschung zur Verbesserung von "
-#~ "KI in der Medizin unterstützen! <br> "
-#~ "Sie sind nur ein Schritt davon "
-#~ "entfernt den Unterschied zu machen. <br>"
-#~ " Sind sie im Bereich der Medizin "
-#~ "tätig und würden gerne mehr erfahren "
-#~ "oder uns unterstützen? Dann kontaktieren "
-#~ "sie und einfach via "
-
-#~ msgid "confirm password:"
-#~ msgstr "Passwort bestätigen:"
-
-#~ msgid "What is your german level:"
-#~ msgstr "Wie gut sprechen sie Deutsch:"
-
-#~ msgid "What is your english level:"
-#~ msgstr "Wie gut sprechen sie Englisch:"
-
-#~ msgid ""
-#~ "Help improving Artificial intelligence in medical decision\n"
-#~ "                            support"
-#~ msgstr ""
-#~ "Annotationstool zur Verbesserung von "
-#~ "Künstlicher Intelligenz für medizinische "
-#~ "Entscheidungsunterstützung"
-
-#~ msgid ""
-#~ "What is your german\n"
-#~ "                                        level:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "What is your english\n"
-#~ "                                        level:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "confirm\n"
-#~ "                                        password:"
-#~ msgstr ""
-
-#~ msgid "General"
-#~ msgstr "Allgemein"
 

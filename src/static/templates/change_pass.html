@@ -1,12 +1,49 @@
 {% extends "header.html"%} {% block content %}
 
-    <div class="bgded overlay" style="background-image:url({{url_for('static', filename='./images/img3.jpg')}});">
-        <div id="breadcrumb" class="hoc clear">
+<div class="bgded overlay" style="background-image:url({{url_for('static', filename='./images/img3.jpg')}});">
+    <div class="hoc clear pageintro">
+        <div class="flexslider basicslider">
             <ul class="slides">
                 <li>
-                    <article1>
-                        <h1 class='heading1'>{{gettext('Change your Password')}}</h1>
-                    </article1>
+                    <article>
+                        <h1 class='heading'>{{gettext('WisPerMed Annotation Tool')}}</h1>
+                        <h1>{{gettext('Artificial intelligence and medical decision support')}}</h1>
+                        <div class="overlaybox" id="signup">
+                            <form action="" method="POST">
+                                <h2>{{gettext('Change your Password')}}</h2>
+                                <p>{{gettext('Please fill in the form and save changes.')}}</p>
+                                <div class="scrollable">
+                                    <div class="input_row">
+                                        <label for="input_username">{{gettext('Nickname')}}: </label>
+                                        <input type="text" id="input_username" name="username"
+                                               placeholder="{{gettext('Nickname')}}" disabled>
+                                    </div>
+                                    <div class="input_row">
+                                        <label for="input_password" class="required">{{gettext('Old Password:')}} </label>
+                                        <input type="password" id="input_password" name="oldpass"
+                                               placeholder="{{gettext('Password')}}" required>
+                                    </div>
+                                    <div class="input_row">
+                                        <label for="repeat_password" class="required">{{gettext('new Password:')}} </label>
+                                        <input type="password" id="repeat_password" name="newpass"
+                                               placeholder="{{gettext('Password')}}" required>
+                                    </div>
+                                    <div class="input_row">
+                                        <p><span class="required"></span> {{gettext('This field is mandatory')}}</p>
+                                        <span></span>
+                                    </div>
+                                    <div class="input_row">
+
+                                        <input type="button" value="{{gettext('Cancel')}}"
+                                               class="btn brand z-depth-0 cancel start"
+                                               onclick="history.back()">
+                                        <input type="submit" name="type" value="{{gettext('save')}}"
+                                               class="btn brand z-depth-0 end">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </article>
                 </li>
             </ul>
             <!--<ul>
@@ -16,41 +53,5 @@
             </ul>-->
         </div>
     </div>
-    <div class="wrapper row3">
-        <main class="hoc container clear">
-            <div class="content">
-                <p>{{gettext('Please fill in the form and save changes.')}}</p>
-                <p>{{gettext('*required data')}}</p>
-                <form action="" method="POST">
-                    <div class="scrollable">
-                        <table style="width: 100%">
-                            <tbody>
-                            <td style="text-align: right">{{gettext('Username:')}}</td>
-                            <td style="text-align: left">{{ username }}</td>
-                            </tbody>
-
-                            <tbody>
-                            <td style="text-align: right">{{gettext('Old Password:')}}<span style="color: red">*</span></td>
-                            <td style="text-align: left"><input type="password" name="oldpass" style="width: 300px;"
-                                                                placeholder="{{gettext('Password')}}" required></td>
-                            </tbody>
-
-                            <tbody>
-                            <td style="text-align: right">{{gettext('new Password:')}}<span style="color: red">*</span></td>
-                            <td style="text-align: left"><input type="password" name="newpass" style="width: 300px"
-                                                                placeholder="{{gettext('Password')}}" required></td>
-                            </tbody>
-
-                        </table>
-                        <div class="center">
-                            <input type="submit" name="type" value="{{gettext('save')}}" class="btn brand z-depth-0 end">
-                            <input type="button" value="{{gettext('Cancel')}}" class="btn brand z-depth-0 cancel start"
-                                   onclick="history.back()">
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <h1><br></h1>
-        </main>
-    </div>
+</div>
 {% endblock content %}

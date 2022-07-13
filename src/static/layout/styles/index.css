@@ -140,12 +140,12 @@ main {
     height: 23px;
 }
 
-.overlaybox input[type=submit] {
+.overlaybox input[type=submit], .overlaybox input[type=button]  {
     max-width: 160px;
     font-size: unset;
 }
 
-.overlaybox .input_row>input[type=submit], .overlaybox .text_row>input[type=submit] {
+.overlaybox .input_row>input[type=submit], .overlaybox .text_row>input[type=submit], .overlaybox .input_row>input[type=button] {
     height: 35px;
 }
 
