@@ -1,18 +1,17 @@
-# German translations for PROJECT.
+# Translations template for PROJECT.
 # Copyright (C) 2022 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2022-07-13 13:33+0200\n"
-"PO-Revision-Date: 2022-07-13 10:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,126 +19,126 @@ msgstr ""
 
 #: static/templates/change_pass.html:8
 msgid "Change your Password"
-msgstr "Passwort ändern"
+msgstr ""
 
 #: static/templates/change_pass.html:22
 msgid "Please fill in the form and save changes."
-msgstr "Bitte füllen sie die Felder aus und speichern sie die Änderungen."
+msgstr ""
 
 #: static/templates/change_pass.html:23
 msgid "*required data"
-msgstr "*erforderliche Felder"
+msgstr ""
 
 #: static/templates/change_pass.html:28
 msgid "Username:"
-msgstr "Nutzername"
+msgstr ""
 
 #: static/templates/change_pass.html:33
 msgid "Old Password:"
-msgstr "altes Passwort"
+msgstr ""
 
 #: static/templates/change_pass.html:35 static/templates/change_pass.html:41
 #: static/templates/login.html:71 static/templates/signup.html:75
 #: static/templates/signup.html:80
 msgid "Password"
-msgstr "Passwort"
+msgstr ""
 
 #: static/templates/change_pass.html:39
 msgid "new Password:"
-msgstr "neues Passwort"
+msgstr ""
 
 #: static/templates/change_pass.html:46
 msgid "save"
-msgstr "speichern"
+msgstr ""
 
 #: static/templates/change_pass.html:47
 msgid "Cancel"
-msgstr "abbrechen"
+msgstr ""
 
 #: static/templates/header.html:30 static/templates/login.html:30
 #: static/templates/signup.html:30
 msgid "Home"
-msgstr "Startseite"
+msgstr ""
 
 #: static/templates/header.html:31 static/templates/header.html:33
 msgid "Annotate"
-msgstr "Annotieren"
+msgstr ""
 
 #: static/templates/header.html:35
 msgid "Technicality"
-msgstr "Formalität"
+msgstr ""
 
 #: static/templates/header.html:40 static/templates/login.html:33
 #: static/templates/signup.html:33
 msgid "About us"
-msgstr "Über uns"
+msgstr ""
 
 #: static/templates/header.html:43 static/templates/login.html:36
 #: static/templates/signup.html:36
 msgid "WisPerMed"
-msgstr "WisPerMed"
+msgstr ""
 
 #: static/templates/header.html:46 static/templates/login.html:39
 #: static/templates/signup.html:39
 msgid "Contact us"
-msgstr "kontaktiere uns"
+msgstr ""
 
 #: static/templates/header.html:50
 msgid "Settings"
-msgstr "Account"
+msgstr ""
 
 #: static/templates/header.html:52
 msgid "Change password"
-msgstr "Passwort ändern"
+msgstr ""
 
 #: static/templates/header.html:54
 msgid "logout"
-msgstr "ausloggen"
+msgstr ""
 
 #: static/templates/index.html:8
 msgid ", Welcome to WisPerMed"
-msgstr ", Willkommen bei WisPerMeds"
+msgstr ""
 
 #: static/templates/index.html:8
 msgid " Annotation Tool!"
-msgstr " Annotationstool!"
+msgstr ""
 
 #: static/templates/index.html:9
 msgid "Help improving Artificial intelligence in medical decision support"
-msgstr "Künstliche Intelligenz und Entscheidungsunterstützung in der Medizin"
+msgstr ""
 
 #: static/templates/index.html:10
 msgid "Start Annotation!"
-msgstr "Annotation starten!"
+msgstr ""
 
 #: static/templates/index.html:16
 msgid "Thank you for supporting our research!"
-msgstr "Vielen dank, dass sie uns bei unserer Forschung unterstützen!"
+msgstr ""
 
 #: static/templates/login.html:52
 msgid "Welcome to WisPerMed Annotation Tool!"
-msgstr "Willkommmen beim WisPerMed Annotationstool!"
+msgstr ""
 
 #: static/templates/login.html:53 static/templates/signup.html:54
 msgid "Artificial intelligence and medical decision support"
-msgstr "Künstliche Intelligenz und Entscheidungsunterstützung in der Medizin"
+msgstr ""
 
 #: static/templates/login.html:64 static/templates/login.html:66
 #: static/templates/signup.html:65 static/templates/signup.html:69
 msgid "Nickname"
-msgstr "Spitzname"
+msgstr ""
 
 #: static/templates/login.html:69 static/templates/signup.html:73
 msgid "Password:"
-msgstr "Passwort:"
+msgstr ""
 
 #: static/templates/login.html:75
 msgid "Forgot password?"
-msgstr "Passwort vergessen?"
+msgstr ""
 
 #: static/templates/login.html:79
 msgid "Do not have account?"
-msgstr "Haben Sie noch kein Konto?"
+msgstr ""
 
 #: static/templates/login.html:88
 msgid ""
@@ -151,131 +150,123 @@ msgid ""
 "                                    domain and would like to help us? "
 "then contact us via"
 msgstr ""
-" Vielen dank, dass sie uns bei unserer Forschung zur Verbesserung von KI "
-"in der Medizin unterstützen! <br> Sie sind nur ein Schritt davon entfernt"
-" den Unterschied zu machen. <br> Sind sie im Bereich der Medizin tätig "
-"und würden gerne mehr erfahren oder uns unterstützen? Dann kontaktieren "
-"sie und einfach via "
 
 #: static/templates/signup.html:53
 msgid "Welcome to WisPerMed"
-msgstr "Willkommen bei WisPerMed"
+msgstr ""
 
 #: static/templates/signup.html:57
 msgid "Account registration"
-msgstr "Konto anlegen"
+msgstr ""
 
 #: static/templates/signup.html:66
 msgid "Please choose a fictional nickname. Not your real name!"
-msgstr "Bitte wählen Sie einen fiktionalen Nutzernamen und nicht ihren echten!"
+msgstr ""
 
 #: static/templates/signup.html:78
 msgid "confirm password:"
-msgstr "Passwort wiederholen"
+msgstr ""
 
 #: static/templates/signup.html:83
 msgid "What is your german level:"
-msgstr "Wie gut sprechen Sie Deutsch?:"
+msgstr ""
 
 #: static/templates/signup.html:85 static/templates/signup.html:95
 #: static/templates/signup.html:105
 msgid "Select"
-msgstr "Auswählen"
+msgstr ""
 
 #: static/templates/signup.html:86 static/templates/signup.html:96
 msgid "B1 (Independent)"
-msgstr "B1 (Unabhängig)"
+msgstr ""
 
 #: static/templates/signup.html:87 static/templates/signup.html:97
 msgid "B2 (upper Independent)"
-msgstr "B2 (Oberstufe Unabhängig)"
+msgstr ""
 
 #: static/templates/signup.html:88 static/templates/signup.html:98
 msgid "C1 (Advanced)"
-msgstr "C1 (Fortgeschrittene)"
+msgstr ""
 
 #: static/templates/signup.html:89 static/templates/signup.html:99
 msgid "Native"
-msgstr "Muttersprachler"
+msgstr ""
 
 #: static/templates/signup.html:93
 msgid "What is your english level:"
-msgstr "Wie gut sprechen Sie Englisch?:"
+msgstr ""
 
 #: static/templates/signup.html:103
 msgid "To which category do you belong?:"
-msgstr "Zu welcher Kategorie gehören Sie?"
+msgstr ""
 
 #: static/templates/signup.html:106
 msgid "Doctor with 2+ years of experience"
-msgstr "Arzt mit 2+ Jahren Erfahrung"
+msgstr ""
 
 #: static/templates/signup.html:108
 msgid ""
 "Doctor with less than 2 years of\n"
 "                                            experience"
-msgstr "Arzt mit weniger als 2 Jahren Berufserfahrung"
+msgstr ""
 
 #: static/templates/signup.html:111
 msgid "Senior Medical Student (7th semester +)"
-msgstr "Senior Medizinstudent (7. Semester +)"
+msgstr ""
 
 #: static/templates/signup.html:113
 msgid "junior Medical Student (up to 6th semester)"
-msgstr "Junior Medizinstudent (bis zum 6. Semester)"
+msgstr ""
 
 #: static/templates/signup.html:115
 msgid "Out of medical domain"
-msgstr "Außerhalb des medizinischen Bereichs"
+msgstr ""
 
 #: static/templates/signup.html:119 static/templates/technicality.html:495
 msgid "This field is mandatory"
-msgstr "erforderliches Feld"
+msgstr ""
 
 #: static/templates/signup.html:120
 msgid "I already have an account!"
-msgstr "Ich habe ein Konto!"
+msgstr ""
 
 #: static/templates/signup.html:124
 msgid "signup"
-msgstr "Regirstrieren"
+msgstr ""
 
 #: static/templates/technicality.html:10
 msgid "Annotation of medical documents"
-msgstr "Annotation medizinischer Publikationen"
+msgstr ""
 
 #: static/templates/technicality.html:24
 msgid "Level of Technicality"
-msgstr "Grad der Formalität"
+msgstr ""
 
 #: static/templates/technicality.html:25
 msgid ""
 "Please read the abstracts carefully and evaluate their technicality and "
 "readability levels on a scale between 0 and 100 percent."
 msgstr ""
-"Bitte lesen sie die Abstracts sorgfältig durch und bewerten sie die "
-"jeweilige Formalität und Lesbarkeit auf einer Skala zwischen 0 und 100 "
-"Prozent."
 
 #: static/templates/technicality.html:66
 msgid "Title"
-msgstr "Titel"
+msgstr ""
 
 #: static/templates/technicality.html:70
 msgid "English abstract"
-msgstr "Englisches Abstract"
+msgstr ""
 
 #: static/templates/technicality.html:77 static/templates/technicality.html:125
 msgid "Technicality Level -"
-msgstr "Grad der Formalität -"
+msgstr ""
 
 #: static/templates/technicality.html:78 static/templates/technicality.html:100
 msgid "Englishs"
-msgstr "Englisches"
+msgstr ""
 
 #: static/templates/technicality.html:79 static/templates/technicality.html:101
 msgid "abstract: "
-msgstr "Abstract:"
+msgstr ""
 
 #: static/templates/technicality.html:80 static/templates/technicality.html:129
 msgid ""
@@ -283,15 +274,10 @@ msgid ""
 "content may cover concepts only understandable to people learned in a "
 "certain domain. 0 means high technical text, and 100 low technicality."
 msgstr ""
-"Ein Artikel kann gut geschrieben und grammatikalisch verständlich sein, "
-"aber sein Inhalt kann Konzepte umfassen, die nur für Menschen mit "
-"Fachkenntnissen in einem bestimmten Bereich verständlich sind. 0 "
-"bedeutet, dass der Text sehr technisch ist, und 100, dass er wenig "
-"technisch ist."
 
 #: static/templates/technicality.html:99 static/templates/technicality.html:148
 msgid "Readability Level -"
-msgstr "Grad der Lesbarkeit -"
+msgstr ""
 
 #: static/templates/technicality.html:102
 #: static/templates/technicality.html:151
@@ -299,116 +285,26 @@ msgid ""
 "The ease with which a reader can understand a written text. 0 means Hard "
 "to read, and 100 easy to read."
 msgstr ""
-"Die Leichtigkeit, mit der ein Leser einen geschriebenen Text verstehen "
-"kann. 0 bedeutet schwer zu lesen und 100 leicht zu lesen."
 
 #: static/templates/technicality.html:118
 msgid "German abstract"
-msgstr "Deutsches Abstract"
+msgstr ""
 
 #: static/templates/technicality.html:126
 #: static/templates/technicality.html:149
 msgid "Germans"
-msgstr "Deutsches"
+msgstr ""
 
 #: static/templates/technicality.html:127
 #: static/templates/technicality.html:150
 msgid "abstract:"
-msgstr "Abstract:"
+msgstr ""
 
 #: static/templates/technicality.html:168
 msgid "Topic"
-msgstr "Themen-bereich"
+msgstr ""
 
 #: static/templates/technicality.html:497
 msgid "submit"
-msgstr "absenden"
-
-#~ msgid ""
-#~ ",\n"
-#~ "                            Welcome to WisPerMed"
-#~ msgstr ", Willkommen bei WisPerMed"
-
-#~ msgid "Welcome to "
-#~ msgstr "Willkommen beim "
-
-#~ msgid ""
-#~ " Annotation\n"
-#~ "                Tool!"
-#~ msgstr "-Annotationstool!"
-
-#~ msgid ""
-#~ "Englisch: Technicality; \n"
-#~ "Die Formalität Beschreibt, wie fachlich "
-#~ "ein Text ist. Anzeichen für eine "
-#~ "hohe Formalität ist der Gebrauch vieler"
-#~ " (spezifischer) Fachwörter und ein hohes"
-#~ " Maß an benötigtem Vorwissen aus der"
-#~ " Domäne, um den Text verstehen zu "
-#~ "können."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Technicality level for\n"
-#~ "                        medical\n"
-#~ "                        research abstracts"
-#~ msgstr "Formalität des Textes"
-
-#~ msgid "XXXXXXXXXXXXXXXXXXXXXXXXX"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Thank you for supporting our research"
-#~ " for improving AI in Medicine <br>"
-#~ " You\n"
-#~ "                    are only one step "
-#~ "far from making a difference! <br> "
-#~ "Are you in the medical domain and"
-#~ " would like to\n"
-#~ "                    help us? then contact us via"
-#~ msgstr ""
-#~ " Vielen dank, dass sie uns bei "
-#~ "unserer Forschung zur Verbesserung von "
-#~ "KI in der Medizin unterstützen! <br> "
-#~ "Sie sind nur ein Schritt davon "
-#~ "entfernt den Unterschied zu machen. <br>"
-#~ " Sind sie im Bereich der Medizin "
-#~ "tätig und würden gerne mehr erfahren "
-#~ "oder uns unterstützen? Dann kontaktieren "
-#~ "sie und einfach via "
-
-#~ msgid "confirm password:"
-#~ msgstr "Passwort bestätigen:"
-
-#~ msgid "What is your german level:"
-#~ msgstr "Wie gut sprechen sie Deutsch:"
-
-#~ msgid "What is your english level:"
-#~ msgstr "Wie gut sprechen sie Englisch:"
-
-#~ msgid ""
-#~ "Help improving Artificial intelligence in medical decision\n"
-#~ "                            support"
-#~ msgstr ""
-#~ "Annotationstool zur Verbesserung von "
-#~ "Künstlicher Intelligenz für medizinische "
-#~ "Entscheidungsunterstützung"
-
-#~ msgid ""
-#~ "What is your german\n"
-#~ "                                        level:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "What is your english\n"
-#~ "                                        level:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "confirm\n"
-#~ "                                        password:"
-#~ msgstr ""
-
-#~ msgid "General"
-#~ msgstr "Allgemein"
+msgstr ""
 
