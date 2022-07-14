@@ -141,14 +141,14 @@ msgid "Forgot password?"
 msgstr "Passwort vergessen?"
 
 #: static/templates/login.html:79
-msgid "Do not have account?"
+msgid "Do you not have an account?"
 msgstr "Haben Sie noch kein Konto?"
 
 #: static/templates/login.html:88
 msgid ""
 "Thank you for supporting our research for improving AI in Medicine <br> "
 "You are only one step far from making a difference! <br> Are you in the "
-"medical domain and would like to help us? then contact us via"
+"medical domain and would like to help us? Then contact us via"
 msgstr ""
 " Vielen dank, dass sie uns bei unserer Forschung zur Verbesserung von KI "
 "in der Medizin unterstützen! <br> Sie sind nur ein Schritt davon entfernt"
@@ -165,11 +165,11 @@ msgid "Please choose a fictional nickname. Not your real name!"
 msgstr "Bitte wählen Sie einen fiktiven Nutzernamen und nicht ihren echten!"
 
 #: static/templates/signup.html:78
-msgid "confirm password:"
+msgid "Confirm password:"
 msgstr "Passwort wiederholen"
 
 #: static/templates/signup.html:83
-msgid "What is your german level:"
+msgid "What is your German language level:"
 msgstr "Wie gut sprechen Sie Deutsch?:"
 
 #: static/templates/signup.html:85 static/templates/signup.html:95
@@ -178,15 +178,15 @@ msgid "Select"
 msgstr "Auswählen"
 
 #: static/templates/signup.html:86 static/templates/signup.html:96
-msgid "B1 (Independent)"
+msgid "B1 (intermediate)"
 msgstr "B1 (Unabhängig)"
 
 #: static/templates/signup.html:87 static/templates/signup.html:97
-msgid "B2 (upper Independent)"
+msgid "B2 (upper-intermediate)"
 msgstr "B2 (Oberstufe Unabhängig)"
 
 #: static/templates/signup.html:88 static/templates/signup.html:98
-msgid "C1 (Advanced)"
+msgid "C1 (advanced)"
 msgstr "C1 (Fortgeschrittene)"
 
 #: static/templates/signup.html:89 static/templates/signup.html:99
@@ -194,7 +194,7 @@ msgid "Native"
 msgstr "Muttersprachler"
 
 #: static/templates/signup.html:93
-msgid "What is your english level:"
+msgid "What is your English language level:"
 msgstr "Wie gut sprechen Sie Englisch?:"
 
 #: static/templates/signup.html:103
@@ -202,19 +202,19 @@ msgid "To which category do you belong?:"
 msgstr "In welcher Kategorie ordnen sie sich ein?"
 
 #: static/templates/signup.html:106
-msgid "Doctor with 2+ years of experience"
+msgid "Physician with 2+ years of experience"
 msgstr "Ärzt*in mit 2+ Jahren Erfahrung"
 
 #: static/templates/signup.html:108
-msgid "Doctor with less than 2 years of experience"
+msgid "Physician with less than 2 years of experience"
 msgstr "Ärzt*in mit weniger als 2 Jahren Erfahlung"
 
 #: static/templates/signup.html:110
-msgid "Senior Medical Student (7th semester +)"
+msgid "Senior medical student (7th semester +)"
 msgstr "Senior Medizinstudent*in (7. Semester +)"
 
 #: static/templates/signup.html:112
-msgid "junior Medical Student (up to 6th semester)"
+msgid "Junior medical student (up to 6th semester)"
 msgstr "Junior Medizinstudent*in (bis zum 6. Semester)"
 
 #: static/templates/signup.html:114
@@ -222,7 +222,7 @@ msgid "Out of medical domain"
 msgstr "Außerhalb des medizinischen Bereichs"
 
 #: static/templates/signup.html:119
-msgid "I already have an account!"
+msgid "I have an account."
 msgstr "Ich habe schon ein Konto"
 
 #: static/templates/signup.html:123
