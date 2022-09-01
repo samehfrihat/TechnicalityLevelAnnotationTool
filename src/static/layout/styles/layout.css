@@ -8,6 +8,8 @@
 /*colors*/
 :root {
     --color-primary-0: #00ADEF; /* Main Primary color */
+
+    --color-primary-0-40: rgba(0, 173, 239, 0.4);
     --color-primary-0-30: rgba(0, 173, 239, 0.3);
     --color-primary-0-20: rgba(0, 173, 239, 0.2);
     --color-primary-0-10: rgba(0, 173, 239, 0.1);
@@ -15,6 +17,7 @@
     --color-primary-2: #07BAFF;
     --color-primary-3: #0078A6;
     --color-primary-4: #005D81;
+    --color-primary-4-40: rgba(0, 93, 129, 0.4);
     --color-primary-4-30: rgba(0, 93, 129, 0.3);
     --color-primary-4-20: rgba(0, 93, 129, 0.2);
     --color-primary-4-10: rgba(0, 93, 129, 0.1);
@@ -1188,6 +1191,9 @@ table a, #comments a {
     background-color: var(--color-primary-4-30);
 }
 
+.lightMainColor4 {
+    background-color: var(--color-primary-4-40);
+}
 /* ------------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------------ */

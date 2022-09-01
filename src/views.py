@@ -85,5 +85,7 @@ def technicality():
     if request.method == 'POST':
         abstract_db.add_document_annotation(username=session['username'], _id=session["_docID"], param=request.form.to_dict())
     _doc = abstract_db.get_document(session['username'])
+    if not _doc["status"]:
+        print("This is an error needs to be handled later!")
     session["_docID"] = _doc["value"]['_id'].__str__()
     return render_template('technicality.html', title='Annotate Technicality', doc=_doc["value"])

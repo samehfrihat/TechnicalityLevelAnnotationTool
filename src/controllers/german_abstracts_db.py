@@ -55,6 +55,8 @@ class GermanAbstractsDB:
             }
         try:
             result = self.db.find_one(query, projection=projection, sort=[("annotation_count", DESCENDING)])
+            if result is None:
+                return return_fail("Failed to find documents for annotation! Please context WisPerMed team!")
             return return_pass(result)
         except Exception as e:
             print(e)
