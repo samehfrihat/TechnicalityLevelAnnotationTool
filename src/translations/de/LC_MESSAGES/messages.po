@@ -230,8 +230,8 @@ msgid "signup"
 msgstr "Regirstrieren"
 
 #: static/templates/technicality.html:10
-msgid "Annotation of medical documents"
-msgstr "Annotation medizinischer Publikationen"
+msgid "Annotation tool of medical documents"
+msgstr "Annotationstool medizinischer Publikationen"
 
 #: static/templates/technicality.html:24
 msgid "Level of Technicality"

@@ -7,7 +7,7 @@
         <ul class="slides">
             <li>
                 <article1>
-                    <h1 class='heading1'>{{gettext('Annotation of medical documents')}}</h1>
+                    <h1 class='heading1'>{{gettext('Annotation tool of medical documents')}}</h1>
                 </article1>
             </li>
         </ul>
@@ -34,6 +34,7 @@
                         localStorage.setItem("3", "0");
                         localStorage.setItem("4", "0");
                         localStorage.setItem("5", "0");
+                        localStorage.setItem("6", "0");
                     }
 
                     function checkSubmitEnable(nr) {
@@ -45,6 +46,7 @@
                             && localStorage.getItem("3") === "1"
                             && localStorage.getItem("4") === "1"
                             && localStorage.getItem("5") === "1"
+                            && localStorage.getItem("6") === "1"
                         ) {
                             const button = document.getElementById("submitAnnotation");
                             button.disabled = false;
@@ -495,19 +497,19 @@
                         <td class="tg-0lax">{{gettext('Desirable information for (better) contextual understanding')}}</td>
                         <td class="tg-0lax">
                             <label>
-                                <input type="checkbox" name="contextOptions" value="opt1">{{gettext('Exchange with colleagues of the same professional level')}}
+                                <input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')" value="opt1">{{gettext('Exchange with colleagues of the same professional level')}}
                             </label>
                             <label>
-                                <input type="checkbox" name="contextOptions" value="opt2">{{gettext('Exchange with supervisors')}}
+                                <input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')"  value="opt2">{{gettext('Exchange with supervisors')}}
                             </label>
                             <label>
-                                <input type="checkbox" name="contextOptions" value="opt3">{{gettext('Pschyrembel (medical dictionary)')}}
+                                <input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')"  value="opt3">{{gettext('Pschyrembel (medical dictionary)')}}
                             </label>
                             <label>
-                                <input type="checkbox" name="contextOptions" value="opt5">{{gettext('Medical guideline')}}
+                                <input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')"  value="opt5">{{gettext('Medical guideline')}}
                             </label>
                             <label>
-                                <input type="checkbox" name="contextOptions" value="opt6">{{gettext('Hospital-specific SOP (standard operating procedure)')}}
+                                <input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')"  value="opt6">{{gettext('Hospital-specific SOP (standard operating procedure)')}}
                             </label>
                             <label>
                                 <input type="checkbox" name="contextOptions" onchange="showHideControl('opt7Info')" value="opt7">{{gettext('Online tool')}}
@@ -518,11 +520,12 @@
                                 <input type="text" style=" display:none" placeholder="{{gettext('Which?')}}" id="opt8Info" name="opt8Info"/>
                             </label>
                             <label>
-                                <input type="checkbox" name="contextOptions" value="opt9">{{gettext('Not needed')}}
+                                <input type="checkbox" name="contextOptions"  onclick="checkSubmitEnable('6')" value="opt9">{{gettext('Not needed')}}
                             </label>
                             <script>
                                 function showHideControl(id) {
                                     $('#'+id).toggle();
+                                    checkSubmitEnable('6');
                                 }
                             </script>
                         </td>
