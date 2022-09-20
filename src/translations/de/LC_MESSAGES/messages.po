@@ -319,24 +319,21 @@ msgstr "absenden"
 
 
 #: static/templates/technicality.html:497
-msgid "Desirable knowledge bases for better contextual understanding"
-msgstr "Wünschenswerte Wissensbasen zum besseren Kontextverständnis"
+msgid "Desirable information for (better) contextual understanding"
+msgstr "Wünschenswerte Informationen zum (besseren) Kontextverständnis"
+
 
 #: static/templates/technicality.html:497
-msgid "Exchange with direct colleagues of the same professional level of education/qualification"
-msgstr "Austausch mit direkten Kolleg*innen des selben fachlichen Ausbildungsstands/derselben Qualifikation"
+msgid "Exchange with colleagues of the same professional level"
+msgstr "Austausch mit Kolleg*innen des selben fachlichen Qualifikation"
 
 #: static/templates/technicality.html:497
-msgid "Exchange with superiors with more experience/expertise"
-msgstr "Austausch mit Vorgesetzten mit mehr Erfahrung/Expertise"
+msgid "Exchange with supervisors"
+msgstr "Austausch mit Vorgesetzten"
 
 #: static/templates/technicality.html:497
 msgid "Pschyrembel (medical dictionary)"
 msgstr "Pschyrembel (medizinisches Nachschlagewerk)"
-
-#: static/templates/technicality.html:497
-msgid "General dictionary"
-msgstr "Lexikon (allgemeines Nachschlagewerk)"
 
 #: static/templates/technicality.html:497
 msgid "Medical guideline"
@@ -347,16 +344,16 @@ msgid "Hospital-specific SOP (standard operating procedure)"
 msgstr "Klinikinterne SOP (Standardarbeitsanweisung)"
 
 #: static/templates/technicality.html:497
-msgid "Software tool"
-msgstr "Software-Programm"
+msgid "Online tool"
+msgstr "Online-Tool"
 
 #: static/templates/technicality.html:497
-msgid "Other information material/additional information"
+msgid "Other information"
 msgstr "Anderes Informationsmaterial/Zusätzliches"
 
 #: static/templates/technicality.html:497
-msgid "I do not need additional knowledge bases to understand the abstracts contextually (better)"
-msgstr "Anderes Informationsmaterial/Zusätzliches"
+msgid "Not needed"
+msgstr "Keine zusätzlichen Wissensbasen"
 
 #: static/templates/technicality.html:497
 msgid "Which?"

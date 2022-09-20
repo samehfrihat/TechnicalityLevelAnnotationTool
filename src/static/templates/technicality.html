@@ -492,19 +492,16 @@
                         </td>
                     </tr>
                     <tr  class="lightMainColor4">
-                        <td class="tg-0lax">{{gettext('Desirable knowledge bases for better contextual understanding')}}</td>
+                        <td class="tg-0lax">{{gettext('Desirable information for (better) contextual understanding')}}</td>
                         <td class="tg-0lax">
                             <label>
-                                <input type="checkbox" name="contextOptions" value="opt1">{{gettext('Exchange with direct colleagues of the same professional level of education/qualification')}}
+                                <input type="checkbox" name="contextOptions" value="opt1">{{gettext('Exchange with colleagues of the same professional level')}}
                             </label>
                             <label>
-                                <input type="checkbox" name="contextOptions" value="opt2">{{gettext('Exchange with superiors with more experience/expertise')}}
+                                <input type="checkbox" name="contextOptions" value="opt2">{{gettext('Exchange with supervisors')}}
                             </label>
                             <label>
                                 <input type="checkbox" name="contextOptions" value="opt3">{{gettext('Pschyrembel (medical dictionary)')}}
-                            </label>
-                            <label>
-                                <input type="checkbox" name="contextOptions" value="opt4">{{gettext('General dictionary')}}
                             </label>
                             <label>
                                 <input type="checkbox" name="contextOptions" value="opt5">{{gettext('Medical guideline')}}
@@ -513,15 +510,15 @@
                                 <input type="checkbox" name="contextOptions" value="opt6">{{gettext('Hospital-specific SOP (standard operating procedure)')}}
                             </label>
                             <label>
-                                <input type="checkbox" name="contextOptions" onchange="showHideControl('opt7Info')" value="opt7">{{gettext('Software tool')}}
+                                <input type="checkbox" name="contextOptions" onchange="showHideControl('opt7Info')" value="opt7">{{gettext('Online tool')}}
                                 <input type="text" style=" display:none" placeholder="{{gettext('Which?')}}" id="opt7Info" name="opt7Info"/>
                             </label>
                             <label>
-                                <input type="checkbox" onchange="showHideControl('opt8Info')"  name="contextOptions" value="opt8">{{gettext('Other information material/additional information')}}
+                                <input type="checkbox" onchange="showHideControl('opt8Info')"  name="contextOptions" value="opt8">{{gettext('Other information')}}
                                 <input type="text" style=" display:none" placeholder="{{gettext('Which?')}}" id="opt8Info" name="opt8Info"/>
                             </label>
                             <label>
-                                <input type="checkbox" name="contextOptions" value="opt9">{{gettext('I do not need additional knowledge bases to understand the abstracts contextually (better)')}}
+                                <input type="checkbox" name="contextOptions" value="opt9">{{gettext('Not needed')}}
                             </label>
                             <script>
                                 function showHideControl(id) {
