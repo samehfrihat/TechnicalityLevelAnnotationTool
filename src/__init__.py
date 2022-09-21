@@ -1,3 +1,4 @@
+import logging
 from datetime import timedelta
 
 from flask import Flask, request
@@ -18,6 +19,8 @@ app.permanent_session_lifetime = timedelta(days=5)  # session stays for 5 days
 @babel.localeselector
 def get_locale():
     translations = [str(translation) for translation in babel.list_translations()]
+    logging.debug(translations)
+    logging.debug(request.accept_languages.best_match(translations))
     return request.accept_languages.best_match(translations)
 
 

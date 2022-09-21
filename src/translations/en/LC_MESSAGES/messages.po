@@ -1,0 +1,354 @@
+# English translations for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-09-21 12:53+0200\n"
+"PO-Revision-Date: 2022-09-21 13:08+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.1\n"
+
+#: static/templates/change_pass.html:9
+msgid "WisPerMed Annotation Tool"
+msgstr ""
+
+#: static/templates/change_pass.html:10 static/templates/login.html:53
+#: static/templates/signup.html:54
+msgid "Artificial intelligence and medical decision support"
+msgstr ""
+
+#: static/templates/change_pass.html:13
+msgid "Change your Password"
+msgstr ""
+
+#: static/templates/change_pass.html:14
+msgid "Please fill in the form and save changes."
+msgstr ""
+
+#: static/templates/change_pass.html:17 static/templates/login.html:64
+#: static/templates/login.html:66 static/templates/signup.html:65
+#: static/templates/signup.html:69
+msgid "Nickname"
+msgstr ""
+
+#: static/templates/change_pass.html:22
+msgid "Old Password:"
+msgstr ""
+
+#: static/templates/change_pass.html:24 static/templates/change_pass.html:29
+#: static/templates/login.html:71 static/templates/signup.html:75
+#: static/templates/signup.html:80
+msgid "Password"
+msgstr ""
+
+#: static/templates/change_pass.html:27
+msgid "new Password:"
+msgstr ""
+
+#: static/templates/change_pass.html:32 static/templates/signup.html:118
+#: static/templates/technicality.html:590
+msgid "This field is mandatory"
+msgstr ""
+
+#: static/templates/change_pass.html:37
+msgid "Cancel"
+msgstr ""
+
+#: static/templates/change_pass.html:40
+msgid "save"
+msgstr ""
+
+#: static/templates/header.html:30 static/templates/login.html:30
+#: static/templates/signup.html:30
+msgid "Home"
+msgstr ""
+
+#: static/templates/header.html:31 static/templates/header.html:33
+msgid "Annotate"
+msgstr ""
+
+#: static/templates/header.html:35
+msgid "Technicality"
+msgstr ""
+
+#: static/templates/header.html:40 static/templates/login.html:33
+#: static/templates/signup.html:33
+msgid "About us"
+msgstr ""
+
+#: static/templates/header.html:43 static/templates/login.html:36
+#: static/templates/signup.html:36
+msgid "WisPerMed"
+msgstr ""
+
+#: static/templates/header.html:46 static/templates/login.html:39
+#: static/templates/signup.html:39
+msgid "Contact us"
+msgstr ""
+
+#: static/templates/header.html:50
+msgid "Settings"
+msgstr ""
+
+#: static/templates/header.html:52
+msgid "Change password"
+msgstr ""
+
+#: static/templates/header.html:54
+msgid "logout"
+msgstr ""
+
+#: static/templates/index.html:8
+msgid ", Welcome to WisPerMed"
+msgstr ""
+
+#: static/templates/index.html:8
+msgid " Annotation Tool!"
+msgstr ""
+
+#: static/templates/index.html:9
+msgid "Help improving Artificial intelligence in medical decision support"
+msgstr ""
+
+#: static/templates/index.html:10
+msgid "Start Annotation!"
+msgstr ""
+
+#: static/templates/index.html:16
+msgid "Thank you for supporting our research!"
+msgstr ""
+
+#: static/templates/login.html:52 static/templates/signup.html:53
+msgid "Welcome to WisPerMed Annotation Tool!"
+msgstr ""
+
+#: static/templates/login.html:69 static/templates/signup.html:73
+msgid "Password:"
+msgstr ""
+
+#: static/templates/login.html:75
+msgid "Forgot password?"
+msgstr ""
+
+#: static/templates/login.html:79
+msgid "Do you not have an account?"
+msgstr ""
+
+#: static/templates/login.html:88
+msgid ""
+"Thank you for supporting our research for improving AI in Medicine <br> "
+"You are only one step far from making a difference! <br> Are you in the "
+"medical domain and would like to help us? Then contact us via"
+msgstr ""
+
+#: static/templates/signup.html:57
+msgid "Account registration"
+msgstr ""
+
+#: static/templates/signup.html:66
+msgid "Please choose a fictional nickname. Not your real name!"
+msgstr ""
+
+#: static/templates/signup.html:78
+msgid "Confirm password:"
+msgstr ""
+
+#: static/templates/signup.html:83
+msgid "What is your German language level:"
+msgstr ""
+
+#: static/templates/signup.html:85 static/templates/signup.html:95
+#: static/templates/signup.html:105
+msgid "Select"
+msgstr ""
+
+#: static/templates/signup.html:86
+msgid "B1 (intermediate)"
+msgstr ""
+
+#: static/templates/signup.html:87
+msgid "B2 (upper-intermediate)"
+msgstr ""
+
+#: static/templates/signup.html:88
+msgid "C1 (advanced)"
+msgstr ""
+
+#: static/templates/signup.html:89 static/templates/signup.html:99
+msgid "Native"
+msgstr ""
+
+#: static/templates/signup.html:93
+msgid "What is your English language level:"
+msgstr ""
+
+#: static/templates/signup.html:96
+msgid "B1 (Independent)"
+msgstr ""
+
+#: static/templates/signup.html:97
+msgid "B2 (upper Independent)"
+msgstr ""
+
+#: static/templates/signup.html:98
+msgid "C1 (Advanced)"
+msgstr ""
+
+#: static/templates/signup.html:103
+msgid "To which category do you belong?:"
+msgstr ""
+
+#: static/templates/signup.html:106
+msgid "Physician with 2+ years of experience"
+msgstr ""
+
+#: static/templates/signup.html:108
+msgid "Physician with less than 2 years of experience"
+msgstr ""
+
+#: static/templates/signup.html:110
+msgid "Senior medical student (7th semester +)"
+msgstr ""
+
+#: static/templates/signup.html:112
+msgid "Junior medical student (up to 6th semester)"
+msgstr ""
+
+#: static/templates/signup.html:114
+msgid "Out of medical domain"
+msgstr ""
+
+#: static/templates/signup.html:119
+msgid "I have an account."
+msgstr ""
+
+#: static/templates/signup.html:123
+msgid "signup"
+msgstr ""
+
+#: static/templates/technicality.html:10
+msgid "Annotation tool of medical documents"
+msgstr ""
+
+#: static/templates/technicality.html:24
+msgid "Level of Technicality"
+msgstr ""
+
+#: static/templates/technicality.html:25
+msgid ""
+"Please read the abstracts carefully and evaluate their technicality and\n"
+"                readability levels on a scale between 0 and 100 percent."
+msgstr ""
+
+#: static/templates/technicality.html:71
+msgid "Title"
+msgstr ""
+
+#: static/templates/technicality.html:75
+msgid "English abstract"
+msgstr ""
+
+#: static/templates/technicality.html:82 static/templates/technicality.html:132
+msgid "Technicality Level -"
+msgstr ""
+
+#: static/templates/technicality.html:83 static/templates/technicality.html:106
+msgid "Englishs"
+msgstr ""
+
+#: static/templates/technicality.html:84 static/templates/technicality.html:107
+msgid "abstract: "
+msgstr ""
+
+#: static/templates/technicality.html:85 static/templates/technicality.html:136
+msgid ""
+"An article may be well written and grammatically understandable, but its "
+"content may cover concepts only understandable to people learned in a "
+"certain domain. 0 means high technical text, and 100 low technicality."
+msgstr ""
+
+#: static/templates/technicality.html:105
+#: static/templates/technicality.html:156
+msgid "Readability Level -"
+msgstr ""
+
+#: static/templates/technicality.html:108
+#: static/templates/technicality.html:159
+msgid ""
+"The ease with which a reader can understand a written text. 0 means Hard "
+"to read, and 100 easy to read."
+msgstr ""
+
+#: static/templates/technicality.html:125
+msgid "German abstract"
+msgstr ""
+
+#: static/templates/technicality.html:133
+#: static/templates/technicality.html:157
+msgid "Germans"
+msgstr ""
+
+#: static/templates/technicality.html:134
+#: static/templates/technicality.html:158
+msgid "abstract:"
+msgstr ""
+
+#: static/templates/technicality.html:177
+msgid "Topic"
+msgstr ""
+
+#: static/templates/technicality.html:537
+msgid "Desirable information for (a better) contextual understanding"
+msgstr ""
+
+#: static/templates/technicality.html:540
+msgid "Exchange with colleagues of the same professional level"
+msgstr ""
+
+#: static/templates/technicality.html:544
+msgid "Exchange with supervisors"
+msgstr ""
+
+#: static/templates/technicality.html:548
+msgid "Pschyrembel (medical dictionary)"
+msgstr ""
+
+#: static/templates/technicality.html:552
+msgid "Medical guideline"
+msgstr ""
+
+#: static/templates/technicality.html:556
+msgid "Hospital-specific SOP (standard operating procedure)"
+msgstr ""
+
+#: static/templates/technicality.html:562
+msgid "Online tool"
+msgstr ""
+
+#: static/templates/technicality.html:563
+#: static/templates/technicality.html:572
+msgid "Which?"
+msgstr ""
+
+#: static/templates/technicality.html:571
+msgid "Other information"
+msgstr ""
+
+#: static/templates/technicality.html:578
+msgid "Not needed"
+msgstr ""
+
+#: static/templates/technicality.html:592
+msgid "submit"
+msgstr ""
+
