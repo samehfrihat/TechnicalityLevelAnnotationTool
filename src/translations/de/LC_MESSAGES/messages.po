@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-07-13 14:13+0200\n"
+"POT-Creation-Date: 2022-09-21 12:53+0200\n"
 "PO-Revision-Date: 2022-07-13 10:20+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -35,9 +35,9 @@ msgstr "Passwort ändern"
 msgid "Please fill in the form and save changes."
 msgstr "Bitte füllen sie die Felder aus und speichern sie die Änderungen."
 
-#: static/templates/change_pass.html:17 static/templates/change_pass.html:19
-#: static/templates/login.html:64 static/templates/login.html:66
-#: static/templates/signup.html:65 static/templates/signup.html:69
+#: static/templates/change_pass.html:17 static/templates/login.html:64
+#: static/templates/login.html:66 static/templates/signup.html:65
+#: static/templates/signup.html:69
 msgid "Nickname"
 msgstr "Spitzname"
 
@@ -56,7 +56,7 @@ msgid "new Password:"
 msgstr "neues Passwort"
 
 #: static/templates/change_pass.html:32 static/templates/signup.html:118
-#: static/templates/technicality.html:495
+#: static/templates/technicality.html:590
 msgid "This field is mandatory"
 msgstr "erforderliches Feld"
 
@@ -177,15 +177,15 @@ msgstr "Wie gut sprechen Sie Deutsch?:"
 msgid "Select"
 msgstr "Auswählen"
 
-#: static/templates/signup.html:86 static/templates/signup.html:96
+#: static/templates/signup.html:86
 msgid "B1 (intermediate)"
 msgstr "B1 (Unabhängig)"
 
-#: static/templates/signup.html:87 static/templates/signup.html:97
+#: static/templates/signup.html:87
 msgid "B2 (upper-intermediate)"
 msgstr "B2 (Oberstufe Unabhängig)"
 
-#: static/templates/signup.html:88 static/templates/signup.html:98
+#: static/templates/signup.html:88
 msgid "C1 (advanced)"
 msgstr "C1 (Fortgeschrittene)"
 
@@ -196,6 +196,18 @@ msgstr "Muttersprachler"
 #: static/templates/signup.html:93
 msgid "What is your English language level:"
 msgstr "Wie gut sprechen Sie Englisch?:"
+
+#: static/templates/signup.html:96
+msgid "B1 (Independent)"
+msgstr ""
+
+#: static/templates/signup.html:97
+msgid "B2 (upper Independent)"
+msgstr ""
+
+#: static/templates/signup.html:98
+msgid "C1 (Advanced)"
+msgstr "C1 (Fortgeschrittene)"
 
 #: static/templates/signup.html:103
 msgid "To which category do you belong?:"
@@ -239,34 +251,34 @@ msgstr "Grad der Formalität"
 
 #: static/templates/technicality.html:25
 msgid ""
-"Please read the abstracts carefully and evaluate their technicality and "
-"readability levels on a scale between 0 and 100 percent."
+"Please read the abstracts carefully and evaluate their technicality and\n"
+"                readability levels on a scale between 0 and 100 percent."
 msgstr ""
 "Bitte lesen sie die Abstracts sorgfältig durch und bewerten sie die "
 "jeweilige Formalität und Lesbarkeit auf einer Skala zwischen 0 und 100 "
 "Prozent."
 
-#: static/templates/technicality.html:66
+#: static/templates/technicality.html:71
 msgid "Title"
 msgstr "Titel"
 
-#: static/templates/technicality.html:70
+#: static/templates/technicality.html:75
 msgid "English abstract"
 msgstr "Englisches Abstract"
 
-#: static/templates/technicality.html:77 static/templates/technicality.html:125
+#: static/templates/technicality.html:82 static/templates/technicality.html:132
 msgid "Technicality Level -"
 msgstr "Grad der Formalität -"
 
-#: static/templates/technicality.html:78 static/templates/technicality.html:100
+#: static/templates/technicality.html:83 static/templates/technicality.html:106
 msgid "Englishs"
 msgstr "Englisches"
 
-#: static/templates/technicality.html:79 static/templates/technicality.html:101
+#: static/templates/technicality.html:84 static/templates/technicality.html:107
 msgid "abstract: "
 msgstr "Abstract:"
 
-#: static/templates/technicality.html:80 static/templates/technicality.html:129
+#: static/templates/technicality.html:85 static/templates/technicality.html:136
 msgid ""
 "An article may be well written and grammatically understandable, but its "
 "content may cover concepts only understandable to people learned in a "
@@ -278,12 +290,13 @@ msgstr ""
 "bedeutet, dass der Text sehr technisch ist, und 100, dass er wenig "
 "technisch ist."
 
-#: static/templates/technicality.html:99 static/templates/technicality.html:148
+#: static/templates/technicality.html:105
+#: static/templates/technicality.html:156
 msgid "Readability Level -"
 msgstr "Grad der Lesbarkeit -"
 
-#: static/templates/technicality.html:102
-#: static/templates/technicality.html:151
+#: static/templates/technicality.html:108
+#: static/templates/technicality.html:159
 msgid ""
 "The ease with which a reader can understand a written text. 0 means Hard "
 "to read, and 100 easy to read."
@@ -291,71 +304,66 @@ msgstr ""
 "Die Leichtigkeit, mit der ein Leser einen geschriebenen Text verstehen "
 "kann. 0 bedeutet schwer zu lesen und 100 leicht zu lesen."
 
-#: static/templates/technicality.html:118
+#: static/templates/technicality.html:125
 msgid "German abstract"
 msgstr "Deutsches Abstract"
 
-#: static/templates/technicality.html:126
-#: static/templates/technicality.html:149
+#: static/templates/technicality.html:133
+#: static/templates/technicality.html:157
 msgid "Germans"
 msgstr "Deutsches"
 
-#: static/templates/technicality.html:127
-#: static/templates/technicality.html:150
+#: static/templates/technicality.html:134
+#: static/templates/technicality.html:158
 msgid "abstract:"
 msgstr "Abstract:"
 
-#: static/templates/technicality.html:168
+#: static/templates/technicality.html:177
 msgid "Topic"
 msgstr "Themen-bereich"
 
-#: static/templates/technicality.html:497
-msgid "submit"
-msgstr "absenden"
-
-
-
-
-
-
-#: static/templates/technicality.html:497
-msgid "Desirable information for (better) contextual understanding"
+#: static/templates/technicality.html:537
+msgid "Desirable information for (a better) contextual understanding"
 msgstr "Wünschenswerte Informationen zum (besseren) Kontextverständnis"
 
-
-#: static/templates/technicality.html:497
+#: static/templates/technicality.html:540
 msgid "Exchange with colleagues of the same professional level"
 msgstr "Austausch mit Kolleg*innen des selben fachlichen Qualifikation"
 
-#: static/templates/technicality.html:497
+#: static/templates/technicality.html:544
 msgid "Exchange with supervisors"
 msgstr "Austausch mit Vorgesetzten"
 
-#: static/templates/technicality.html:497
+#: static/templates/technicality.html:548
 msgid "Pschyrembel (medical dictionary)"
 msgstr "Pschyrembel (medizinisches Nachschlagewerk)"
 
-#: static/templates/technicality.html:497
+#: static/templates/technicality.html:552
 msgid "Medical guideline"
 msgstr "Medizinische Leitlinie"
 
-#: static/templates/technicality.html:497
+#: static/templates/technicality.html:556
 msgid "Hospital-specific SOP (standard operating procedure)"
 msgstr "Klinikinterne SOP (Standardarbeitsanweisung)"
 
-#: static/templates/technicality.html:497
+#: static/templates/technicality.html:562
 msgid "Online tool"
 msgstr "Online-Tool"
 
-#: static/templates/technicality.html:497
+#: static/templates/technicality.html:563
+#: static/templates/technicality.html:572
+msgid "Which?"
+msgstr "Welches?"
+
+#: static/templates/technicality.html:571
 msgid "Other information"
 msgstr "Anderes Informationsmaterial/Zusätzliches"
 
-#: static/templates/technicality.html:497
+#: static/templates/technicality.html:578
 msgid "Not needed"
 msgstr "Keine zusätzlichen Wissensbasen"
 
-#: static/templates/technicality.html:497
-msgid "Which?"
-msgstr "Welches?"
+#: static/templates/technicality.html:592
+msgid "submit"
+msgstr "absenden"
 

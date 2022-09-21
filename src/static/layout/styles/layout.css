@@ -826,6 +826,27 @@ td {
     width: 38%;
 }
 
+.checkRow label, .checkRow label input{
+    display: inline-block;
+}
+
+.checkRow label, .checkRow label input{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.checkRow{
+    min-height: 32px;
+}
+.checkRow input[type=checkbox]{
+    transform: scale(1.8);
+}
+td>strong{
+    padding-bottom: 8px;
+    padding-left: 8px;
+    display: block;
+}
+
+
 
 /* Gallery
 --------------------------------------------------------------------------------------------------------------- */

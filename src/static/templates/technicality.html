@@ -22,12 +22,14 @@
     <main class="hoc container clear">
         <div class="content">
             <!--<h1><strong>{{gettext('Level of Technicality')}}</strong></h1>-->
-            <p align="justify">{{gettext('Please read the abstracts carefully and evaluate their technicality and readability levels on a scale between 0 and 100 percent.')}}</p>
+            <p align="justify">{{gettext('Please read the abstracts carefully and evaluate their technicality and
+                readability levels on a scale between 0 and 100 percent.')}}</p>
             <form method="POST">
                 <script type="text/javascript">
                     if (window.addEventListener) {
                         window.addEventListener('load', setSliderStates, false); //W3C
                     }
+
                     function setSliderStates() {
                         localStorage.setItem("1", "0");
                         localStorage.setItem("2", "0");
@@ -69,11 +71,11 @@
                         <td class="tg-0lax">{{gettext('Title')}}</td>
                         <td class="tg-0lax">{{doc["tittle"]}}</td>
                     </tr>
-                    <tr  class="lightMainColor">
+                    <tr class="lightMainColor">
                         <td class="tg-0lax">{{gettext('English abstract')}}</td>
                         <td class="tg-0lax">{{doc["english_abstract"]}}</td>
                     </tr>
-                    <tr   class="lightMainColor"><!--INPUT-->
+                    <tr class="lightMainColor"><!--INPUT-->
                         <td class="tg-0lax" colspan="2" style="padding:0 10px;">
                             <div class="slider_with_counter">
                                 <label for="level_en" id="technicality_label_level_en" class="tooltip ">
@@ -88,7 +90,8 @@
                                     <span>  0  </span>
                                     <input type="range" name="technicality_level_en" min=0
                                            max=100 step="5" id="level_en"
-                                           style="width: 100%; background-color: transparent;" value="50" onclick="checkSubmitEnable('1')" />
+                                           style="width: 100%; background-color: transparent;" value="50"
+                                           onclick="checkSubmitEnable('1')"/>
                                     <span></span>
                                     <span> 100 </span>
                                 </div>
@@ -110,7 +113,8 @@
                                     <span>  0  </span>
                                     <input type="range" name="readability_level_en" min=0
                                            max=100 step="5" id="read_level_en"
-                                           style="width: 100%; background-color: transparent;" value="50" onclick="checkSubmitEnable('2')">
+                                           style="width: 100%; background-color: transparent;" value="50"
+                                           onclick="checkSubmitEnable('2')">
                                     <span></span>
                                     <span> 100 </span>
                                 </div>
@@ -137,7 +141,8 @@
                                     <span> 0  </span>
                                     <input type="range" name="technicality_level_de" min=0
                                            max=100 step="5" id="level_de"
-                                           style="width: 100%; background-color: transparent;" value="50" onclick="checkSubmitEnable('3')"/>
+                                           style="width: 100%; background-color: transparent;" value="50"
+                                           onclick="checkSubmitEnable('3')"/>
                                     <span></span>
                                     <span> 100 </span>
                                 </div>
@@ -159,7 +164,8 @@
                                     <span> 0  </span>
                                     <input type="range" name="readability_level_de" min=0
                                            max=100 step="5" id="readability_level_de"
-                                           style="width: 100%; background-color: transparent;" value="50" onclick="checkSubmitEnable('4')" />
+                                           style="width: 100%; background-color: transparent;" value="50"
+                                           onclick="checkSubmitEnable('4')"/>
                                     <span></span>
                                     <span> 100 </span>
                                 </div>
@@ -172,30 +178,32 @@
                         <!--<td class="tg-0lax">{{doc["topic"]}}</td>-->
                         <td>
                             <div id="dynamic-list-div">
-                                <select id="topics-list" onchange="ChangeSecondList(this.options[this.selectedIndex].value)" name="topics">
-                                  <option value="" selected="selected">Select an option...</option>
-                                  <optgroup label="Anesthesiology">
-                                    <option value="Anesthesiology">Anesthesiology</option>
-                                  </optgroup>
-                                  <optgroup label="Cardiology">
-                                    <option value="Cardiology">Cardiology</option>
-                                  </optgroup>
-                                  <optgroup label="Dermatology">
-                                    <option value="Dermatology">Dermatology</option>
-                                  </optgroup>
-                                  <optgroup label="Emergency Medicine">
-                                    <option value="Emergency Medicine">Emergency Medicine</option>
-                                  </optgroup>
-                                  <optgroup label="Family Practice">
-                                    <option value="Family Practice">Family Practice</option>
-                                  </optgroup>
-                                  <optgroup label="Forensic Medicine">
-                                    <option value="Forensic Medicine">Forensic Medicine</option>
-                                  </optgroup>
-                                  <optgroup label="Geriatrics">
-                                    <option value="Geriatrics">Geriatrics</option>
-                                  </optgroup>
-                                  <!--subsection-->
+                                <select id="topics-list"
+                                        onchange="ChangeSecondList(this.options[this.selectedIndex].value)"
+                                        name="topics">
+                                    <option value="" selected="selected">Select an option...</option>
+                                    <optgroup label="Anesthesiology">
+                                        <option value="Anesthesiology">Anesthesiology</option>
+                                    </optgroup>
+                                    <optgroup label="Cardiology">
+                                        <option value="Cardiology">Cardiology</option>
+                                    </optgroup>
+                                    <optgroup label="Dermatology">
+                                        <option value="Dermatology">Dermatology</option>
+                                    </optgroup>
+                                    <optgroup label="Emergency Medicine">
+                                        <option value="Emergency Medicine">Emergency Medicine</option>
+                                    </optgroup>
+                                    <optgroup label="Family Practice">
+                                        <option value="Family Practice">Family Practice</option>
+                                    </optgroup>
+                                    <optgroup label="Forensic Medicine">
+                                        <option value="Forensic Medicine">Forensic Medicine</option>
+                                    </optgroup>
+                                    <optgroup label="Geriatrics">
+                                        <option value="Geriatrics">Geriatrics</option>
+                                    </optgroup>
+                                    <!--subsection-->
                                     <option class="optionGroup" value="Internal Medicine">Internal Medicine</option>
                                     <option value="Endocrinology">&nbsp;&nbsp;&nbsp;Endocrinology</option>
                                     <option value="Gastroenterology">&nbsp;&nbsp;&nbsp;Gastroenterology</option>
@@ -206,36 +214,45 @@
                                     <option value="Parasitology">&nbsp;&nbsp;&nbsp;Parasitology</option>
                                     <option value="Rheumatology">&nbsp;&nbsp;&nbsp;Rheumatology</option>
 
-                                  <!--subsection-->
+                                    <!--subsection-->
                                     <option class="optionGroup" value="Medical Genetics">Medical Genetics</option>
-                                    <option value="Breast Cancer Genetics">&nbsp;&nbsp;&nbsp;Breast Cancer Genetics</option>
+                                    <option value="Breast Cancer Genetics">&nbsp;&nbsp;&nbsp;Breast Cancer Genetics
+                                    </option>
 
-                                  <optgroup label="Neurology">
-                                    <option value="Neurology">Neurology</option>
-                                  </optgroup>
-                                  <optgroup label="Obstetrics">
-                                    <option value="Obstetrics">Obstetrics</option>
-                                  </optgroup>
-                                  <optgroup label="Obstetrics and Gynecology">
-                                    <option value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
-                                  </optgroup>
-                                  <optgroup label="Occupational Medicine">
-                                    <option value="Occupational Medicine">Occupational Medicine</option>
-                                  </optgroup>
-                                  <!--subsection-->
+                                    <optgroup label="Neurology">
+                                        <option value="Neurology">Neurology</option>
+                                    </optgroup>
+                                    <optgroup label="Obstetrics">
+                                        <option value="Obstetrics">Obstetrics</option>
+                                    </optgroup>
+                                    <optgroup label="Obstetrics and Gynecology">
+                                        <option value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
+                                    </optgroup>
+                                    <optgroup label="Occupational Medicine">
+                                        <option value="Occupational Medicine">Occupational Medicine</option>
+                                    </optgroup>
+                                    <!--subsection-->
                                     <option class="optionGroup" value="Ophthalmology">Ophthalmology</option>
-                                    <option value="Experimental Ophthalmology">&nbsp;&nbsp;&nbsp;Experimental Ophthalmology</option>
+                                    <option value="Experimental Ophthalmology">&nbsp;&nbsp;&nbsp;Experimental
+                                        Ophthalmology
+                                    </option>
 
-                                  <optgroup label="Otolaryngology">
-                                    <option value="Otolaryngology">Otolaryngology</option>
-                                  </optgroup>
-                                  <!--subsection-->
-                                  <option class="optionGroup" value="Pathology">Pathology</option>
-                                    <option value="Bone and Connective Tissue Pathology">&nbsp;&nbsp;&nbsp;Bone and Connective Tissue Pathology</option>
-                                    <option value="Cardiovascular Pathology">&nbsp;&nbsp;&nbsp;Cardiovascular Pathology</option>
+                                    <optgroup label="Otolaryngology">
+                                        <option value="Otolaryngology">Otolaryngology</option>
+                                    </optgroup>
+                                    <!--subsection-->
+                                    <option class="optionGroup" value="Pathology">Pathology</option>
+                                    <option value="Bone and Connective Tissue Pathology">&nbsp;&nbsp;&nbsp;Bone and
+                                        Connective Tissue Pathology
+                                    </option>
+                                    <option value="Cardiovascular Pathology">&nbsp;&nbsp;&nbsp;Cardiovascular
+                                        Pathology
+                                    </option>
                                     <option value="Cytopathology">&nbsp;&nbsp;&nbsp;Cytopathology</option>
-                                    <option value="Experimental Pathology">&nbsp;&nbsp;&nbsp;Experimental Pathology</option>
-                                    <option value="Gynecologic Pathology">&nbsp;&nbsp;&nbsp;Gynecologic Pathology</option>
+                                    <option value="Experimental Pathology">&nbsp;&nbsp;&nbsp;Experimental Pathology
+                                    </option>
+                                    <option value="Gynecologic Pathology">&nbsp;&nbsp;&nbsp;Gynecologic Pathology
+                                    </option>
                                     <option value="Hematopathology">&nbsp;&nbsp;&nbsp;Hematopathology</option>
                                     <option value="Hematopathology">&nbsp;&nbsp;&nbsp;Hematopathology</option>
                                     <option value="Human Pathology">&nbsp;&nbsp;&nbsp;Human Pathology</option>
@@ -245,36 +262,52 @@
                                     <option value="Ocular Pathology">&nbsp;&nbsp;&nbsp;Ocular Pathology</option>
                                     <option value="Pathology">&nbsp;&nbsp;&nbsp;Pathology</option>
                                     <option value="Oral">&nbsp;&nbsp;&nbsp;Oral</option>
-                                      <option value="Pathology of Tumors in Animals">&nbsp;&nbsp;&nbsp;Pathology of Tumors in Animals</option>
-                                      <option value="Psychopathology">&nbsp;&nbsp;&nbsp;Psychopathology</option>
-                                      <option value="Pulmonary Pathology">&nbsp;&nbsp;&nbsp;Pulmonary Pathology</option>
-                                      <option value="Renal/Urogenital Pathology">&nbsp;&nbsp;&nbsp;Renal/Urogenital Pathology</option>
-                                      <option value="Surgical Pathology">&nbsp;&nbsp;&nbsp;Surgical Pathology</option>
-                                      <option value="Ultrastructural Pathology">&nbsp;&nbsp;&nbsp;Ultrastructural Pathology</option>
+                                    <option value="Pathology of Tumors in Animals">&nbsp;&nbsp;&nbsp;Pathology of Tumors
+                                        in Animals
+                                    </option>
+                                    <option value="Psychopathology">&nbsp;&nbsp;&nbsp;Psychopathology</option>
+                                    <option value="Pulmonary Pathology">&nbsp;&nbsp;&nbsp;Pulmonary Pathology</option>
+                                    <option value="Renal/Urogenital Pathology">&nbsp;&nbsp;&nbsp;Renal/Urogenital
+                                        Pathology
+                                    </option>
+                                    <option value="Surgical Pathology">&nbsp;&nbsp;&nbsp;Surgical Pathology</option>
+                                    <option value="Ultrastructural Pathology">&nbsp;&nbsp;&nbsp;Ultrastructural
+                                        Pathology
+                                    </option>
 
-                                  <!--subsection-->
+                                    <!--subsection-->
                                     <option class="optionGroup" value="Pediatrics">Pediatrics</option>
                                     <option value="Neonatology">&nbsp;&nbsp;&nbsp;Neonatology</option>
-                                    <option value="Pediatric Hematology/Oncology">&nbsp;&nbsp;&nbsp;Pediatric Hematology/Oncology</option>
-                                    <option value="Pediatric Neurologic Oncology">&nbsp;&nbsp;&nbsp;Pediatric Neurologic Oncology</option>
+                                    <option value="Pediatric Hematology/Oncology">&nbsp;&nbsp;&nbsp;Pediatric
+                                        Hematology/Oncology
+                                    </option>
+                                    <option value="Pediatric Neurologic Oncology">&nbsp;&nbsp;&nbsp;Pediatric Neurologic
+                                        Oncology
+                                    </option>
                                     <option value="Pediatric Neurology">&nbsp;&nbsp;&nbsp;Pediatric Neurology</option>
 
 
-                                  <optgroup label="Physical Medicine and Rehabilitation">
-                                    <option value="Physical Medicine and Rehabilitation">Physical Medicine and Rehabilitation</option>
-                                  </optgroup>
-                                  <optgroup label="Podiatry">
-                                    <option value="Podiatry">Podiatry</option>
-                                  </optgroup>
+                                    <optgroup label="Physical Medicine and Rehabilitation">
+                                        <option value="Physical Medicine and Rehabilitation">Physical Medicine and
+                                            Rehabilitation
+                                        </option>
+                                    </optgroup>
+                                    <optgroup label="Podiatry">
+                                        <option value="Podiatry">Podiatry</option>
+                                    </optgroup>
                                     <!--subsection-->
-                                  <option class="optionGroup" value="Preventive Medicine">Preventive Medicine</option>
-                                    <option value="Health Promotion in Nursing">&nbsp;&nbsp;&nbsp;Health Promotion in Nursing</option>
+                                    <option class="optionGroup" value="Preventive Medicine">Preventive Medicine</option>
+                                    <option value="Health Promotion in Nursing">&nbsp;&nbsp;&nbsp;Health Promotion in
+                                        Nursing
+                                    </option>
 
                                     <!--subsection-->
-                                  <option class="optionGroup" value="Psychiatry">Psychiatry</option>
+                                    <option class="optionGroup" value="Psychiatry">Psychiatry</option>
                                     <option value="Child Psychiatry">&nbsp;&nbsp;&nbsp;Child Psychiatry</option>
-                                    <option value="Experimental Psychiatry">&nbsp;&nbsp;&nbsp;Experimental Psychiatry</option>
-                                    <option value="Psychosomatic Medicine">&nbsp;&nbsp;&nbsp;Psychosomatic Medicine</option>
+                                    <option value="Experimental Psychiatry">&nbsp;&nbsp;&nbsp;Experimental Psychiatry
+                                    </option>
+                                    <option value="Psychosomatic Medicine">&nbsp;&nbsp;&nbsp;Psychosomatic Medicine
+                                    </option>
 
                                     <!--subsection-->
                                     <option class="optionGroup" value="Public Health">Public Health</option>
@@ -285,53 +318,59 @@
                                     <option value="Women's Health">&nbsp;&nbsp;&nbsp;Women's Health</option>
 
 
-                                  <optgroup label="Pulmonary Medicine">
-                                    <option value="Pulmonary Medicine">Pulmonary Medicine</option>
-                                  </optgroup>
+                                    <optgroup label="Pulmonary Medicine">
+                                        <option value="Pulmonary Medicine">Pulmonary Medicine</option>
+                                    </optgroup>
                                     <!--subsection-->
-                                  <option class="optionGroup" value="Radiology">Radiology</option>
+                                    <option class="optionGroup" value="Radiology">Radiology</option>
                                     <option value="Diagnostic Radiology">&nbsp;&nbsp;&nbsp;Diagnostic Radiology</option>
-                                    <option value="Interventional Radiology">&nbsp;&nbsp;&nbsp;Interventional Radiology</option>
+                                    <option value="Interventional Radiology">&nbsp;&nbsp;&nbsp;Interventional
+                                        Radiology
+                                    </option>
                                     <option value="Nuclear Medicine">&nbsp;&nbsp;&nbsp;Nuclear Medicine</option>
                                     <option value="Pediatric Radiology">&nbsp;&nbsp;&nbsp;Pediatric Radiology</option>
                                     <option value="Radiology, Bone">&nbsp;&nbsp;&nbsp;Radiology, Bone</option>
                                     <option value="Radiology, Dental">&nbsp;&nbsp;&nbsp;Radiology, Dental</option>
-                                    <option value="Radiology, Head, Neck">&nbsp;&nbsp;&nbsp;Radiology, Head, Neck</option>
+                                    <option value="Radiology, Head, Neck">&nbsp;&nbsp;&nbsp;Radiology, Head, Neck
+                                    </option>
                                     <option value="Otolaryngology">&nbsp;&nbsp;&nbsp;Radiology, Soft Tissue</option>
-                                    <option value="Radiology, Thorax, Chest">&nbsp;&nbsp;&nbsp;Radiology, Thorax, Chest</option>
-                                    <option value="Therapeutic Radiology">&nbsp;&nbsp;&nbsp;Therapeutic Radiology</option>
+                                    <option value="Radiology, Thorax, Chest">&nbsp;&nbsp;&nbsp;Radiology, Thorax,
+                                        Chest
+                                    </option>
+                                    <option value="Therapeutic Radiology">&nbsp;&nbsp;&nbsp;Therapeutic Radiology
+                                    </option>
 
-                                  <optgroup label="Sports Medicine">
-                                    <option value="Sports Medicine">Sports Medicine</option>
-                                  </optgroup>
-                                  <optgroup label="Surgery">
-                                    <option value="Surgery">Surgery</option>
-                                  </optgroup>
+                                    <optgroup label="Sports Medicine">
+                                        <option value="Sports Medicine">Sports Medicine</option>
+                                    </optgroup>
+                                    <optgroup label="Surgery">
+                                        <option value="Surgery">Surgery</option>
+                                    </optgroup>
                                     <!--subsection-->
-                                  <option class="optionGroup" value="Surgical Specialty">Surgical Specialty</option>
+                                    <option class="optionGroup" value="Surgical Specialty">Surgical Specialty</option>
                                     <option value="General Surgery">&nbsp;&nbsp;&nbsp;General Surgery</option>
-                                      <option value="Hand Surgery">&nbsp;&nbsp;&nbsp;Hand Surgery</option>
-                                      <option value="Neurosurgery">&nbsp;&nbsp;&nbsp;Neurosurgery</option>
-                                      <option value="Oral Surgery">&nbsp;&nbsp;&nbsp;Oral Surgery</option>
-                                      <option value="Orthopedics">&nbsp;&nbsp;&nbsp;Orthopedics</option>
-                                      <option value="Pediatric Surgery">&nbsp;&nbsp;&nbsp;Pediatric Surgery</option>
-                                      <option value="Plastic Surgery">&nbsp;&nbsp;&nbsp;Plastic Surgery</option>
-                                      <option value="Thoracic Surgery">&nbsp;&nbsp;&nbsp;Thoracic Surgery</option>
-                                      <option value="Urological Surgery">&nbsp;&nbsp;&nbsp;Urological Surgery</option>
-                                      <option value="Vascular Surgery">&nbsp;&nbsp;&nbsp;Vascular Surgery</option>
+                                    <option value="Hand Surgery">&nbsp;&nbsp;&nbsp;Hand Surgery</option>
+                                    <option value="Neurosurgery">&nbsp;&nbsp;&nbsp;Neurosurgery</option>
+                                    <option value="Oral Surgery">&nbsp;&nbsp;&nbsp;Oral Surgery</option>
+                                    <option value="Orthopedics">&nbsp;&nbsp;&nbsp;Orthopedics</option>
+                                    <option value="Pediatric Surgery">&nbsp;&nbsp;&nbsp;Pediatric Surgery</option>
+                                    <option value="Plastic Surgery">&nbsp;&nbsp;&nbsp;Plastic Surgery</option>
+                                    <option value="Thoracic Surgery">&nbsp;&nbsp;&nbsp;Thoracic Surgery</option>
+                                    <option value="Urological Surgery">&nbsp;&nbsp;&nbsp;Urological Surgery</option>
+                                    <option value="Vascular Surgery">&nbsp;&nbsp;&nbsp;Vascular Surgery</option>
 
-                                  <optgroup label="Urology">
-                                    <option value="Urology">Urology</option>
-                                  </optgroup>
+                                    <optgroup label="Urology">
+                                        <option value="Urology">Urology</option>
+                                    </optgroup>
                                 </select>
                                 <div id="second-list-dev"></div>
                             </div>
                             <script type="text/javascript">
                                 function ChangeSecondList(value) {
-                                    if (document.getElementById('topics-list').selectedIndex > 0){
+                                    if (document.getElementById('topics-list').selectedIndex > 0) {
                                         checkSubmitEnable("5");
                                     }
-                                    if(!document.getElementById('"second_topics-list"')){
+                                    if (!document.getElementById('"second_topics-list"')) {
                                         var divid = document.getElementById("second-list-dev");
                                         divid.innerHTML = `
                                         <select id="second_topics-list" name="second_topics" >
@@ -488,43 +527,59 @@
                                 </select>
                                     `
                                     }
-                                    document.getElementById('topics-list').value=value;
+                                    document.getElementById('topics-list').value = value;
                                 }
                             </script>
                         </td>
                     </tr>
-                    <tr  class="lightMainColor4">
-                        <td class="tg-0lax">{{gettext('Desirable information for (better) contextual understanding')}}</td>
-                        <td class="tg-0lax">
-                            <label>
-                                <input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')" value="opt1">{{gettext('Exchange with colleagues of the same professional level')}}
-                            </label>
-                            <label>
-                                <input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')"  value="opt2">{{gettext('Exchange with supervisors')}}
-                            </label>
-                            <label>
-                                <input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')"  value="opt3">{{gettext('Pschyrembel (medical dictionary)')}}
-                            </label>
-                            <label>
-                                <input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')"  value="opt5">{{gettext('Medical guideline')}}
-                            </label>
-                            <label>
-                                <input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')"  value="opt6">{{gettext('Hospital-specific SOP (standard operating procedure)')}}
-                            </label>
-                            <label>
-                                <input type="checkbox" name="contextOptions" onchange="showHideControl('opt7Info')" value="opt7">{{gettext('Online tool')}}
-                                <input type="text" style=" display:none" placeholder="{{gettext('Which?')}}" id="opt7Info" name="opt7Info"/>
-                            </label>
-                            <label>
-                                <input type="checkbox" onchange="showHideControl('opt8Info')"  name="contextOptions" value="opt8">{{gettext('Other information')}}
-                                <input type="text" style=" display:none" placeholder="{{gettext('Which?')}}" id="opt8Info" name="opt8Info"/>
-                            </label>
-                            <label>
-                                <input type="checkbox" name="contextOptions"  onclick="checkSubmitEnable('6')" value="opt9">{{gettext('Not needed')}}
-                            </label>
+                    <tr class="lightMainColor4">
+                        <td class="tg-0lax" colspan="2">
+                            <strong>{{gettext('Desirable information for (a better) contextual understanding')}}</strong>
+                            <div class="checkRow">
+                                <label> <input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')"
+                                               value="opt1"/>{{gettext('Exchange with colleagues of the same professional level')}}</label>
+                            </div>
+                            <div class="checkRow">
+                                <label><input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')"
+                                              value="opt2"> {{gettext('Exchange with supervisors')}}
+                                </label></div>
+                            <div class="checkRow">
+                                <label><input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')"
+                                              value="opt3"> {{gettext('Pschyrembel (medical dictionary)')}}
+                                </label></div>
+                            <div class="checkRow">
+                                <label><input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')"
+                                              value="opt5"> {{gettext('Medical guideline')}}
+                                </label></div>
+                            <div class="checkRow">
+                                <label><input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')"
+                                              value="opt6"> {{gettext('Hospital-specific SOP (standard operating procedure)')}}
+                                </label></div>
+                            <div class="checkRow">
+                                <label><input type="checkbox" name="contextOptions"
+                                              onchange="showHideControl('opt7Info')"
+                                              value="opt7">
+                                    {{gettext('Online tool')}}
+                                    <input type="text" style=" display:none" placeholder="{{gettext('Which?')}}"
+                                           id="opt7Info" name="opt7Info" width="250px"/></label>
+                            </div>
+                            <div class="checkRow">
+                                <label><input type="checkbox" onchange="showHideControl('opt8Info')"
+                                              name="contextOptions"
+                                              value="opt8">
+
+                                    {{gettext('Other information')}}
+                                <input type="text" style=" display:none" placeholder="{{gettext('Which?')}}"
+                                       id="opt8Info" name="opt8Info" width="250px"/></label>
+
+                            </div>
+                            <div class="checkRow">
+                                <label><input type="checkbox" name="contextOptions" onclick="checkSubmitEnable('6')"
+                                              value="opt9"> {{gettext('Not needed')}}
+                                </label></div>
                             <script>
                                 function showHideControl(id) {
-                                    $('#'+id).toggle();
+                                    $('#' + id).toggle();
                                     checkSubmitEnable('6');
                                 }
                             </script>
