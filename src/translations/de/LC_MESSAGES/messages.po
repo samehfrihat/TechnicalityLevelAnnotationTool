@@ -328,7 +328,7 @@ msgstr "Wünschenswerte Informationen zum (besseren) Kontextverständnis"
 
 #: static/templates/technicality.html:540
 msgid "Exchange with colleagues of the same professional level"
-msgstr "Austausch mit Kolleg*innen des selben fachlichen Qualifikation"
+msgstr "Austausch mit Kolleg*innen der selben fachlichen Qualifikation"
 
 #: static/templates/technicality.html:544
 msgid "Exchange with supervisors"
@@ -361,7 +361,7 @@ msgstr "Anderes Informationsmaterial/Zusätzliches"
 
 #: static/templates/technicality.html:578
 msgid "Not needed"
-msgstr "Keine zusätzlichen Wissensbasen"
+msgstr "Keine zusätzlichen Informationen"
 
 #: static/templates/technicality.html:592
 msgid "submit"
