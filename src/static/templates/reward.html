@@ -5,13 +5,10 @@
             <ul class="slides">
                 <li>
                     <article>
-                        <h1 class='heading'>{{gettext('Welcome ')}}
-                            {% if annotations > 0 %}
-                            <span class='heading highlight1'>{{ level }},</span><br>
-                            {% endif %}
-                            {{gettext(' to WisPerMed Annotation Tool!')}} </h1>
-                        <h1>{{gettext('Help improving Artificial intelligence in medical decision support')}}</h1>
-                        <span class='subheading highlight1'>          {{gettext('You have annotated ')}}</span>
+                        <h1 class='heading'>{{gettext('Tank you!')}}<br><span
+                                class='heading highlight1'>{{ level }}</span></h1>
+                        <h1 class='heading'>{{gettext('You annotation was saved')}}</h1>
+                        <span class='subheading highlight1'>{{gettext('You have annotated ')}}</span>
                         <span class='subheading highlight2'>{{ annotations }}</span>
                         {% if annotations == 1 %}
                         <span class='subheading highlight1'>{{gettext('abstract so far.')}}</span>
@@ -25,7 +22,13 @@
                         <span class='subheading'>{{gettext('If you like, keep on annotating')}}</span>
                         {% endif %}
 
-                        <footer><a class="btn cancel" href="/technicality">{{gettext('Start Annotation!')}}</a></footer>
+                        <footer><a class="btn cancel" href="/technicality">
+                            {% if annotations < 2 %}
+                            {{gettext('Next Abstract')}}
+                            {% else %}
+                            {{gettext('Give me more abstracts')}}
+                            {% endif %}</a>
+                        </footer>
                     </article>
                 </li>
             </ul>

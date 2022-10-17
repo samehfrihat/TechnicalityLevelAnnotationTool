@@ -14,5 +14,5 @@ def return_fail(error: str):
     return {"status": False, "error": error}
 
 
-def return_pass(value=None):
+def return_pass(value: object = None) -> object:
     return {"status": True, "value": value}

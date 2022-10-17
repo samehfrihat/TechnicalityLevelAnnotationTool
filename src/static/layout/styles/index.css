@@ -116,12 +116,13 @@ main {
     }
 
 }
-.content.subtext{
-        margin-top:18px;
+
+.content.subtext {
+    margin-top: 18px;
 
 }
 
-.overlaybox, #signup.overlaybox,  #login.overlaybox {
+.overlaybox, #signup.overlaybox, #login.overlaybox {
     color: #000000;
     background-color: rgba(255, 255, 255, 0.8);
     display: grid;
@@ -129,47 +130,63 @@ main {
     border-radius: 12px;
     justify-content: center;
     margin-top: 18px;
+
 }
-.overlaybox.transparent{
+
+.overlaybox.transparent {
     background-color: transparent;
     color: white;
 }
 
-.overlaybox .input_row input, .overlaybox .input_row select, .overlaybox .text_row select, .overlaybox .text_row input   {
+.overlaybox .input_row input, .overlaybox .input_row select, .overlaybox .text_row select, .overlaybox .text_row input {
     width: 300px;
     height: 23px;
 }
 
-.overlaybox input[type=submit], .overlaybox input[type=button]  {
+.overlaybox input[type=submit], .overlaybox input[type=button] {
     max-width: 160px;
     font-size: unset;
 }
 
-.overlaybox .input_row>input[type=submit], .overlaybox .text_row>input[type=submit], .overlaybox .input_row>input[type=button] {
+.overlaybox .input_row > input[type=submit], .overlaybox .text_row > input[type=submit], .overlaybox .input_row > input[type=button] {
     height: 35px;
 }
 
-.overlaybox .input_row , #signup .input_row, .overlaybox .text_row , #signup .text_row  {
+.overlaybox .input_row, #signup .input_row, .overlaybox .text_row, #signup .text_row {
     display: grid;
-    grid-template-columns: auto 310px;
+    grid-template-columns: max-content 310px;
     justify-items: end;
     width: 100%;
+    justify-content: end;
+
 }
-.overlaybox .input_row , #signup .input_row
-{
-    margin: 15px;
+#signup .checkRow{
+    justify-self: end;
+    margin: 8px 0px;
 }
 
-.overlaybox .text_row , #signup .text_row
-{
+.overlaybox .input_row, #signup .input_row {
+    margin: 8px 0px;
+}
+
+.overlaybox .text_row, #signup .text_row {
     margin: 5px;
 }
 
+.overlaybox .input {
+    display: grid;
+    justify-content: center;
+}
 
-.overlaybox h2{
-    color:var(--color-primary-4);
+.overlaybox h2 {
+    color: var(--color-primary-4);
     padding: 18px;
 }
+.emptyLine
+{
+    height: 8px;
+}
+
 /*.overlaybox .input_row label, .overlaybox .input_row input, .overlaybox .input_row select {
     margin: 10px;
 }*/

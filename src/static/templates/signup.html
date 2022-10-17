@@ -7,6 +7,8 @@
     <link href="{{url_for('static', filename='./layout/styles/layout.css')}}" rel="stylesheet" type="text/css"
           media="all">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='./layout/scripts/cookieTime.js')}}"></script>
+
     <link rel="shortcut icon" href="{{ url_for('static', filename='./images/favicon.ico') }}">
     {{ fontawesome_html() }}
     {% if title %}
@@ -54,38 +56,28 @@
                         <h1>{{gettext('Artificial intelligence and medical decision support') }}</h1>
                         <div class="overlaybox" id="signup">
                             <form action="" method="POST" id="loging">
-                                <h2>{{gettext('Account registration')}}</h2>
+                                <h2>{{gettext('Getting started')}}</h2>
+                                    <p class="center">{{gettext('Thank you for supporting our research for improving AI in Medicine <br> You are only one step far from making a difference! <br> Are you in the medical domain and would like to help us? Then contact us via')}}
+                                        <a class="link_inverted"
+                                       href="mailto:catharina.beckmann@fh-dortmund.de?subject=Medical abstracts survey!">Email</a>
+                                    </p>
+                                   <div class="max_80"><p>{{gettext('Please answer the following questions about your language skills and consent in the use of the collected data to proceed to the annotation. All data collected will be stored under an automatically generated completely anonymous user.')}}</span>
+                                 </p>
+                                </div>
                                 {% if message %}
                                 <p style="color: #9C1A1C; background-color: moccasin;cursor: pointer; border: 3px; border-color: #474747 ;padding: 15px; margin-top: 30px">
                                     {{ message }}
                                 </p>
                                 {% endif %}
-                                <div></div>
-                                <div class="input_row">
-                                    <label for="input_username" class="tooltip required">{{gettext('Nickname')}}:
-                                        <span class="tooltiptext">{{gettext('Please choose a fictional nickname. Not your real name!')}}</span>
-                                    </label>
-                                    <input type="text" id="input_username" name="username"
-                                           placeholder="{{gettext('Nickname')}}" required>
-                                </div>
-
-                                <div class="input_row">
-                                    <label for="input_password" class="required">{{gettext('Password:')}}</label>
-                                    <input type="password" id="input_password" name="password"
-                                           placeholder="{{gettext('Password')}}" required>
-                                </div>
-                                <div class="input_row">
-                                    <label for="repeat_password" class="required">{{gettext('Confirm password:')}}</label>
-                                    <input type="password" id="repeat_password" name="repeat_password"
-                                           placeholder="{{gettext('Password')}}" required>
-                                </div>
+                                <div class="emptyLine"></div>
+                                <div class="input">
                                 <div class="input_row">
                                     <label for="german_language_level" class="required">{{gettext('What is your German language level:')}}</label>
                                     <select name="german_language_level" id="german_language_level" required>
                                         <option style="display: none" value="">{{gettext('Select')}}</option>
-                                        <option value="b1">{{gettext('B1 (intermediate)')}}</option>
-                                        <option value="b2">{{gettext('B2 (upper-intermediate)')}}</option>
-                                        <option value="c1">{{gettext('C1 (advanced)')}}</option>
+                                         <option value="b1">{{gettext('B1 (Independent)')}}</option>
+                                        <option value="b2">{{gettext('B2 (upper Independent)')}}</option>
+                                        <option value="c1">{{gettext('C1 (Advanced)')}}</option>
                                         <option value="native">{{gettext('Native')}}</option>
                                     </select>
                                 </div>
@@ -114,16 +106,24 @@
                                         <option value="nt_med">{{gettext('Out of medical domain')}}</option>
                                     </select>
                                 </div>
-                                <div class="input_row">
-                                    <p><span class="required"></span> {{gettext('This field is mandatory')}}</p>
-                                    <a href="/login">{{gettext('I have an account.')}}</a>
+                                <div class="emptyLine"></div>
+
+                                 <div class="checkRow">
+                                   <label class="required">{{gettext('I consent to the use of the collected data for research and publication purposes.')}}
+                                   <input type="checkbox" name="data_consent" id="data_consent" required >
+                                   </label>
+                                </div>
+                                    <div class="checkRow">
+                                   <label class="required">{{gettext('I consent to the use of functional cookies on this site.')}}
+                                       <input type="checkbox" name="cookie_consent" id="cookie_consent" required>
+                                   </label>
                                 </div>
                                 <div class="input_row">
                                     <span></span>
-                                    <input type="submit" name="type" value="{{gettext('signup')}}"
+                                    <input type="submit" name="type" value="{{gettext('start')}}"
                                            class="btn btn-primary">
                                 </div>
-
+</div>
 
                             </form>
                         </div>
