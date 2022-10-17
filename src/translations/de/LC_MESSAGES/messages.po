@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.10.1\n"
 
 #: controllers/user_db.py:26 views.py:96
-msgid "annotation newbee"
+msgid "annotation newbie"
 msgstr "Annotations Neuling"
 
 #: views.py:98

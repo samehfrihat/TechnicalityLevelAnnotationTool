@@ -93,7 +93,7 @@ def logout():
 
 def get_current_level(param):
     if param < 2:
-        return gettext("annotation newbee")
+        return gettext("annotation newbie")
     elif 2 <= param < 4:
         return gettext("research supporter")
     elif 4 <= param < 6:
