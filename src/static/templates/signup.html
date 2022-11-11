@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="{{url_for('static', filename='./layout/styles/layout.css')}}" rel="stylesheet" type="text/css"
           media="all">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='./layout/scripts/jquery.min.js')}}"></script>
         <script type="text/javascript" src="{{url_for('static', filename='./layout/scripts/cookieTime.js')}}"></script>
 
     <link rel="shortcut icon" href="{{ url_for('static', filename='./images/favicon.ico') }}">
@@ -59,7 +59,7 @@
                                 <h2>{{gettext('Getting started')}}</h2>
                                     <p class="center">{{gettext('Thank you for supporting our research for improving AI in Medicine <br> You are only one step far from making a difference! <br> Are you in the medical domain and would like to help us? Then contact us via')}}
                                         <a class="link_inverted"
-                                       href="mailto:catharina.beckmann@fh-dortmund.de?subject=Medical abstracts survey!">Email</a>
+                                       href="mailto:catharina.beckmann@fh-dortmund.de?subject=Medical abstracts survey!">E-mail</a>
                                     </p>
                                    <div class="max_80"><p>{{gettext('Please answer the following questions about your language skills and consent in the use of the collected data to proceed to the annotation. All data collected will be stored under an automatically generated completely anonymous user.')}}</span>
                                  </p>

@@ -112,7 +112,7 @@
                                     <input type="range" name="technicality_level_en" min=0
                                            max=100 step="5" id="level_en"
                                            style="width: 100%; background-color: transparent;" value="50"
-                                           onchange="checkSubmitEnable('1')" oninput="checkSubmitEnable('2')"/>
+                                           onchange="checkSubmitEnable('1')" oninput="checkSubmitEnable('1')"/>
                                     <span></span>
                                     <span> 100 </span>
                                 </div>
@@ -202,187 +202,59 @@
                                 <select id="topics-list"
                                         onchange="ChangeSecondList(this.options[this.selectedIndex].value)"
                                         name="topics">
-                                    <option value="" selected="selected">Select an option...</option>
-                                    <optgroup label="Anesthesiology">
-                                        <option value="Anesthesiology">Anesthesiology</option>
-                                    </optgroup>
-                                    <optgroup label="Cardiology">
-                                        <option value="Cardiology">Cardiology</option>
-                                    </optgroup>
-                                    <optgroup label="Dermatology">
-                                        <option value="Dermatology">Dermatology</option>
-                                    </optgroup>
-                                    <optgroup label="Emergency Medicine">
-                                        <option value="Emergency Medicine">Emergency Medicine</option>
-                                    </optgroup>
-                                    <optgroup label="Family Practice">
-                                        <option value="Family Practice">Family Practice</option>
-                                    </optgroup>
-                                    <optgroup label="Forensic Medicine">
-                                        <option value="Forensic Medicine">Forensic Medicine</option>
-                                    </optgroup>
-                                    <optgroup label="Geriatrics">
-                                        <option value="Geriatrics">Geriatrics</option>
-                                    </optgroup>
+                                    <option class="optionGroup"  value="" selected="selected">Select an option...</option>
+                                    <option class="optionGroup"  value="Anesthesiology">Anesthesiology</option>
+                                    <option class="optionGroup"  value="Cardiology">Cardiology</option>
+                                    <option class="optionGroup"  value="Dermatology">Dermatology</option>
+                                    <option class="optionGroup"  value="Emergency Medicine">Emergency Medicine</option>
+                                    <option class="optionGroup"  value="Family Practice">Family Practice</option>
+                                    <option class="optionGroup"  value="Forensic Medicine">Forensic Medicine</option>
+                                    <option class="optionGroup"  value="Geriatrics">Geriatrics</option>
                                     <!--subsection-->
                                     <option class="optionGroup" value="Internal Medicine">Internal Medicine</option>
-                                    <option value="Endocrinology">&nbsp;&nbsp;&nbsp;Endocrinology</option>
-                                    <option value="Gastroenterology">&nbsp;&nbsp;&nbsp;Gastroenterology</option>
-                                    <option value="Gynecology">&nbsp;&nbsp;&nbsp;Gynecology</option>
-                                    <option value="Hematology">&nbsp;&nbsp;&nbsp;Hematology</option>
-                                    <option value="Nephrology">&nbsp;&nbsp;&nbsp;Nephrology</option>
-                                    <option value="Oncology">&nbsp;&nbsp;&nbsp;Oncology</option>
-                                    <option value="Parasitology">&nbsp;&nbsp;&nbsp;Parasitology</option>
-                                    <option value="Rheumatology">&nbsp;&nbsp;&nbsp;Rheumatology</option>
 
                                     <!--subsection-->
                                     <option class="optionGroup" value="Medical Genetics">Medical Genetics</option>
-                                    <option value="Breast Cancer Genetics">&nbsp;&nbsp;&nbsp;Breast Cancer Genetics
-                                    </option>
 
-                                    <optgroup label="Neurology">
-                                        <option value="Neurology">Neurology</option>
-                                    </optgroup>
-                                    <optgroup label="Obstetrics">
-                                        <option value="Obstetrics">Obstetrics</option>
-                                    </optgroup>
-                                    <optgroup label="Obstetrics and Gynecology">
-                                        <option value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
-                                    </optgroup>
-                                    <optgroup label="Occupational Medicine">
-                                        <option value="Occupational Medicine">Occupational Medicine</option>
-                                    </optgroup>
+                                    <option class="optionGroup"  value="Neurology">Neurology</option>
+
+                                    <option class="optionGroup"  value="Obstetrics">Obstetrics</option>
+                                    <option class="optionGroup"  value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
+                                    <option class="optionGroup"  value="Occupational Medicine">Occupational Medicine</option>
+
+
                                     <!--subsection-->
-                                    <option class="optionGroup" value="Ophthalmology">Ophthalmology</option>
-                                    <option value="Experimental Ophthalmology">&nbsp;&nbsp;&nbsp;Experimental
-                                        Ophthalmology
-                                    </option>
+                                    <option class="optionGroup"  class="optionGroup" value="Ophthalmology">Ophthalmology</option>
 
-                                    <optgroup label="Otolaryngology">
-                                        <option value="Otolaryngology">Otolaryngology</option>
-                                    </optgroup>
+                                    <option class="optionGroup"  value="Otolaryngology">Otolaryngology</option>
                                     <!--subsection-->
                                     <option class="optionGroup" value="Pathology">Pathology</option>
-                                    <option value="Bone and Connective Tissue Pathology">&nbsp;&nbsp;&nbsp;Bone and
-                                        Connective Tissue Pathology
-                                    </option>
-                                    <option value="Cardiovascular Pathology">&nbsp;&nbsp;&nbsp;Cardiovascular
-                                        Pathology
-                                    </option>
-                                    <option value="Cytopathology">&nbsp;&nbsp;&nbsp;Cytopathology</option>
-                                    <option value="Experimental Pathology">&nbsp;&nbsp;&nbsp;Experimental Pathology
-                                    </option>
-                                    <option value="Gynecologic Pathology">&nbsp;&nbsp;&nbsp;Gynecologic Pathology
-                                    </option>
-                                    <option value="Hematopathology">&nbsp;&nbsp;&nbsp;Hematopathology</option>
-                                    <option value="Hematopathology">&nbsp;&nbsp;&nbsp;Hematopathology</option>
-                                    <option value="Human Pathology">&nbsp;&nbsp;&nbsp;Human Pathology</option>
-                                    <option value="Immunopathology">&nbsp;&nbsp;&nbsp;Immunopathology</option>
-                                    <option value="Molecular Pathology">&nbsp;&nbsp;&nbsp;Molecular Pathology</option>
-                                    <option value="Neuropathology">&nbsp;&nbsp;&nbsp;Neuropathology</option>
-                                    <option value="Ocular Pathology">&nbsp;&nbsp;&nbsp;Ocular Pathology</option>
-                                    <option value="Pathology">&nbsp;&nbsp;&nbsp;Pathology</option>
-                                    <option value="Oral">&nbsp;&nbsp;&nbsp;Oral</option>
-                                    <option value="Pathology of Tumors in Animals">&nbsp;&nbsp;&nbsp;Pathology of Tumors
-                                        in Animals
-                                    </option>
-                                    <option value="Psychopathology">&nbsp;&nbsp;&nbsp;Psychopathology</option>
-                                    <option value="Pulmonary Pathology">&nbsp;&nbsp;&nbsp;Pulmonary Pathology</option>
-                                    <option value="Renal/Urogenital Pathology">&nbsp;&nbsp;&nbsp;Renal/Urogenital
-                                        Pathology
-                                    </option>
-                                    <option value="Surgical Pathology">&nbsp;&nbsp;&nbsp;Surgical Pathology</option>
-                                    <option value="Ultrastructural Pathology">&nbsp;&nbsp;&nbsp;Ultrastructural
-                                        Pathology
-                                    </option>
-
                                     <!--subsection-->
                                     <option class="optionGroup" value="Pediatrics">Pediatrics</option>
-                                    <option value="Neonatology">&nbsp;&nbsp;&nbsp;Neonatology</option>
-                                    <option value="Pediatric Hematology/Oncology">&nbsp;&nbsp;&nbsp;Pediatric
-                                        Hematology/Oncology
-                                    </option>
-                                    <option value="Pediatric Neurologic Oncology">&nbsp;&nbsp;&nbsp;Pediatric Neurologic
-                                        Oncology
-                                    </option>
-                                    <option value="Pediatric Neurology">&nbsp;&nbsp;&nbsp;Pediatric Neurology</option>
 
 
-                                    <optgroup label="Physical Medicine and Rehabilitation">
-                                        <option value="Physical Medicine and Rehabilitation">Physical Medicine and
-                                            Rehabilitation
-                                        </option>
-                                    </optgroup>
-                                    <optgroup label="Podiatry">
-                                        <option value="Podiatry">Podiatry</option>
-                                    </optgroup>
+                                    <option class="optionGroup"  value="Physical Medicine and Rehabilitation">Physical Medicine and Rehabilitation</option>
+                                    <option class="optionGroup"  value="Podiatry">Podiatry</option>
+
                                     <!--subsection-->
                                     <option class="optionGroup" value="Preventive Medicine">Preventive Medicine</option>
-                                    <option value="Health Promotion in Nursing">&nbsp;&nbsp;&nbsp;Health Promotion in
-                                        Nursing
-                                    </option>
 
                                     <!--subsection-->
                                     <option class="optionGroup" value="Psychiatry">Psychiatry</option>
-                                    <option value="Child Psychiatry">&nbsp;&nbsp;&nbsp;Child Psychiatry</option>
-                                    <option value="Experimental Psychiatry">&nbsp;&nbsp;&nbsp;Experimental Psychiatry
-                                    </option>
-                                    <option value="Psychosomatic Medicine">&nbsp;&nbsp;&nbsp;Psychosomatic Medicine
-                                    </option>
 
                                     <!--subsection-->
                                     <option class="optionGroup" value="Public Health">Public Health</option>
-                                    <option value="Arctic Research">&nbsp;&nbsp;&nbsp;Arctic Research</option>
-                                    <option value="Community Health">&nbsp;&nbsp;&nbsp;Community Health</option>
-                                    <option value="Occupational Health">&nbsp;&nbsp;&nbsp;Occupational Health</option>
-                                    <option value="Patterns of Care">&nbsp;&nbsp;&nbsp;Patterns of Care</option>
-                                    <option value="Women's Health">&nbsp;&nbsp;&nbsp;Women's Health</option>
 
-
-                                    <optgroup label="Pulmonary Medicine">
-                                        <option value="Pulmonary Medicine">Pulmonary Medicine</option>
-                                    </optgroup>
+                                    <option class="optionGroup"  value="Pulmonary Medicine">Pulmonary Medicine</option>
                                     <!--subsection-->
                                     <option class="optionGroup" value="Radiology">Radiology</option>
-                                    <option value="Diagnostic Radiology">&nbsp;&nbsp;&nbsp;Diagnostic Radiology</option>
-                                    <option value="Interventional Radiology">&nbsp;&nbsp;&nbsp;Interventional
-                                        Radiology
-                                    </option>
-                                    <option value="Nuclear Medicine">&nbsp;&nbsp;&nbsp;Nuclear Medicine</option>
-                                    <option value="Pediatric Radiology">&nbsp;&nbsp;&nbsp;Pediatric Radiology</option>
-                                    <option value="Radiology, Bone">&nbsp;&nbsp;&nbsp;Radiology, Bone</option>
-                                    <option value="Radiology, Dental">&nbsp;&nbsp;&nbsp;Radiology, Dental</option>
-                                    <option value="Radiology, Head, Neck">&nbsp;&nbsp;&nbsp;Radiology, Head, Neck
-                                    </option>
-                                    <option value="Otolaryngology">&nbsp;&nbsp;&nbsp;Radiology, Soft Tissue</option>
-                                    <option value="Radiology, Thorax, Chest">&nbsp;&nbsp;&nbsp;Radiology, Thorax,
-                                        Chest
-                                    </option>
-                                    <option value="Therapeutic Radiology">&nbsp;&nbsp;&nbsp;Therapeutic Radiology
-                                    </option>
 
-                                    <optgroup label="Sports Medicine">
-                                        <option value="Sports Medicine">Sports Medicine</option>
-                                    </optgroup>
-                                    <optgroup label="Surgery">
-                                        <option value="Surgery">Surgery</option>
-                                    </optgroup>
+                                    <option class="optionGroup"  value="Sports Medicine">Sports Medicine</option>
+                                    <option class="optionGroup"  value="Surgery">Surgery</option>
+
                                     <!--subsection-->
                                     <option class="optionGroup" value="Surgical Specialty">Surgical Specialty</option>
-                                    <option value="General Surgery">&nbsp;&nbsp;&nbsp;General Surgery</option>
-                                    <option value="Hand Surgery">&nbsp;&nbsp;&nbsp;Hand Surgery</option>
-                                    <option value="Neurosurgery">&nbsp;&nbsp;&nbsp;Neurosurgery</option>
-                                    <option value="Oral Surgery">&nbsp;&nbsp;&nbsp;Oral Surgery</option>
-                                    <option value="Orthopedics">&nbsp;&nbsp;&nbsp;Orthopedics</option>
-                                    <option value="Pediatric Surgery">&nbsp;&nbsp;&nbsp;Pediatric Surgery</option>
-                                    <option value="Plastic Surgery">&nbsp;&nbsp;&nbsp;Plastic Surgery</option>
-                                    <option value="Thoracic Surgery">&nbsp;&nbsp;&nbsp;Thoracic Surgery</option>
-                                    <option value="Urological Surgery">&nbsp;&nbsp;&nbsp;Urological Surgery</option>
-                                    <option value="Vascular Surgery">&nbsp;&nbsp;&nbsp;Vascular Surgery</option>
-
-                                    <optgroup label="Urology">
-                                        <option value="Urology">Urology</option>
-                                    </optgroup>
+                                    <option  class="optionGroup" value="Urology">Urology</option>
                                 </select>
                                 <div id="second-list-dev"></div>
                             </div>
@@ -396,155 +268,61 @@
                                         divid.innerHTML = `
                                         <select id="second_topics-list" name="second_topics" >
                                             <option value="" selected="selected">You [can] select a second topic! ...</option>
-                                              <optgroup label="Anesthesiology">
-                                                <option value="Anesthesiology">Anesthesiology</option>
-                                              </optgroup>
-                                              <optgroup label="Cardiology">
-                                                <option value="Cardiology">Cardiology</option>
-                                              </optgroup>
-                                              <optgroup label="Dermatology">
-                                                <option value="Dermatology">Dermatology</option>
-                                              </optgroup>
-                                              <optgroup label="Emergency Medicine">
-                                                <option value="Emergency Medicine">Emergency Medicine</option>
-                                              </optgroup>
-                                              <optgroup label="Family Practice">
-                                                <option value="Family Practice">Family Practice</option>
-                                              </optgroup>
-                                              <optgroup label="Forensic Medicine">
-                                                <option value="Forensic Medicine">Forensic Medicine</option>
-                                              </optgroup>
-                                              <optgroup label="Geriatrics">
-                                                <option value="Geriatrics">Geriatrics</option>
-                                              </optgroup>
-                                              <!--subsection-->
-                                                <option class="optionGroup" value="Internal Medicine">Internal Medicine</option>
-                                                <option value="Endocrinology">&nbsp;&nbsp;&nbsp;Endocrinology</option>
-                                                <option value="Gastroenterology">&nbsp;&nbsp;&nbsp;Gastroenterology</option>
-                                                <option value="Gynecology">&nbsp;&nbsp;&nbsp;Gynecology</option>
-                                                <option value="Hematology">&nbsp;&nbsp;&nbsp;Hematology</option>
-                                                <option value="Nephrology">&nbsp;&nbsp;&nbsp;Nephrology</option>
-                                                <option value="Oncology">&nbsp;&nbsp;&nbsp;Oncology</option>
-                                                <option value="Parasitology">&nbsp;&nbsp;&nbsp;Parasitology</option>
-                                                <option value="Rheumatology">&nbsp;&nbsp;&nbsp;Rheumatology</option>
 
-                                              <!--subsection-->
-                                                <option class="optionGroup" value="Medical Genetics">Medical Genetics</option>
-                                                <option value="Breast Cancer Genetics">&nbsp;&nbsp;&nbsp;Breast Cancer Genetics</option>
+                                             <option class="optionGroup"  value="Anesthesiology">Anesthesiology</option>
+                                    <option class="optionGroup"  value="Cardiology">Cardiology</option>
+                                    <option class="optionGroup"  value="Dermatology">Dermatology</option>
+                                    <option class="optionGroup"  value="Emergency Medicine">Emergency Medicine</option>
+                                    <option class="optionGroup"  value="Family Practice">Family Practice</option>
+                                    <option class="optionGroup"  value="Forensic Medicine">Forensic Medicine</option>
+                                    <option class="optionGroup"  value="Geriatrics">Geriatrics</option>
+                                    <!--subsection-->
+                                    <option class="optionGroup" value="Internal Medicine">Internal Medicine</option>
 
-                                              <optgroup label="Neurology">
-                                                <option value="Neurology">Neurology</option>
-                                              </optgroup>
-                                              <optgroup label="Obstetrics">
-                                                <option value="Obstetrics">Obstetrics</option>
-                                              </optgroup>
-                                              <optgroup label="Obstetrics and Gynecology">
-                                                <option value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
-                                              </optgroup>
-                                              <optgroup label="Occupational Medicine">
-                                                <option value="Occupational Medicine">Occupational Medicine</option>
-                                              </optgroup>
-                                              <!--subsection-->
-                                                <option class="optionGroup" value="Ophthalmology">Ophthalmology</option>
-                                                <option value="Experimental Ophthalmology">&nbsp;&nbsp;&nbsp;Experimental Ophthalmology</option>
+                                    <!--subsection-->
+                                    <option class="optionGroup" value="Medical Genetics">Medical Genetics</option>
 
-                                              <optgroup label="Otolaryngology">
-                                                <option value="Otolaryngology">Otolaryngology</option>
-                                              </optgroup>
-                                              <!--subsection-->
-                                              <option class="optionGroup" value="Pathology">Pathology</option>
-                                                <option value="Bone and Connective Tissue Pathology">&nbsp;&nbsp;&nbsp;Bone and Connective Tissue Pathology</option>
-                                                <option value="Cardiovascular Pathology">&nbsp;&nbsp;&nbsp;Cardiovascular Pathology</option>
-                                                <option value="Cytopathology">&nbsp;&nbsp;&nbsp;Cytopathology</option>
-                                                <option value="Experimental Pathology">&nbsp;&nbsp;&nbsp;Experimental Pathology</option>
-                                                <option value="Gynecologic Pathology">&nbsp;&nbsp;&nbsp;Gynecologic Pathology</option>
-                                                <option value="Hematopathology">&nbsp;&nbsp;&nbsp;Hematopathology</option>
-                                                <option value="Hematopathology">&nbsp;&nbsp;&nbsp;Hematopathology</option>
-                                                <option value="Human Pathology">&nbsp;&nbsp;&nbsp;Human Pathology</option>
-                                                <option value="Immunopathology">&nbsp;&nbsp;&nbsp;Immunopathology</option>
-                                                <option value="Molecular Pathology">&nbsp;&nbsp;&nbsp;Molecular Pathology</option>
-                                                <option value="Neuropathology">&nbsp;&nbsp;&nbsp;Neuropathology</option>
-                                                <option value="Ocular Pathology">&nbsp;&nbsp;&nbsp;Ocular Pathology</option>
-                                                <option value="Pathology">&nbsp;&nbsp;&nbsp;Pathology</option>
-                                                <option value="Oral">&nbsp;&nbsp;&nbsp;Oral</option>
-                                                  <option value="Pathology of Tumors in Animals">&nbsp;&nbsp;&nbsp;Pathology of Tumors in Animals</option>
-                                                  <option value="Psychopathology">&nbsp;&nbsp;&nbsp;Psychopathology</option>
-                                                  <option value="Pulmonary Pathology">&nbsp;&nbsp;&nbsp;Pulmonary Pathology</option>
-                                                  <option value="Renal/Urogenital Pathology">&nbsp;&nbsp;&nbsp;Renal/Urogenital Pathology</option>
-                                                  <option value="Surgical Pathology">&nbsp;&nbsp;&nbsp;Surgical Pathology</option>
-                                                  <option value="Ultrastructural Pathology">&nbsp;&nbsp;&nbsp;Ultrastructural Pathology</option>
+                                    <option class="optionGroup"  value="Neurology">Neurology</option>
 
-                                  <!--subsection-->
+                                    <option class="optionGroup"  value="Obstetrics">Obstetrics</option>
+                                    <option class="optionGroup"  value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
+                                    <option class="optionGroup"  value="Occupational Medicine">Occupational Medicine</option>
+
+
+                                    <!--subsection-->
+                                    <option class="optionGroup"  class="optionGroup" value="Ophthalmology">Ophthalmology</option>
+
+                                    <option class="optionGroup"  value="Otolaryngology">Otolaryngology</option>
+                                    <!--subsection-->
+                                    <option class="optionGroup" value="Pathology">Pathology</option>
+                                    <!--subsection-->
                                     <option class="optionGroup" value="Pediatrics">Pediatrics</option>
-                                    <option value="Neonatology">&nbsp;&nbsp;&nbsp;Neonatology</option>
-                                    <option value="Pediatric Hematology/Oncology">&nbsp;&nbsp;&nbsp;Pediatric Hematology/Oncology</option>
-                                    <option value="Pediatric Neurologic Oncology">&nbsp;&nbsp;&nbsp;Pediatric Neurologic Oncology</option>
-                                    <option value="Pediatric Neurology">&nbsp;&nbsp;&nbsp;Pediatric Neurology</option>
 
 
-                                  <optgroup label="Physical Medicine and Rehabilitation">
-                                    <option value="Physical Medicine and Rehabilitation">Physical Medicine and Rehabilitation</option>
-                                  </optgroup>
-                                  <optgroup label="Podiatry">
-                                    <option value="Podiatry">Podiatry</option>
-                                  </optgroup>
-                                    <!--subsection-->
-                                  <option class="optionGroup" value="Preventive Medicine">Preventive Medicine</option>
-                                    <option value="Health Promotion in Nursing">&nbsp;&nbsp;&nbsp;Health Promotion in Nursing</option>
+                                    <option class="optionGroup"  value="Physical Medicine and Rehabilitation">Physical Medicine and Rehabilitation</option>
+                                    <option class="optionGroup"  value="Podiatry">Podiatry</option>
 
                                     <!--subsection-->
-                                  <option class="optionGroup" value="Psychiatry">Psychiatry</option>
-                                    <option value="Child Psychiatry">&nbsp;&nbsp;&nbsp;Child Psychiatry</option>
-                                    <option value="Experimental Psychiatry">&nbsp;&nbsp;&nbsp;Experimental Psychiatry</option>
-                                    <option value="Psychosomatic Medicine">&nbsp;&nbsp;&nbsp;Psychosomatic Medicine</option>
+                                    <option class="optionGroup" value="Preventive Medicine">Preventive Medicine</option>
+
+                                    <!--subsection-->
+                                    <option class="optionGroup" value="Psychiatry">Psychiatry</option>
 
                                     <!--subsection-->
                                     <option class="optionGroup" value="Public Health">Public Health</option>
-                                    <option value="Arctic Research">&nbsp;&nbsp;&nbsp;Arctic Research</option>
-                                    <option value="Community Health">&nbsp;&nbsp;&nbsp;Community Health</option>
-                                    <option value="Occupational Health">&nbsp;&nbsp;&nbsp;Occupational Health</option>
-                                    <option value="Patterns of Care">&nbsp;&nbsp;&nbsp;Patterns of Care</option>
-                                    <option value="Women's Health">&nbsp;&nbsp;&nbsp;Women's Health</option>
 
-
-                                  <optgroup label="Pulmonary Medicine">
-                                    <option value="Pulmonary Medicine">Pulmonary Medicine</option>
-                                  </optgroup>
+                                    <option class="optionGroup"  value="Pulmonary Medicine">Pulmonary Medicine</option>
                                     <!--subsection-->
-                                  <option class="optionGroup" value="Radiology">Radiology</option>
-                                    <option value="Diagnostic Radiology">&nbsp;&nbsp;&nbsp;Diagnostic Radiology</option>
-                                    <option value="Interventional Radiology">&nbsp;&nbsp;&nbsp;Interventional Radiology</option>
-                                    <option value="Nuclear Medicine">&nbsp;&nbsp;&nbsp;Nuclear Medicine</option>
-                                    <option value="Pediatric Radiology">&nbsp;&nbsp;&nbsp;Pediatric Radiology</option>
-                                    <option value="Radiology, Bone">&nbsp;&nbsp;&nbsp;Radiology, Bone</option>
-                                    <option value="Radiology, Dental">&nbsp;&nbsp;&nbsp;Radiology, Dental</option>
-                                    <option value="Radiology, Head, Neck">&nbsp;&nbsp;&nbsp;Radiology, Head, Neck</option>
-                                    <option value="Otolaryngology">&nbsp;&nbsp;&nbsp;Radiology, Soft Tissue</option>
-                                    <option value="Radiology, Thorax, Chest">&nbsp;&nbsp;&nbsp;Radiology, Thorax, Chest</option>
-                                    <option value="Therapeutic Radiology">&nbsp;&nbsp;&nbsp;Therapeutic Radiology</option>
+                                    <option class="optionGroup" value="Radiology">Radiology</option>
 
-                                  <optgroup label="Sports Medicine">
-                                    <option value="Sports Medicine">Sports Medicine</option>
-                                  </optgroup>
-                                  <optgroup label="Surgery">
-                                    <option value="Surgery">Surgery</option>
-                                  </optgroup>
+                                    <option class="optionGroup"  value="Sports Medicine">Sports Medicine</option>
+                                    <option class="optionGroup"  value="Surgery">Surgery</option>
+
                                     <!--subsection-->
-                                  <option class="optionGroup" value="Surgical Specialty">Surgical Specialty</option>
-                                    <option value="General Surgery">&nbsp;&nbsp;&nbsp;General Surgery</option>
-                                      <option value="Hand Surgery">&nbsp;&nbsp;&nbsp;Hand Surgery</option>
-                                      <option value="Neurosurgery">&nbsp;&nbsp;&nbsp;Neurosurgery</option>
-                                      <option value="Oral Surgery">&nbsp;&nbsp;&nbsp;Oral Surgery</option>
-                                      <option value="Orthopedics">&nbsp;&nbsp;&nbsp;Orthopedics</option>
-                                      <option value="Pediatric Surgery">&nbsp;&nbsp;&nbsp;Pediatric Surgery</option>
-                                      <option value="Plastic Surgery">&nbsp;&nbsp;&nbsp;Plastic Surgery</option>
-                                      <option value="Thoracic Surgery">&nbsp;&nbsp;&nbsp;Thoracic Surgery</option>
-                                      <option value="Urological Surgery">&nbsp;&nbsp;&nbsp;Urological Surgery</option>
-                                      <option value="Vascular Surgery">&nbsp;&nbsp;&nbsp;Vascular Surgery</option>
+                                    <option class="optionGroup" value="Surgical Specialty">Surgical Specialty</option>
+                                    <option  class="optionGroup" value="Urology">Urology</option>
 
-                                  <optgroup label="Urology">
-                                    <option value="Urology">Urology</option>
-                                  </optgroup>
+
                                 </select>
                                     `
                                     }

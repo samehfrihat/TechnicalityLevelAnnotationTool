@@ -157,7 +157,7 @@ msgstr "Annotation starten!"
 
 #: static/templates/index.html:34 static/templates/reward.html:37
 msgid "Thank you for supporting our research!"
-msgstr "Vielen dank, dass Sie uns bei unserer Forschung unterstützen!"
+msgstr "Vielen Dank, dass Sie uns bei unserer Forschung unterstützen!"
 
 #: static/templates/login.html:52 static/templates/signup.html:55
 msgid "Welcome to WisPerMed Annotation Tool!"
@@ -182,10 +182,10 @@ msgid ""
 "medical domain and would like to help us? Then contact us via"
 msgstr ""
 " Vielen dank, dass Sie uns bei unserer Forschung zur Verbesserung von KI "
-"in der Medizin unterstützen! <br> Sie sind nur ein Schritt davon entfernt"
-" den Unterschied zu machen. <br> Sind Sie im Bereich der Medizin tätig "
+"in der Medizin unterstützen! <br> Sie sind nur einen Schritt davon entfernt"
+" den Unterschied zu machen! <br> Sind Sie im Bereich der Medizin tätig "
 "und würden gerne mehr erfahren oder uns unterstützen? Dann kontaktieren "
-"Sie und einfach via "
+"Sie uns einfach via "
 
 #: static/templates/reward.html:8
 msgid "Tank you!"
@@ -205,7 +205,7 @@ msgstr "Gib mir noch ein Abstract"
 
 #: static/templates/signup.html:59
 msgid "Getting started"
-msgstr "Los gehts!"
+msgstr "Los geht's!"
 
 #: static/templates/signup.html:64
 msgid ""
@@ -215,7 +215,7 @@ msgid ""
 "completely anonymous user."
 msgstr ""
 "Um mit der Annotation starten zu können beantworten Sie bitte die "
-"folgenden Fragen zu ihren Sprachkenntnissen und stimmen der Daten- und "
+"folgenden Fragen zu Ihren Sprachkenntnissen und stimmen der Daten- und "
 "Cookienutzung zu. Alle gesammelten Daten werden unter einem automatisch "
 "angelegten und komplett anonymisierten Nutzer gespeichert. "
 
@@ -254,19 +254,19 @@ msgstr "In welcher Kategorie ordnen Sie sich ein?"
 
 #: static/templates/signup.html:98
 msgid "Physician with 2+ years of experience"
-msgstr "Ärzt*in mit 2+ Jahren Erfahrung"
+msgstr "Ärzt*in mit mehr als 2 Jahren Berufserfahrung"
 
 #: static/templates/signup.html:100
 msgid "Physician with less than 2 years of experience"
-msgstr "Ärzt*in mit 2+ Jahren Erfahrung"
+msgstr "Ärzt*in mit weniger als 2 Jahren Berufserfahrung"
 
 #: static/templates/signup.html:102
 msgid "Senior medical student (7th semester +)"
-msgstr "Senior Medizinstudent*in (7. Semester +)"
+msgstr "Medizinstudent*in (ab 7. Fachsemester)"
 
 #: static/templates/signup.html:104
 msgid "Junior medical student (up to 6th semester)"
-msgstr "Senior Medizinstudent*in (7. Semester +)"
+msgstr "Medizinstudent*in (bis 6. Fachsemester)"
 
 #: static/templates/signup.html:106
 msgid "Out of medical domain"
