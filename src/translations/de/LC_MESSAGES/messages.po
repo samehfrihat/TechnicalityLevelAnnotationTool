@@ -7,18 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-10-17 13:55+0200\n"
+"POT-Creation-Date: 2022-11-11 16:28+0100\n"
 "PO-Revision-Date: 2022-07-13 10:20+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
 "Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.1\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: controllers/user_db.py:26 views.py:96
+#: views.py:96
 msgid "annotation newbie"
 msgstr "Annotations Neuling"
 
@@ -41,6 +41,11 @@ msgstr "Annotationsmeister*in"
 #: views.py:106
 msgid "legendary annotator"
 msgstr "legendäre*r Annotator*in"
+
+#: controllers/user_db.py:26
+#, fuzzy
+msgid "annotation newbee"
+msgstr "Annotations Neuling"
 
 #: static/templates/change_pass.html:9
 msgid "WisPerMed Annotation Tool"
@@ -77,7 +82,7 @@ msgstr "Passwort"
 msgid "new Password:"
 msgstr "neues Passwort"
 
-#: static/templates/change_pass.html:32 static/templates/technicality.html:620
+#: static/templates/change_pass.html:32 static/templates/technicality.html:398
 msgid "This field is mandatory"
 msgstr "erforderliches Feld"
 
@@ -182,10 +187,10 @@ msgid ""
 "medical domain and would like to help us? Then contact us via"
 msgstr ""
 " Vielen dank, dass Sie uns bei unserer Forschung zur Verbesserung von KI "
-"in der Medizin unterstützen! <br> Sie sind nur einen Schritt davon entfernt"
-" den Unterschied zu machen! <br> Sind Sie im Bereich der Medizin tätig "
-"und würden gerne mehr erfahren oder uns unterstützen? Dann kontaktieren "
-"Sie uns einfach via "
+"in der Medizin unterstützen! <br> Sie sind nur einen Schritt davon "
+"entfernt den Unterschied zu machen! <br> Sind Sie im Bereich der Medizin "
+"tätig und würden gerne mehr erfahren oder uns unterstützen? Dann "
+"kontaktieren Sie uns einfach via "
 
 #: static/templates/reward.html:8
 msgid "Tank you!"
@@ -375,48 +380,48 @@ msgstr "Abstract:"
 msgid "Topic"
 msgstr "Themen-bereich"
 
-#: static/templates/technicality.html:558
+#: static/templates/technicality.html:336
 msgid "Desirable information for (a better) contextual understanding"
 msgstr "Wünschenswerte Informationen zum (besseren) Kontextverständnis"
 
-#: static/templates/technicality.html:563
+#: static/templates/technicality.html:341
 msgid "Exchange with colleagues of the same professional level"
 msgstr "Austausch mit Kolleg*innen der selben fachlichen Qualifikation"
 
-#: static/templates/technicality.html:569
+#: static/templates/technicality.html:347
 msgid "Exchange with supervisors"
 msgstr "Austausch mit Vorgesetzten"
 
-#: static/templates/technicality.html:574
+#: static/templates/technicality.html:352
 msgid "Pschyrembel (medical dictionary)"
 msgstr "Pschyrembel (medizinisches Nachschlagewerk)"
 
-#: static/templates/technicality.html:579
+#: static/templates/technicality.html:357
 msgid "Medical guideline"
 msgstr "Medizinische Leitlinie"
 
-#: static/templates/technicality.html:584
+#: static/templates/technicality.html:362
 msgid "Hospital-specific SOP (standard operating procedure)"
 msgstr "Klinikinterne SOP (Standardarbeitsanweisung)"
 
-#: static/templates/technicality.html:591
+#: static/templates/technicality.html:369
 msgid "Online tool"
 msgstr "Online-Tool"
 
-#: static/templates/technicality.html:592
-#: static/templates/technicality.html:602
+#: static/templates/technicality.html:370
+#: static/templates/technicality.html:380
 msgid "Which?"
 msgstr "Welches?"
 
-#: static/templates/technicality.html:601
+#: static/templates/technicality.html:379
 msgid "Other information"
 msgstr "Anderes Informationsmaterial/Zusätzliches"
 
-#: static/templates/technicality.html:609
+#: static/templates/technicality.html:387
 msgid "Not needed"
 msgstr "Keine zusätzlichen Informationen"
 
-#: static/templates/technicality.html:622
+#: static/templates/technicality.html:400
 msgid "submit"
 msgstr "absenden"
 
