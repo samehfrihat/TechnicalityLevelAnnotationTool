@@ -5,9 +5,9 @@
             <ul class="slides">
                 <li>
                     <article>
-                        <h1 class='heading'>{{gettext('Tank you!')}}<br><span
+                        <h1 class='heading'>{{gettext('Thank you!')}}<br><span
                                 class='heading highlight1'>{{ level }}</span></h1>
-                        <h1 class='heading'>{{gettext('You annotation was saved')}}</h1>
+                        <h1 class='heading'>{{gettext('Your annotation was saved')}}</h1>
                         <span class='subheading highlight1'>{{gettext('You have annotated ')}}</span>
                         <span class='subheading highlight2'>{{ annotations }}</span>
                         {% if annotations == 1 %}
@@ -19,7 +19,7 @@
                         {% if annotations < 2 %}
                         <span class='subheading'>{{gettext('Please annotate at least 2 abstracts')}}</span>
                         {% else %}
-                        <span class='subheading'>{{gettext('If you like, keep on annotating')}}</span>
+                        <span class='subheading'>{{gettext('If you like, keep on annotating.')}}</span>
                         {% endif %}
 
                         <footer><a class="btn cancel" href="/technicality">

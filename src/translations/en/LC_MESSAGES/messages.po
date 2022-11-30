@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-10-17 13:55+0200\n"
+"POT-Creation-Date: 2022-11-30 17:23+0100\n"
 "PO-Revision-Date: 2022-10-17 13:25+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.1\n"
 
-#: controllers/user_db.py:26 views.py:96
-msgid "annotation newbee"
+#: views.py:96
+msgid "annotation newbie"
 msgstr ""
 
 #: views.py:98
@@ -40,6 +40,10 @@ msgstr ""
 
 #: views.py:106
 msgid "legendary annotator"
+msgstr ""
+
+#: controllers/user_db.py:26
+msgid "annotation newbee"
 msgstr ""
 
 #: static/templates/change_pass.html:9
@@ -77,7 +81,7 @@ msgstr ""
 msgid "new Password:"
 msgstr ""
 
-#: static/templates/change_pass.html:32 static/templates/technicality.html:620
+#: static/templates/change_pass.html:32 static/templates/technicality.html:398
 msgid "This field is mandatory"
 msgstr ""
 
@@ -145,7 +149,7 @@ msgstr ""
 msgid "Please annotate at least 2 abstracts"
 msgstr ""
 
-#: static/templates/index.html:25 static/templates/reward.html:22
+#: static/templates/index.html:25
 msgid "If you like, keep on annotating"
 msgstr ""
 
@@ -181,11 +185,15 @@ msgid ""
 msgstr ""
 
 #: static/templates/reward.html:8
-msgid "Tank you!"
+msgid "Thank you!"
 msgstr ""
 
 #: static/templates/reward.html:10
-msgid "You annotation was saved"
+msgid "Your annotation was saved"
+msgstr ""
+
+#: static/templates/reward.html:22
+msgid "If you like, keep on annotating."
 msgstr ""
 
 #: static/templates/reward.html:27
@@ -350,48 +358,48 @@ msgstr ""
 msgid "Topic"
 msgstr ""
 
-#: static/templates/technicality.html:558
+#: static/templates/technicality.html:336
 msgid "Desirable information for (a better) contextual understanding"
 msgstr ""
 
-#: static/templates/technicality.html:563
+#: static/templates/technicality.html:341
 msgid "Exchange with colleagues of the same professional level"
 msgstr ""
 
-#: static/templates/technicality.html:569
+#: static/templates/technicality.html:347
 msgid "Exchange with supervisors"
 msgstr ""
 
-#: static/templates/technicality.html:574
+#: static/templates/technicality.html:352
 msgid "Pschyrembel (medical dictionary)"
 msgstr ""
 
-#: static/templates/technicality.html:579
+#: static/templates/technicality.html:357
 msgid "Medical guideline"
 msgstr ""
 
-#: static/templates/technicality.html:584
+#: static/templates/technicality.html:362
 msgid "Hospital-specific SOP (standard operating procedure)"
 msgstr ""
 
-#: static/templates/technicality.html:591
+#: static/templates/technicality.html:369
 msgid "Online tool"
 msgstr ""
 
-#: static/templates/technicality.html:592
-#: static/templates/technicality.html:602
+#: static/templates/technicality.html:370
+#: static/templates/technicality.html:380
 msgid "Which?"
 msgstr ""
 
-#: static/templates/technicality.html:601
+#: static/templates/technicality.html:379
 msgid "Other information"
 msgstr ""
 
-#: static/templates/technicality.html:609
+#: static/templates/technicality.html:387
 msgid "Not needed"
 msgstr ""
 
-#: static/templates/technicality.html:622
+#: static/templates/technicality.html:400
 msgid "submit"
 msgstr ""
 
@@ -428,5 +436,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "C1 (advanced)"
+#~ msgstr ""
+
+#~ msgid "Tank you!"
+#~ msgstr ""
+
+#~ msgid "You annotation was saved"
 #~ msgstr ""
 
