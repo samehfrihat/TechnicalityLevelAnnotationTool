@@ -7,8 +7,6 @@ GERMAN_ABSTRACTS_PATH = os.path.join(_CURRENT_FILE_PATH, "static/data/germanAbst
 
 # Database related configurations
 CONNECTION_STRING = os.environ.get("DB", 'localhost:27017')
-#CONNECTION_STRING = os.environ.get("DB", 'mongodb://root:secret@sally.is.inf.uni-due.de:27017')
-#CONNECTION_STRING = os.environ.get("DB", 'mongodb://root:rootPasswordXXX@ariadne.is.inf.uni-due.de:27017')
 
 # API related configurations
 PORT = os.environ.get("PORT", 8787)
